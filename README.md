@@ -165,7 +165,7 @@ Các loại splitter phù hợp:
 ```bash
 pip install chromadb
 ```
-- ChromaDB lưu trữ vector embeddings (`BAAI/bge-m3`), metadata và thông tin phân đoạn local tại thư mục `chroma_db/`
+- ChromaDB lưu trữ vector embeddings (`text-embedding-3-small`, 1536 dimensions), metadata và thông tin phân đoạn local tại thư mục `chroma_db/`
 - Hỗ trợ truy vấn tìm kiếm tương đồng Cosine (Cosine Similarity Search) phục vụ Dense Retrieval ở Task 5
 
 **Yêu cầu:**
