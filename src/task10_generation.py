@@ -60,7 +60,8 @@ Quy tắc bắt buộc:
 4. Trả lời bằng tiếng Việt, ngắn gọn, có cấu trúc rõ ràng
 5. Khi có nhiều nguồn, ưu tiên văn bản pháp luật gốc và nêu rõ nếu các nguồn khác nhau
 6. Không suy luận hay mở rộng ngoài những gì được nêu trong context
-7. Không tự tạo tên nguồn, số điều, mức tiền hoặc thời hạn không có trong context"""
+7. Không tự tạo tên nguồn, số điều, mức tiền hoặc thời hạn không có trong context
+8. Lịch sử hội thoại chỉ dùng để hiểu câu hỏi nối tiếp, KHÔNG được xem là bằng chứng"""
 
 
 # =============================================================================
@@ -199,11 +200,64 @@ def _call_llm(user_message: str) -> str:
     raise RuntimeError("All generation backends failed: " + " | ".join(errors))
 
 
+def _normalize_conversation_history(
+    conversation_history: list[dict] | None,
+) -> list[dict[str, str]]:
+    """Keep a small, safe history window for multi-turn follow-up questions."""
+    if conversation_history is None:
+        return []
+    if not isinstance(conversation_history, list):
+        raise TypeError("conversation_history must be a list or None")
+
+    normalized: list[dict[str, str]] = []
+    for message in conversation_history[-4:]:
+        if not isinstance(message, dict):
+            continue
+        role = message.get("role")
+        content = message.get("content")
+        if role not in {"user", "assistant"}:
+            continue
+        if not isinstance(content, str) or not content.strip():
+            continue
+        normalized.append({"role": role, "content": content.strip()[:800]})
+    return normalized
+
+
+def _is_follow_up(query: str) -> bool:
+    normalized = query.casefold().strip()
+    follow_up_prefixes = (
+        "còn ",
+        "thế ",
+        "vậy ",
+        "nếu vậy",
+        "trường hợp đó",
+        "quy định đó",
+        "điều này",
+    )
+    return len(normalized) <= 45 or normalized.startswith(follow_up_prefixes)
+
+
+def _build_retrieval_query(query: str, history: list[dict[str, str]]) -> str:
+    """Resolve short follow-ups for retrieval without treating chat as evidence."""
+    if not history or not _is_follow_up(query):
+        return query
+    previous_user_questions = [
+        message["content"] for message in history if message["role"] == "user"
+    ]
+    if not previous_user_questions:
+        return query
+    return f"{previous_user_questions[-1]}\nCâu hỏi nối tiếp: {query}"
+
+
 # =============================================================================
 # GENERATION
 # =============================================================================
 
-def generate_with_citation(query: str, top_k: int = TOP_K) -> dict:
+def generate_with_citation(
+    query: str,
+    top_k: int = TOP_K,
+    conversation_history: list[dict] | None = None,
+) -> dict:
     """
     End-to-end RAG generation có citation.
 
@@ -231,7 +285,9 @@ def generate_with_citation(query: str, top_k: int = TOP_K) -> dict:
         raise ValueError("top_k must be a positive integer")
 
     query = query.strip()
-    chunks = retrieve(query, top_k=top_k)
+    history = _normalize_conversation_history(conversation_history)
+    retrieval_query = _build_retrieval_query(query, history)
+    chunks = retrieve(retrieval_query, top_k=top_k)
     if not chunks:
         return {
             "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
@@ -248,8 +304,21 @@ def generate_with_citation(query: str, top_k: int = TOP_K) -> dict:
             "retrieval_source": "none",
         }
 
+    history_block = ""
+    if history:
+        history_lines = [
+            f"{'Người dùng' if item['role'] == 'user' else 'Trợ lý'}: {item['content']}"
+            for item in history
+        ]
+        history_block = (
+            "LỊCH SỬ HỘI THOẠI (chỉ để hiểu câu hỏi nối tiếp, không phải nguồn):\n"
+            + "\n".join(history_lines)
+            + "\n\n"
+        )
+
     user_message = (
-        "CONTEXT ĐƯỢC PHÉP SỬ DỤNG:\n"
+        history_block
+        + "CONTEXT ĐƯỢC PHÉP SỬ DỤNG:\n"
         f"{context}\n\n"
         "---\n"
         f"CÂU HỎI: {query}\n\n"
