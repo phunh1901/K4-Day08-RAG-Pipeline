@@ -257,6 +257,8 @@ def generate_with_citation(
     query: str,
     top_k: int = TOP_K,
     conversation_history: list[dict] | None = None,
+    context_chunks: list[dict] | None = None,
+    use_query_expansion: bool = False,
 ) -> dict:
     """
     End-to-end RAG generation có citation.
@@ -287,7 +289,16 @@ def generate_with_citation(
     query = query.strip()
     history = _normalize_conversation_history(conversation_history)
     retrieval_query = _build_retrieval_query(query, history)
-    chunks = retrieve(retrieval_query, top_k=top_k)
+    if context_chunks is None:
+        chunks = retrieve(
+            retrieval_query,
+            top_k=top_k,
+            use_query_expansion=use_query_expansion,
+        )
+    else:
+        if not isinstance(context_chunks, list):
+            raise TypeError("context_chunks must be a list or None")
+        chunks = [chunk.copy() for chunk in context_chunks[:top_k] if isinstance(chunk, dict)]
     if not chunks:
         return {
             "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",

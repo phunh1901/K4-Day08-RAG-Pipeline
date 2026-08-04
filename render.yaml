@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: vietnam-labor-law-rag
+    runtime: docker
+    plan: free
+    autoDeploy: false
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: PAGEINDEX_API_KEY
+        sync: false
+      - key: PAGEINDEX_DOC_ID
+        sync: false

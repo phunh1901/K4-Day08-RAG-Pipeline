@@ -14,6 +14,8 @@ dựa trên corpus của nhóm và phải kèm trích dẫn nguồn.
 - Citation theo đúng nhãn `[Nguồn N: tên-tài-liệu]`.
 - Hiển thị nguồn, score, loại tài liệu, mục liên quan và highlight từ khóa.
 - Conversation memory tối đa 4 tin nhắn, có thể bật/tắt.
+- Query Expansion tiếng Việt ánh xạ từ ngữ đời thường sang thuật ngữ pháp lý.
+- Có cả BM25 và TF-IDF để so sánh cơ chế lexical retrieval.
 - Tải lịch sử chat dưới dạng Markdown và xóa session khi demo lại.
 - Xử lý lỗi API thân thiện, không hiển thị hoặc ghi log API key.
 
@@ -39,15 +41,14 @@ flowchart TD
     L -->|Answer + citations + sources| UI
 ```
 
-## Phân công CP5 — Role 1, 2, 3
+## Nhóm 4 thành viên
 
-| Role | Phần việc CP5 | Deliverable đã tích hợp |
-|---|---|---|
-| Role 1 — Leader/Architect | Chọn phiên bản code tốt nhất, ghép pipeline, kiểm tra kiến trúc và khả năng demo | `app.py`, sơ đồ kiến trúc, hướng dẫn chạy và checklist demo |
-| Role 2 — Pipeline Integration | Nối `generate_with_citation()` vào luồng câu hỏi, truyền `top_k` và history, nhận `answer/sources/retrieval_source` | Luồng end-to-end Task 9 → Task 10 → UI, xử lý lỗi dịch vụ |
-| Role 3 — Frontend | Chat UI, sidebar, câu hỏi gợi ý, source viewer, score/highlight, memory và session controls | Ứng dụng Streamlit hoàn chỉnh trong `app.py` |
-
-Role Evaluation/QA tiếp tục sở hữu `group_project/evaluation/` và báo cáo RAGAS.
+| Thành viên | MSSV | Role | Trách nhiệm chính |
+|---|---|---:|---|
+| Ngô Hoàng Phú | 2A202601244 | 1 | Leader, kiến trúc và tích hợp tổng thể |
+| Nguyễn Trung Long | 2A202601514 | 2 | Data, dense retrieval và pipeline integration |
+| Đinh Quốc Việt | 2A202601891 | 3 | Sparse/PageIndex, generation và Streamlit UI |
+| Nguyễn Xuân Kiên | 2A202601398 | 4 | Golden dataset, RAGAS A/B và QA |
 
 ## Chuẩn bị môi trường
 
@@ -88,18 +89,19 @@ Mở `http://localhost:8501` nếu trình duyệt không tự mở.
 
 ```powershell
 python -m pytest tests/test_individual.py -v
+python -m pytest tests/test_bonus_and_integration.py -v
 python -m pytest tests/test_individual.py::TestTask10 -v
 python -m streamlit run app.py --server.headless=true
 ```
 
 Checklist:
 
-- [ ] App mở không có exception.
-- [ ] Câu hỏi luật lao động trả lời có citation.
-- [ ] Danh sách nguồn hiển thị đúng số đoạn và retrieval channel.
-- [ ] Câu hỏi nối tiếp sử dụng history khi memory bật.
-- [ ] Không có API key trong Git hoặc giao diện.
-- [ ] Golden dataset, 4 metric và báo cáo A/B trong `evaluation/` đã hoàn tất.
+- [x] App mở không có exception.
+- [x] Câu hỏi luật lao động trả lời có citation.
+- [x] Danh sách nguồn hiển thị đúng số đoạn và retrieval channel.
+- [x] Câu hỏi nối tiếp sử dụng history khi memory bật.
+- [x] Không có API key trong Git hoặc giao diện.
+- [x] Golden dataset 15 câu, 4 metric và báo cáo A/B đã hoàn tất.
 
 ## Evaluation
 
@@ -114,3 +116,27 @@ Chạy theo hướng dẫn của nhóm QA:
 ```powershell
 python -m group_project.evaluation.eval_pipeline
 ```
+
+Kết quả benchmark ngày 04/08/2026 trên đủ 15 câu:
+
+| Config | Faithfulness | Relevancy | Recall | Precision | Average |
+|---|---:|---:|---:|---:|---:|
+| Hybrid + BM25 + RRF + fallback | 0.7622 | 0.4166 | 0.8778 | 0.9740 | **0.7576** |
+| Dense-only | 0.5881 | 0.3662 | 0.8111 | 0.9317 | **0.6743** |
+
+## Bonus 20 điểm
+
+- **5 điểm lexical khác BM25:** `tfidf_search()` dùng TF-IDF word/bigram + cosine;
+  BM25 dùng term saturation (`k1`) và document-length normalization (`b`).
+- **5 điểm Semantic Search nâng cao:** Query Expansion tích hợp vào Task 5, Task 9 và UI.
+- **4 điểm deploy:** có `Dockerfile`, `render.yaml`, healthcheck và Streamlit production config;
+  cần khai báo secrets trên nền tảng trước khi tạo URL công khai.
+- **3 điểm memory:** lịch sử 4 tin nhắn giúp phân giải follow-up nhưng không được dùng làm evidence.
+- **3 điểm UI/UX:** source, retrieval channel, score, highlight, suggestions và download chat.
+
+## Deploy bằng Render Blueprint
+
+1. Push repository lên GitHub.
+2. Trên Render chọn **New → Blueprint**, trỏ tới repository này.
+3. Khai báo bốn secrets theo `render.yaml`; tuyệt đối không commit `.env`.
+4. Deploy và kiểm tra endpoint `/_stcore/health` trước khi demo.

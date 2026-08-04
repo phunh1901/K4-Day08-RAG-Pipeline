@@ -1,0 +1,1036 @@
+{
+  "hybrid_rrf_fallback": {
+    "summary": {
+      "faithfulness": 0.7622222222222222,
+      "answer_relevancy": 0.4166135911777221,
+      "context_recall": 0.8777777777777778,
+      "context_precision": 0.9739814814601289
+    },
+    "rows": [
+      {
+        "question": "Em vừa tốt nghiệp đại học, đi làm vị trí marketing và công ty muốn thử việc 60 ngày. Như vậy có đúng luật không?",
+        "answer": "Thời gian thử việc cho công việc có chức danh nghề nghiệp cần trình độ chuyên môn, kỹ thuật từ cao đẳng trở lên không được quá 60 ngày. Do đó, việc công ty muốn thử việc bạn 60 ngày là đúng luật. [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-09-2020-tt-bldtbxh-lao-dong-chua-thanh-nien.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.7762024554413939,
+        "context_recall": 0.5,
+        "context_precision": 0.99999999998,
+        "average": 0.7565506138553485
+      },
+      {
+        "question": "Nếu em làm hợp đồng chỉ 20 ngày thì công ty có được bắt thử việc không?",
+        "answer": "Theo quy định, không áp dụng thử việc đối với người lao động giao kết hợp đồng lao động có thời hạn dưới 01 tháng. Vì vậy, nếu em làm hợp đồng chỉ 20 ngày, công ty không được phép bắt thử việc. [Nguồn 5: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.749999999995
+      },
+      {
+        "question": "Công ty bảo cứ làm 2 tháng rồi tính, không ký hợp đồng lao động bằng văn bản có được không?",
+        "answer": "Công ty không được phép chỉ bảo cứ làm 2 tháng rồi mới tính mà không ký hợp đồng lao động bằng văn bản. Theo quy định, trước khi nhận người lao động vào làm việc, người sử dụng lao động phải giao kết hợp đồng lao động với người lao động [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]. Hợp đồng lao động phải được giao kết bằng văn bản và được làm thành 02 bản [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.6666666666666666,
+        "context_precision": 0.99999999998,
+        "average": 0.5833333333283333
+      },
+      {
+        "question": "Sếp nhắn bắt em tăng ca cuối tuần nhưng em không muốn. Công ty có quyền ép không?",
+        "answer": "Công ty có quyền yêu cầu nhân viên làm thêm giờ, nhưng việc này phải tuân theo các quy định về thời giờ làm việc và làm thêm giờ. Nếu bạn không muốn làm thêm, bạn có thể từ chối, nhưng công ty cũng có thể áp dụng các quy định liên quan đến giờ làm việc tiêu chuẩn và giờ làm thêm để yêu cầu bạn thực hiện. Tuy nhiên, nếu bạn không đồng ý, công ty không thể ép buộc bạn phải làm thêm giờ mà không có sự đồng ý của bạn. \n\nTóm lại, công ty có quyền yêu cầu làm thêm nhưng không thể ép buộc bạn nếu bạn không đồng ý [Nguồn 1: thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md].",
+        "sources": [
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 0.8333333333333334,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.7083333333283334
+      },
+      {
+        "question": "Làm thêm ngày thường, ngày nghỉ hằng tuần và ngày lễ thì được tính lương thế nào?",
+        "answer": "Người lao động làm thêm giờ được trả lương như sau:\n\n1. Vào ngày thường, lương làm thêm ít nhất bằng 150% tiền lương theo công việc đang làm [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].\n\n2. Vào ngày nghỉ hằng tuần, lương làm thêm ít nhất bằng 200% tiền lương theo công việc đang làm [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].\n\n3. Vào ngày nghỉ lễ, tết, lương làm thêm ít nhất bằng 300% tiền lương theo công việc đang làm, chưa kể tiền lương ngày lễ, tết [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md"
+        ],
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.7808888500921034,
+        "context_recall": 0.5,
+        "context_precision": 0.99999999998,
+        "average": 0.7577222125180259
+      },
+      {
+        "question": "Công ty trả lương chậm hơn lịch đã hẹn 20 ngày thì em có quyền gì?",
+        "answer": "Nếu công ty trả lương chậm hơn lịch đã hẹn 20 ngày, bạn có quyền được bồi thường. Cụ thể, người sử dụng lao động phải đền bù cho bạn một khoản tiền ít nhất bằng số tiền lãi của số tiền trả chậm, tính theo lãi suất huy động tiền gửi có kỳ hạn 01 tháng do ngân hàng nơi người sử dụng lao động mở tài khoản trả lương công bố tại thời điểm trả lương [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md"
+        ],
+        "faithfulness": 0.3333333333333333,
+        "answer_relevancy": 0.8286488526432697,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.7904955464891508
+      },
+      {
+        "question": "Lương em đang nhận thấp hơn mức tối thiểu vùng thì có sao không?",
+        "answer": "Nếu lương bạn đang nhận thấp hơn mức lương tối thiểu vùng, điều này là không hợp pháp. Mức lương tối thiểu được xác định nhằm bảo đảm mức sống tối thiểu của người lao động và gia đình họ, và nó phải được áp dụng cho tất cả người lao động làm công việc giản đơn nhất trong điều kiện lao động bình thường [Nguồn 4: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]. \n\nNgười sử dụng lao động phải đảm bảo mức lương theo công việc hoặc chức danh của người lao động không được thấp hơn mức lương tối thiểu tháng hoặc giờ [Nguồn 1: 03_muc_luong_toi_thieu.md]. Nếu bạn phát hiện mình nhận lương thấp hơn mức tối thiểu, bạn có quyền yêu cầu điều chỉnh mức lương cho phù hợp với quy định pháp luật.",
+        "sources": [
+          "03_muc_luong_toi_thieu.md",
+          "03_muc_luong_toi_thieu.md",
+          "03_muc_luong_toi_thieu.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.7605557196074963,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.890138929896874
+      },
+      {
+        "question": "Nếu em muốn nghỉ việc ở công ty hiện tại thì phải báo trước bao lâu?",
+        "answer": "Thời gian báo trước khi muốn nghỉ việc phụ thuộc vào loại hợp đồng lao động của bạn:\n\n1. Nếu bạn có hợp đồng lao động không xác định thời hạn, bạn phải báo trước ít nhất 45 ngày. [Nguồn 4: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]\n   \n2. Nếu bạn có hợp đồng lao động xác định thời hạn từ 12 tháng đến 36 tháng, bạn phải báo trước ít nhất 30 ngày. [Nguồn 2: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]\n\n3. Nếu bạn có hợp đồng lao động xác định thời hạn dưới 12 tháng, bạn phải báo trước ít nhất 03 ngày làm việc. [Nguồn 2: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md"
+        ],
+        "faithfulness": 0.3333333333333333,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.5833333333283334
+      },
+      {
+        "question": "Khi nghỉ việc, em sẽ được công ty thanh toán những khoản gì?",
+        "answer": "Khi nghỉ việc, em sẽ được công ty thanh toán những khoản sau:\n\n1. Tiền lương cho những ngày làm việc chưa được thanh toán. Đây là khoản tiền mà mọi người lao động khi nghỉ việc đều được nhận nếu tại thời điểm nghỉ việc doanh nghiệp vẫn chưa thanh toán tiền lương cho những ngày họ đã làm việc [Nguồn 1: 01_quyen_loi_khi_nghi_viec.md].\n\n2. Các khoản tiền khác liên quan đến quyền lợi của người lao động, tùy thuộc vào từng trường hợp cụ thể [Nguồn 2: 01_quyen_loi_khi_nghi_viec.md]. \n\nThông tin chi tiết về các khoản tiền cụ thể sẽ được quy định trong Bộ Luật Lao động năm 2019 [Nguồn 5: 01_quyen_loi_khi_nghi_viec.md].",
+        "sources": [
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999666667,
+        "average": 0.7499999999916667
+      },
+      {
+        "question": "Công ty cắt giảm nhân sự vì tái cấu trúc thì em có được nhận trợ cấp gì không?",
+        "answer": "Nếu công ty cắt giảm nhân sự vì tái cấu trúc, bạn có thể nhận trợ cấp mất việc làm nếu đáp ứng đủ các điều kiện. Cụ thể, bạn sẽ được trả trợ cấp mất việc làm khi nghỉ việc do chấm dứt hợp đồng lao động theo trường hợp người sử dụng lao động cho người lao động thôi việc do thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế, và bạn đã làm việc thường xuyên cho người sử dụng lao động từ đủ 12 tháng trở lên. Mức trợ cấp sẽ bằng 01 tháng tiền lương cho mỗi năm làm việc nhưng ít nhất phải bằng 02 tháng tiền lương [Nguồn 2: 01_quyen_loi_khi_nghi_viec.md].",
+        "sources": [
+          "01_quyen_loi_khi_nghi_viec.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.7347409867675676,
+        "context_recall": 1.0,
+        "context_precision": 0.8041666666465626,
+        "average": 0.8347269133535326
+      },
+      {
+        "question": "Sếp nói sẽ sa thải em vì đi muộn nhiều lần, điều đó có hợp pháp không?",
+        "answer": "Việc sa thải người lao động phải tuân theo quy định pháp luật. Theo Bộ luật Lao động, hình thức xử lý kỷ luật sa thải chỉ được áp dụng trong một số trường hợp cụ thể như: hành vi trộm cắp, tham ô, đánh bạc, cố ý gây thương tích, sử dụng ma túy tại nơi làm việc, hoặc tiết lộ bí mật kinh doanh, gây thiệt hại nghiêm trọng cho người sử dụng lao động, v.v. [Nguồn 5: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].\n\nĐi muộn nhiều lần không nằm trong các trường hợp được quy định để sa thải. Do đó, nếu sếp sa thải bạn chỉ vì lý do đi muộn, điều đó có thể không hợp pháp.",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-09-2020-tt-bldtbxh-lao-dong-chua-thanh-nien.md"
+        ],
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.624999999995
+      },
+      {
+        "question": "Em làm ở công ty tư nhân, bao nhiêu tuổi thì được nghỉ hưu?",
+        "answer": "Tuổi nghỉ hưu của người lao động trong điều kiện lao động bình thường được điều chỉnh theo lộ trình. Cụ thể, từ năm 2021, tuổi nghỉ hưu là đủ 60 tuổi 03 tháng đối với lao động nam và đủ 55 tuổi 04 tháng đối với lao động nữ. Sau đó, mỗi năm sẽ tăng thêm 03 tháng đối với lao động nam và 04 tháng đối với lao động nữ cho đến khi đủ 62 tuổi đối với lao động nam vào năm 2028 và đủ 60 tuổi đối với lao động nữ vào năm 2035 [Nguồn 2: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.8157689309040644,
+        "context_recall": 0.5,
+        "context_precision": 0.8055555555287036,
+        "average": 0.6969977882748587
+      },
+      {
+        "question": "Nếu em nghỉ việc mà còn phép năm chưa dùng hết thì công ty có phải trả tiền không?",
+        "answer": "Nếu em nghỉ việc mà còn phép năm chưa dùng hết, công ty phải thanh toán tiền lương cho những ngày phép năm chưa nghỉ. Điều này được quy định tại khoản 3 Điều 113 Bộ Luật Lao động 2019: \"Trường hợp do thôi việc, bị mất việc làm mà chưa nghỉ hằng năm hoặc chưa nghỉ hết số ngày nghỉ hằng năm thì được người sử dụng lao động thanh toán tiền lương cho những ngày chưa nghỉ.\" [Nguồn 1: 01_quyen_loi_khi_nghi_viec.md]",
+        "sources": [
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7722332517443427,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.9430583129310857
+      },
+      {
+        "question": "Tiền lương làm căn cứ đóng bảo hiểm xã hội gồm những khoản nào?",
+        "answer": "Tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc bao gồm các khoản sau:\n\n1. Đối với người lao động thuộc chế độ tiền lương do Nhà nước quy định:\n   - Tiền lương tháng theo chức vụ, chức danh, ngạch, bậc, cấp bậc quân hàm.\n   - Các khoản phụ cấp chức vụ, phụ cấp thâm niên vượt khung, phụ cấp thâm niên nghề, hệ số chênh lệch bảo lưu lương (nếu có) [Nguồn 1: 04_can_cu_ty_le_dong_bhxh.md].\n\n2. Đối với người lao động thuộc chế độ tiền lương do người sử dụng lao động quyết định:\n   - Tiền lương tháng, bao gồm mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác được thỏa thuận trả thường xuyên, ổn định trong mỗi kỳ trả lương [Nguồn 4: 04_can_cu_ty_le_dong_bhxh.md].\n\n3. Trong trường hợp người lao động ngừng việc vẫn hưởng tiền lương tháng bằng hoặc cao hơn tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc thấp nhất, thì đóng theo tiền lương được hưởng trong thời gian ngừng việc [Nguồn 4: 04_can_cu_ty_le_dong_bhxh.md].",
+        "sources": [
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7801648204655945,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.9450412051113987
+      },
+      {
+        "question": "Nếu em bị ốm dài ngày thì chế độ bảo hiểm xã hội được tính thế nào?",
+        "answer": "Nếu bạn bị ốm dài ngày, chế độ bảo hiểm xã hội sẽ được hưởng theo quy định của Luật Bảo hiểm xã hội. Luật này có hiệu lực từ ngày 01/7/2025, mang đến thay đổi lớn trong cách tính thời gian hưởng chế độ đối với người lao động mắc bệnh cần chữa trị dài ngày, giúp tăng quyền lợi của người tham gia BHXH một cách tối ưu hơn [Nguồn 4: 05_che_do_om_dau_dai_ngay.md]. \n\nTuy nhiên, thông tin chi tiết về cách tính cụ thể vẫn chưa được cung cấp trong các nguồn hiện có.",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "05_che_do_om_dau_dai_ngay.md",
+          "04_can_cu_ty_le_dong_bhxh.md"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.749999999995
+      }
+    ],
+    "predictions": {
+      "question": [
+        "Em vừa tốt nghiệp đại học, đi làm vị trí marketing và công ty muốn thử việc 60 ngày. Như vậy có đúng luật không?",
+        "Nếu em làm hợp đồng chỉ 20 ngày thì công ty có được bắt thử việc không?",
+        "Công ty bảo cứ làm 2 tháng rồi tính, không ký hợp đồng lao động bằng văn bản có được không?",
+        "Sếp nhắn bắt em tăng ca cuối tuần nhưng em không muốn. Công ty có quyền ép không?",
+        "Làm thêm ngày thường, ngày nghỉ hằng tuần và ngày lễ thì được tính lương thế nào?",
+        "Công ty trả lương chậm hơn lịch đã hẹn 20 ngày thì em có quyền gì?",
+        "Lương em đang nhận thấp hơn mức tối thiểu vùng thì có sao không?",
+        "Nếu em muốn nghỉ việc ở công ty hiện tại thì phải báo trước bao lâu?",
+        "Khi nghỉ việc, em sẽ được công ty thanh toán những khoản gì?",
+        "Công ty cắt giảm nhân sự vì tái cấu trúc thì em có được nhận trợ cấp gì không?",
+        "Sếp nói sẽ sa thải em vì đi muộn nhiều lần, điều đó có hợp pháp không?",
+        "Em làm ở công ty tư nhân, bao nhiêu tuổi thì được nghỉ hưu?",
+        "Nếu em nghỉ việc mà còn phép năm chưa dùng hết thì công ty có phải trả tiền không?",
+        "Tiền lương làm căn cứ đóng bảo hiểm xã hội gồm những khoản nào?",
+        "Nếu em bị ốm dài ngày thì chế độ bảo hiểm xã hội được tính thế nào?"
+      ],
+      "answer": [
+        "Thời gian thử việc cho công việc có chức danh nghề nghiệp cần trình độ chuyên môn, kỹ thuật từ cao đẳng trở lên không được quá 60 ngày. Do đó, việc công ty muốn thử việc bạn 60 ngày là đúng luật. [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]",
+        "Theo quy định, không áp dụng thử việc đối với người lao động giao kết hợp đồng lao động có thời hạn dưới 01 tháng. Vì vậy, nếu em làm hợp đồng chỉ 20 ngày, công ty không được phép bắt thử việc. [Nguồn 5: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]",
+        "Công ty không được phép chỉ bảo cứ làm 2 tháng rồi mới tính mà không ký hợp đồng lao động bằng văn bản. Theo quy định, trước khi nhận người lao động vào làm việc, người sử dụng lao động phải giao kết hợp đồng lao động với người lao động [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]. Hợp đồng lao động phải được giao kết bằng văn bản và được làm thành 02 bản [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "Công ty có quyền yêu cầu nhân viên làm thêm giờ, nhưng việc này phải tuân theo các quy định về thời giờ làm việc và làm thêm giờ. Nếu bạn không muốn làm thêm, bạn có thể từ chối, nhưng công ty cũng có thể áp dụng các quy định liên quan đến giờ làm việc tiêu chuẩn và giờ làm thêm để yêu cầu bạn thực hiện. Tuy nhiên, nếu bạn không đồng ý, công ty không thể ép buộc bạn phải làm thêm giờ mà không có sự đồng ý của bạn. \n\nTóm lại, công ty có quyền yêu cầu làm thêm nhưng không thể ép buộc bạn nếu bạn không đồng ý [Nguồn 1: thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md].",
+        "Người lao động làm thêm giờ được trả lương như sau:\n\n1. Vào ngày thường, lương làm thêm ít nhất bằng 150% tiền lương theo công việc đang làm [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].\n\n2. Vào ngày nghỉ hằng tuần, lương làm thêm ít nhất bằng 200% tiền lương theo công việc đang làm [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].\n\n3. Vào ngày nghỉ lễ, tết, lương làm thêm ít nhất bằng 300% tiền lương theo công việc đang làm, chưa kể tiền lương ngày lễ, tết [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "Nếu công ty trả lương chậm hơn lịch đã hẹn 20 ngày, bạn có quyền được bồi thường. Cụ thể, người sử dụng lao động phải đền bù cho bạn một khoản tiền ít nhất bằng số tiền lãi của số tiền trả chậm, tính theo lãi suất huy động tiền gửi có kỳ hạn 01 tháng do ngân hàng nơi người sử dụng lao động mở tài khoản trả lương công bố tại thời điểm trả lương [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "Nếu lương bạn đang nhận thấp hơn mức lương tối thiểu vùng, điều này là không hợp pháp. Mức lương tối thiểu được xác định nhằm bảo đảm mức sống tối thiểu của người lao động và gia đình họ, và nó phải được áp dụng cho tất cả người lao động làm công việc giản đơn nhất trong điều kiện lao động bình thường [Nguồn 4: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]. \n\nNgười sử dụng lao động phải đảm bảo mức lương theo công việc hoặc chức danh của người lao động không được thấp hơn mức lương tối thiểu tháng hoặc giờ [Nguồn 1: 03_muc_luong_toi_thieu.md]. Nếu bạn phát hiện mình nhận lương thấp hơn mức tối thiểu, bạn có quyền yêu cầu điều chỉnh mức lương cho phù hợp với quy định pháp luật.",
+        "Thời gian báo trước khi muốn nghỉ việc phụ thuộc vào loại hợp đồng lao động của bạn:\n\n1. Nếu bạn có hợp đồng lao động không xác định thời hạn, bạn phải báo trước ít nhất 45 ngày. [Nguồn 4: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]\n   \n2. Nếu bạn có hợp đồng lao động xác định thời hạn từ 12 tháng đến 36 tháng, bạn phải báo trước ít nhất 30 ngày. [Nguồn 2: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]\n\n3. Nếu bạn có hợp đồng lao động xác định thời hạn dưới 12 tháng, bạn phải báo trước ít nhất 03 ngày làm việc. [Nguồn 2: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]",
+        "Khi nghỉ việc, em sẽ được công ty thanh toán những khoản sau:\n\n1. Tiền lương cho những ngày làm việc chưa được thanh toán. Đây là khoản tiền mà mọi người lao động khi nghỉ việc đều được nhận nếu tại thời điểm nghỉ việc doanh nghiệp vẫn chưa thanh toán tiền lương cho những ngày họ đã làm việc [Nguồn 1: 01_quyen_loi_khi_nghi_viec.md].\n\n2. Các khoản tiền khác liên quan đến quyền lợi của người lao động, tùy thuộc vào từng trường hợp cụ thể [Nguồn 2: 01_quyen_loi_khi_nghi_viec.md]. \n\nThông tin chi tiết về các khoản tiền cụ thể sẽ được quy định trong Bộ Luật Lao động năm 2019 [Nguồn 5: 01_quyen_loi_khi_nghi_viec.md].",
+        "Nếu công ty cắt giảm nhân sự vì tái cấu trúc, bạn có thể nhận trợ cấp mất việc làm nếu đáp ứng đủ các điều kiện. Cụ thể, bạn sẽ được trả trợ cấp mất việc làm khi nghỉ việc do chấm dứt hợp đồng lao động theo trường hợp người sử dụng lao động cho người lao động thôi việc do thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế, và bạn đã làm việc thường xuyên cho người sử dụng lao động từ đủ 12 tháng trở lên. Mức trợ cấp sẽ bằng 01 tháng tiền lương cho mỗi năm làm việc nhưng ít nhất phải bằng 02 tháng tiền lương [Nguồn 2: 01_quyen_loi_khi_nghi_viec.md].",
+        "Việc sa thải người lao động phải tuân theo quy định pháp luật. Theo Bộ luật Lao động, hình thức xử lý kỷ luật sa thải chỉ được áp dụng trong một số trường hợp cụ thể như: hành vi trộm cắp, tham ô, đánh bạc, cố ý gây thương tích, sử dụng ma túy tại nơi làm việc, hoặc tiết lộ bí mật kinh doanh, gây thiệt hại nghiêm trọng cho người sử dụng lao động, v.v. [Nguồn 5: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].\n\nĐi muộn nhiều lần không nằm trong các trường hợp được quy định để sa thải. Do đó, nếu sếp sa thải bạn chỉ vì lý do đi muộn, điều đó có thể không hợp pháp.",
+        "Tuổi nghỉ hưu của người lao động trong điều kiện lao động bình thường được điều chỉnh theo lộ trình. Cụ thể, từ năm 2021, tuổi nghỉ hưu là đủ 60 tuổi 03 tháng đối với lao động nam và đủ 55 tuổi 04 tháng đối với lao động nữ. Sau đó, mỗi năm sẽ tăng thêm 03 tháng đối với lao động nam và 04 tháng đối với lao động nữ cho đến khi đủ 62 tuổi đối với lao động nam vào năm 2028 và đủ 60 tuổi đối với lao động nữ vào năm 2035 [Nguồn 2: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "Nếu em nghỉ việc mà còn phép năm chưa dùng hết, công ty phải thanh toán tiền lương cho những ngày phép năm chưa nghỉ. Điều này được quy định tại khoản 3 Điều 113 Bộ Luật Lao động 2019: \"Trường hợp do thôi việc, bị mất việc làm mà chưa nghỉ hằng năm hoặc chưa nghỉ hết số ngày nghỉ hằng năm thì được người sử dụng lao động thanh toán tiền lương cho những ngày chưa nghỉ.\" [Nguồn 1: 01_quyen_loi_khi_nghi_viec.md]",
+        "Tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc bao gồm các khoản sau:\n\n1. Đối với người lao động thuộc chế độ tiền lương do Nhà nước quy định:\n   - Tiền lương tháng theo chức vụ, chức danh, ngạch, bậc, cấp bậc quân hàm.\n   - Các khoản phụ cấp chức vụ, phụ cấp thâm niên vượt khung, phụ cấp thâm niên nghề, hệ số chênh lệch bảo lưu lương (nếu có) [Nguồn 1: 04_can_cu_ty_le_dong_bhxh.md].\n\n2. Đối với người lao động thuộc chế độ tiền lương do người sử dụng lao động quyết định:\n   - Tiền lương tháng, bao gồm mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác được thỏa thuận trả thường xuyên, ổn định trong mỗi kỳ trả lương [Nguồn 4: 04_can_cu_ty_le_dong_bhxh.md].\n\n3. Trong trường hợp người lao động ngừng việc vẫn hưởng tiền lương tháng bằng hoặc cao hơn tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc thấp nhất, thì đóng theo tiền lương được hưởng trong thời gian ngừng việc [Nguồn 4: 04_can_cu_ty_le_dong_bhxh.md].",
+        "Nếu bạn bị ốm dài ngày, chế độ bảo hiểm xã hội sẽ được hưởng theo quy định của Luật Bảo hiểm xã hội. Luật này có hiệu lực từ ngày 01/7/2025, mang đến thay đổi lớn trong cách tính thời gian hưởng chế độ đối với người lao động mắc bệnh cần chữa trị dài ngày, giúp tăng quyền lợi của người tham gia BHXH một cách tối ưu hơn [Nguồn 4: 05_che_do_om_dau_dai_ngay.md]. \n\nTuy nhiên, thông tin chi tiết về cách tính cụ thể vẫn chưa được cung cấp trong các nguồn hiện có."
+      ],
+      "contexts": [
+        [
+          "động có thời hạn dưới 01 tháng.\n\nĐiều 25. Thời gian thử việc\n\nThời gian thử việc do hai bên thỏa thuận căn cứ vào tính chất và mức độ\nphức tạp của công việc nhưng chỉ được thử việc một lần đối với một công việc và\nbảo đảm điều kiện sau đây:\n\n1. Không quá 180 ngày đối với công việc của người quản lý doanh nghiệp\ntheo quy định của Luật Doanh nghiệp, Luật Quản lý, sử dụng vốn nhà nước đầu\ntư vào sản xuất, kinh doanh tại doanh nghiệp;\n\n2. Không quá 60 ngày đối với công việc có chức danh nghề nghiệp cần trình\n\nđộ chuyên môn, kỹ thuật từ cao đẳng trở lên;\n\n3. Không quá 30 ngày đối với công việc có chức danh nghề nghiệp cần trình\n\nđộ chuyên môn, kỹ thuật trung cấp, công nhân kỹ thuật, nhân viên nghiệp vụ;\n\n4. Không quá 06 ngày làm việc đối với công việc khác.\n\nĐiều 26. Tiền lương thử việc",
+          "quy định tại Điều 36 của Bộ luật này.\n\n11. Người sử dụng lao động cho người lao động thôi việc theo quy định tại\n\nĐiều 42 và Điều 43 của Bộ luật này.\n\n12. Giấy phép lao động hết hiệu lực đối với người lao động là người nước\n\nngoài làm việc tại Việt Nam theo quy định tại Điều 156 của Bộ luật này.\n\n13. Trường hợp thỏa thuận nội dung thử việc ghi trong hợp đồng lao động\n\nmà thử việc không đạt yêu cầu hoặc một bên hủy bỏ thỏa thuận thử việc.\n\nĐiều 35. Quyền đơn phương chấm dứt hợp đồng lao động của người lao động\n\n1. Người lao động có quyền đơn phương chấm dứt hợp đồng lao động nhưng\n\nphải báo trước cho người sử dụng lao động như sau:\n\na) Ít nhất 45 ngày nếu làm việc theo hợp đồng lao động không xác định thời hạn;\n\nb) Ít nhất 30 ngày nếu làm việc theo hợp đồng lao động xác định thời hạn có",
+          "b) Ít nhất 30 ngày nếu làm việc theo hợp đồng lao động xác định thời hạn có\n\nthời hạn từ 12 tháng đến 36 tháng;\n\nc) Ít nhất 03 ngày làm việc nếu làm việc theo hợp đồng lao động xác định\n\nthời hạn có thời hạn dưới 12 tháng;\n\nd) Đối với một số ngành, nghề, công việc đặc thù thì thời hạn báo trước được\n\nthực hiện theo quy định của Chính phủ.\n\n2. Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không\n\ncần báo trước trong trường hợp sau đây:\n\na) Không được bố trí theo đúng công việc, địa điểm làm việc hoặc không\nđược bảo đảm điều kiện làm việc theo thỏa thuận, trừ trường hợp quy định tại\nĐiều 29 của Bộ luật này;\n\nb) Không được trả đủ lương hoặc trả lương không đúng thời hạn, trừ trường\n\nhợp quy định tại khoản 4 Điều 97 của Bộ luật này;",
+          "người đại diện theo pháp luật của người đó theo quy định tại Điều 4 của Thông\ntư này.\n2. Bố trí thời giờ làm việc của người chưa đủ 15 tuổi theo quy định tại khoản 1\nĐiều 146 của Bộ luật Lao động. Người chưa đủ 15 tuổi vừa làm việc vừa học tập\nhoặc có nhu cầu học tập thì việc bố trí thời giờ làm việc phải bảo đảm không ảnh\nhưởng đến thời gian học tập của người chưa đủ 15 tuổi.\n3. Bố trí các đợt nghỉ giải lao cho người chưa đủ 15 tuổi theo quy định tại\nkhoản 2 Điều 109 của Bộ luật Lao động.\n4. Tuân thủ quy định về khám sức khỏe, khám phát hiện bệnh nghề nghiệp và\nbảo đảm điều kiện làm việc, an toàn, vệ sinh lao động quy định tại điểm c và điểm d\nkhoản 1 Điều 145 của Bộ luật Lao động và Luật An toàn, vệ sinh lao động.\n5. Chỉ được tuyển dụng và sử dụng người từ đủ 13 tuổi đến chưa đủ 15 tuổi",
+          "e) Người lao động tự ý bỏ việc mà không có lý do chính đáng từ 05 ngày làm\n\nviệc liên tục trở lên;\n\ng) Người lao động cung cấp không trung thực thông tin theo quy định tại\nkhoản 2 Điều 16 của Bộ luật này khi giao kết hợp đồng lao động làm ảnh hưởng\nđến việc tuyển dụng người lao động.\n\n2. Khi đơn phương chấm dứt hợp đồng lao động trong trường hợp quy định\ntại các điểm a, b, c, đ và g khoản 1 Điều này, người sử dụng lao động phải báo\ntrước cho người lao động như sau:\n\na) Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn;\n\nb) Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn có thời hạn\n\ntừ 12 tháng đến 36 tháng;\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n38"
+        ],
+        [
+          "4. Không quá 06 ngày làm việc đối với công việc khác.\n\nĐiều 26. Tiền lương thử việc\n\nTiền lương của người lao động trong thời gian thử việc do hai bên thỏa thuận\n\nnhưng ít nhất phải bằng 85% mức lương của công việc đó.\n\nĐiều 27. Kết thúc thời gian thử việc\n\n1. Khi kết thúc thời gian thử việc, người sử dụng lao động phải thông báo\n\nkết quả thử việc cho người lao động.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n33\n\nTrường hợp thử việc đạt yêu cầu thì người sử dụng lao động tiếp tục thực\nhiện hợp đồng lao động đã giao kết đối với trường hợp thỏa thuận thử việc trong\nhợp đồng lao động hoặc phải giao kết hợp đồng lao động đối với trường hợp giao\nkết hợp đồng thử việc.\n\nTrường hợp thử việc không đạt yêu cầu thì chấm dứt hợp đồng lao động đã\n\ngiao kết hoặc hợp đồng thử việc.",
+          "Trường hợp phụ lục hợp đồng lao động sửa đổi, bổ sung một số điều, khoản\ncủa hợp đồng lao động thì phải ghi rõ nội dung điều, khoản sửa đổi, bổ sung và\nthời điểm có hiệu lực.\n\nĐiều 23. Hiệu lực của hợp đồng lao động\n\nHợp đồng lao động có hiệu lực kể từ ngày hai bên giao kết, trừ trường hợp\n\nhai bên có thỏa thuận hoặc pháp luật có quy định khác.\n\nĐiều 24. Thử việc\n\n1. Người sử dụng lao động và người lao động có thể thỏa thuận nội dung thử\nviệc ghi trong hợp đồng lao động hoặc thỏa thuận về thử việc bằng việc giao kết\nhợp đồng thử việc.\n\n2. Nội dung chủ yếu của hợp đồng thử việc gồm thời gian thử việc và nội\n\ndung quy định tại các điểm a, b, c, đ, g và h khoản 1 Điều 21 của Bộ luật này.\n\n3. Không áp dụng thử việc đối với người lao động giao kết hợp đồng lao\n\nđộng có thời hạn dưới 01 tháng.",
+          "động có thời hạn dưới 01 tháng.\n\nĐiều 25. Thời gian thử việc\n\nThời gian thử việc do hai bên thỏa thuận căn cứ vào tính chất và mức độ\nphức tạp của công việc nhưng chỉ được thử việc một lần đối với một công việc và\nbảo đảm điều kiện sau đây:\n\n1. Không quá 180 ngày đối với công việc của người quản lý doanh nghiệp\ntheo quy định của Luật Doanh nghiệp, Luật Quản lý, sử dụng vốn nhà nước đầu\ntư vào sản xuất, kinh doanh tại doanh nghiệp;\n\n2. Không quá 60 ngày đối với công việc có chức danh nghề nghiệp cần trình\n\nđộ chuyên môn, kỹ thuật từ cao đẳng trở lên;\n\n3. Không quá 30 ngày đối với công việc có chức danh nghề nghiệp cần trình\n\nđộ chuyên môn, kỹ thuật trung cấp, công nhân kỹ thuật, nhân viên nghiệp vụ;\n\n4. Không quá 06 ngày làm việc đối với công việc khác.\n\nĐiều 26. Tiền lương thử việc",
+          "giao kết hoặc hợp đồng thử việc.\n\n2. Trong thời gian thử việc, mỗi bên có quyền hủy bỏ hợp đồng thử việc hoặc\nhợp đồng lao động đã giao kết mà không cần báo trước và không phải bồi thường.\n\nMục 2\nTHỰC HIỆN HỢP ĐỒNG LAO ĐỘNG\n\nĐiều 28. Thực hiện công việc theo hợp đồng lao động\n\nCông việc theo hợp đồng lao động phải do người lao động đã giao kết hợp\nđồng thực hiện. Địa điểm làm việc được thực hiện theo hợp đồng lao động, trừ\ntrường hợp hai bên có thỏa thuận khác.\n\nĐiều 29. Chuyển người lao động làm công việc khác so với hợp đồng lao động",
+          "b) Ít nhất 30 ngày nếu làm việc theo hợp đồng lao động xác định thời hạn có\n\nthời hạn từ 12 tháng đến 36 tháng;\n\nc) Ít nhất 03 ngày làm việc nếu làm việc theo hợp đồng lao động xác định\n\nthời hạn có thời hạn dưới 12 tháng;\n\nd) Đối với một số ngành, nghề, công việc đặc thù thì thời hạn báo trước được\n\nthực hiện theo quy định của Chính phủ.\n\n2. Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không\n\ncần báo trước trong trường hợp sau đây:\n\na) Không được bố trí theo đúng công việc, địa điểm làm việc hoặc không\nđược bảo đảm điều kiện làm việc theo thỏa thuận, trừ trường hợp quy định tại\nĐiều 29 của Bộ luật này;\n\nb) Không được trả đủ lương hoặc trả lương không đúng thời hạn, trừ trường\n\nhợp quy định tại khoản 4 Điều 97 của Bộ luật này;"
+        ],
+        [
+          "Trường hợp hai bên thỏa thuận bằng tên gọi khác nhưng có nội dung thể hiện\nvề việc làm có trả công, tiền lương và sự quản lý, điều hành, giám sát của một bên\nthì được coi là hợp đồng lao động.\n\n2. Trước khi nhận người lao động vào làm việc thì người sử dụng lao động\n\nphải giao kết hợp đồng lao động với người lao động.\n\nĐiều 14. Hình thức hợp đồng lao động\n\n1. Hợp đồng lao động phải được giao kết bằng văn bản và được làm thành\n02 bản, người lao động giữ 01 bản, người sử dụng lao động giữ 01 bản, trừ trường\nhợp quy định tại khoản 2 Điều này.\n\nHợp đồng lao động được giao kết thông qua phương tiện điện tử dưới hình\nthức thông điệp dữ liệu theo quy định của pháp luật về giao dịch điện tử có giá trị\nnhư hợp đồng lao động bằng văn bản.",
+          "định tại khoản 2 Điều này.\n\n2. Đối với công việc theo mùa vụ, công việc nhất định có thời hạn dưới 12\ntháng thì nhóm người lao động từ đủ 18 tuổi trở  lên có thể ủy quyền cho một\nngười lao động trong nhóm để giao kết hợp đồng lao động; trong trường hợp này,\nhợp đồng lao động phải được giao kết bằng văn bản và có hiệu lực như giao kết\nvới từng người lao động.\n\nHợp đồng lao động do người được ủy quyền ký kết phải kèm theo danh sách\nghi rõ họ tên, ngày tháng năm sinh, giới tính, nơi cư trú và chữ ký của từng người\nlao động.\n\n3. Người giao kết hợp đồng lao động bên phía người sử dụng lao động là\n\nngười thuộc một trong các trường hợp sau đây:\n\na) Người đại diện theo pháp luật của doanh nghiệp hoặc người được ủy quyền\n\ntheo quy định của pháp luật;",
+          "2. Hai bên có thể giao kết hợp đồng lao động bằng lời nói đối với hợp đồng\ncó thời hạn dưới 01 tháng, trừ trường hợp quy định tại khoản 2 Điều 18, điểm a\nkhoản 1 Điều 145 và khoản 1 Điều 162 của Bộ luật này.\n\nĐiều 15. Nguyên tắc giao kết hợp đồng lao động\n\n1. Tự nguyện, bình đẳng, thiện chí, hợp tác và trung thực.\n\n2. Tự do giao kết hợp đồng lao động nhưng không được trái pháp luật, thỏa\n\nước lao động tập thể và đạo đức xã hội.\n\nĐiều 16. Nghĩa vụ cung cấp thông tin khi giao kết hợp đồng lao động\n\n1. Người sử dụng lao động phải cung cấp thông tin trung thực cho người lao\nđộng về công việc, địa điểm làm việc, điều kiện làm việc, thời giờ làm việc, thời\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n29",
+          "e) Người lao động tự ý bỏ việc mà không có lý do chính đáng từ 05 ngày làm\n\nviệc liên tục trở lên;\n\ng) Người lao động cung cấp không trung thực thông tin theo quy định tại\nkhoản 2 Điều 16 của Bộ luật này khi giao kết hợp đồng lao động làm ảnh hưởng\nđến việc tuyển dụng người lao động.\n\n2. Khi đơn phương chấm dứt hợp đồng lao động trong trường hợp quy định\ntại các điểm a, b, c, đ và g khoản 1 Điều này, người sử dụng lao động phải báo\ntrước cho người lao động như sau:\n\na) Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn;\n\nb) Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn có thời hạn\n\ntừ 12 tháng đến 36 tháng;\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n38",
+          "Điều 17. Hành vi người sử dụng lao động không được làm khi giao kết,\n\nthực hiện hợp đồng lao động\n\n1. Giữ bản chính giấy tờ tùy thân, văn bằng, chứng chỉ của người lao động.\n\n2. Yêu cầu người lao động phải thực hiện biện pháp bảo đảm bằng tiền hoặc\n\ntài sản khác cho việc thực hiện hợp đồng lao động.\n\n3. Buộc người lao động thực hiện hợp đồng lao động để trả nợ cho người sử\n\ndụng lao động.\n\nĐiều 18. Thẩm quyền giao kết hợp đồng lao động\n\n1. Người lao động trực tiếp giao kết hợp đồng lao động, trừ trường hợp quy\n\nđịnh tại khoản 2 Điều này."
+        ],
+        [
+          "5\nTháng 11 10 giờ từ thứ hai đến thứ 26 252 Nghỉ 4 ngày nghỉ hằng tuần\nsáu, 8 giờ vào thứ bảy\nhằng tuần\nTháng 12 10 giờ tuần đầu tháng và 25 208 Nghỉ trọn 02 ngày 30, 31 và\n8 giờ vào ngày làm việc nghỉ 04 ngày nghỉ hằng tuần\nkhác\nTỔNG 2296\nIII. Ví dụ về nguyên tắc sử dụng quỹ thời giờ làm việc tiêu chuẩn\nVí dụ 6: Trong tháng 2, công ty X bố trí cho công nhân A làm việc 7 giờ/ngày trong 8\nngày làm việc, sau đó cho nghỉ trọn 11 ngày làm việc. Công ty thực hiện theo đúng kế\nhoạch đã lập nêu tại ví dụ 3 trên, như vậy:\n- Số giờ làm việc ít hơn so với 8 giờ của ngày làm việc bình thường là:\n8 giờ - 7 giờ = 1 giờ; 1 giờ này không phải trả lương ngừng việc;\n- Số ngày nghỉ việc là 11 ngày cũng không phải trả lương ngừng việc.",
+          "so với kế hoạch đã được công ty lập ra cho công nhân A vào tháng 9 tại ví dụ 5 nêu trên,\nthì số giờ làm việc nhiều hơn so với số giờ làm việc tiêu chuẩn là: 8 giờ - 6 giờ = 2 giờ;\n2 giờ này được tính vào tổng số giờ làm thêm, công ty X phải trả tiền lương và thực hiện\ncác chế độ khác liên quan đến làm thêm giờ theo đúng quy định hiện hành.\nVí dụ 9: Trong tháng 10, công ty X bố trí cho công nhân A làm việc 10 giờ từ thứ hai\nđến thứ sáu, 8 giờ vào thứ bảy hằng tuần theo đúng kế hoạch của công ty được nêu tại ví\ndụ 3 trên. Số giờ làm việc nhiều hơn so với 8 giờ làm việc bình thường là:\n10 giờ - 8 giờ = 2 giờ; 2 giờ này không tính là giờ làm thêm.\nIV. Ví dụ về giới hạn giờ làm việc tiêu chuẩn hằng ngày và thời giờ làm thêm",
+          "quyền đơn phương chấm dứt hợp đồng lao động\n\n1. Người lao động ốm đau hoặc bị tai nạn, bệnh nghề nghiệp đang điều trị,\nđiều dưỡng theo chỉ định của cơ sở khám bệnh, chữa bệnh có thẩm quyền, trừ\ntrường hợp quy định tại điểm b khoản 1 Điều 36 của Bộ luật này.\n\n2. Người lao động đang nghỉ hằng năm, nghỉ việc riêng và trường hợp nghỉ\n\nkhác được người sử dụng lao động đồng ý.\n\n3. Người lao động nữ mang thai; người lao động đang nghỉ thai sản hoặc\n\nnuôi con dưới 12 tháng tuổi.\n\nĐiều 38. Hủy bỏ việc đơn phương chấm dứt hợp đồng lao động\n\nMỗi bên đều có quyền hủy bỏ việc đơn phương chấm dứt hợp đồng lao động\ntrước khi hết thời hạn báo trước nhưng phải thông báo bằng văn bản và phải được\nbên kia đồng ý.\n\nĐiều 39. Đơn phương chấm dứt hợp đồng lao động trái pháp luật",
+          "vợ hoặc chồng; vợ hoặc chồng; con đẻ, con nuôi chết: nghỉ 03 ngày.\n\n2. Người lao động được nghỉ không hưởng lương 01 ngày và phải thông báo\nvới người sử dụng lao động khi ông nội, bà nội, ông ngoại, bà ngoại, anh, chị, em\nruột chết; cha hoặc mẹ kết hôn; anh, chị, em ruột kết hôn.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n67\n\n3. Ngoài quy định tại khoản 1 và khoản 2 Điều này, người lao động có thể\n\nthỏa thuận với người sử dụng lao động để nghỉ không hưởng lương.\n\nMục 3\n\nTHỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI\n\nĐỐI VỚI NGƯỜI LÀM CÔNG VIỆC CÓ TÍNH CHẤT ĐẶC BIỆT\n\nĐiều 116. Thời giờ làm việc, thời giờ nghỉ ngơi đối với người làm công\n\nviệc có tính chất đặc biệt",
+          "3. Tiền lương để tính trợ cấp mất việc làm là tiền lương bình quân của 06\n\ntháng liền kề theo hợp đồng lao động trước khi người lao động mất việc làm.\n\n4. Chính phủ quy định chi tiết Điều này.\n\nĐiều 48. Trách nhiệm khi chấm dứt hợp đồng lao động\n\n1. Trong thời hạn 14 ngày làm việc kể từ ngày chấm dứt hợp đồng lao động,\nhai bên có trách nhiệm thanh toán đầy đủ các khoản tiền có liên quan đến quyền lợi\ncủa mỗi bên, trừ trường hợp sau đây có thể kéo dài nhưng không được quá 30 ngày:\n\na) Người sử dụng lao động không phải là cá nhân chấm dứt hoạt động;\n\nb) Người sử dụng lao động thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế;\n\nc) Chia, tách, hợp nhất, sáp nhập; bán, cho thuê, chuyển đổi loại hình doanh\nnghiệp; chuyển nhượng quyền sở hữu, quyền sử dụng tài sản của doanh nghiệp,\nhợp tác xã;"
+        ],
+        [
+          "CÔNG BÁO/Số 131/Ngày 28-02-2026\n\n61\n\nĐiều 98. Tiền lương làm thêm giờ, làm việc vào ban đêm\n\n1. Người lao động làm thêm giờ được trả lương tính theo đơn giá tiền lương\n\nhoặc tiền lương thực trả theo công việc đang làm như sau:\n\na) Vào ngày thường, ít nhất bằng 150%;\n\nb) Vào ngày nghỉ hằng tuần, ít nhất bằng 200%;\n\nc) Vào ngày nghỉ lễ, tết, ngày nghỉ có hưởng lương, ít nhất bằng 300% chưa\nkể tiền lương ngày lễ, tết, ngày nghỉ có hưởng lương đối với người lao động hưởng\nlương ngày.\n\n2. Người lao động làm việc vào ban đêm thì được trả thêm ít nhất bằng 30%\ntiền lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc\ncủa ngày làm việc bình thường.",
+          "2. Người sử dụng lao động có quyền quyết định sắp xếp ngày nghỉ hằng tuần\nvào ngày Chủ nhật hoặc ngày xác định khác trong tuần nhưng phải ghi vào nội\nquy lao động.\n\n3. Nếu ngày nghỉ hằng tuần trùng với ngày nghỉ lễ, tết quy định tại khoản 1\nĐiều 112 của Bộ luật này thì người lao động được nghỉ bù ngày nghỉ hằng tuần\nvào ngày làm việc kế tiếp.\n\nĐiều 112. Nghỉ lễ, tết\n\n1. Người lao động được nghỉ làm việc, hưởng nguyên lương trong những\n\nngày lễ, tết sau đây:\n\na) Tết Dương lịch: 01 ngày (ngày 01 tháng 01 dương lịch);\n\nb) Tết Âm lịch: 05 ngày;\n\nc) Ngày Chiến thắng: 01 ngày (ngày 30 tháng 4 dương lịch);\n\nd) Ngày Quốc tế lao động: 01 ngày (ngày 01 tháng 5 dương lịch);\n\nđ) Quốc khánh: 02 ngày (ngày 02 tháng 9 dương lịch và 01 ngày liền kề trước\n\nhoặc sau);",
+          "3. Người lao động làm thêm giờ vào ban đêm thì ngoài việc trả lương theo\nquy định tại khoản 1 và khoản 2 Điều này, người lao động còn được trả thêm 20%\ntiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc làm vào\nban ngày của ngày làm việc bình thường hoặc của ngày nghỉ hằng tuần hoặc của\nngày nghỉ lễ, tết.\n\n4. Chính phủ quy định chi tiết Điều này.\n\nĐiều 99. Tiền lương ngừng việc\n\nTrường hợp phải ngừng việc, người lao động được trả lương như sau:\n\n1. Nếu do lỗi của người sử dụng lao động thì người lao động được trả đủ tiền\n\nlương theo hợp đồng lao động;",
+          "1. Hằng tuần, người lao động được nghỉ ít nhất một ngày (24 giờ liên tục).\nTrong những tháng thời vụ hoặc phải gấp rút gia công hàng xuất khẩu theo đơn\nđặt hàng, nếu không thực hiện được nghỉ hằng tuần thì phải bảo đảm hằng tháng\ncó ít nhất 04 ngày nghỉ cho người lao động.\n2. Việc nghỉ trong giờ làm việc, nghỉ chuyển ca đối với từng người lao động\nthực hiện theo quy định của Bộ luật Lao động và Nghị định số 145/2020/NĐ-CP.\n3. Người sử dụng lao động phải bố trí để người lao động được nghỉ ngày\nnghỉ lễ, tết, nghỉ hằng năm và các ngày nghỉ có hưởng lương khác; việc rút ngắn\ngiờ làm việc và đảm bảo thời giờ nghỉ ngơi của lao động nữ, lao động chưa thành\nniên, lao động là người cao tuổi; quyết định việc nghỉ không hưởng lương đúng",
+          "Điều 6. Giới hạn giờ làm việc tiêu chuẩn hằng ngày và giờ làm thêm\n1. Tổng số giờ làm việc tiêu chuẩn và số giờ làm thêm trong một ngày\nkhông quá 12 giờ.\n2. Giới hạn giờ làm việc tiêu chuẩn và giờ làm thêm theo tuần, tháng được\nquy định như sau:\na) Tổng số giờ làm việc tiêu chuẩn và số giờ làm thêm trong một tuần không\nquá 72 giờ.\nb) Tổng số giờ làm thêm trong một tháng không quá 40 giờ.\nc) Người sử dụng lao động quyết định lựa chọn áp dụng quy định tại điểm\na hoặc quy định tại điểm b khoản này, ghi vào kế hoạch thời giờ làm việc, thời\ngiờ nghỉ ngơi trong năm quy định tại khoản 2, Điều 8 Thông tư này.\n3. Tổng số giờ làm thêm trong một năm đối với mỗi người lao động không\nquá 300 giờ.\nĐiều 7. Thời giờ nghỉ ngơi\n1. Hằng tuần, người lao động được nghỉ ít nhất một ngày (24 giờ liên tục)."
+        ],
+        [
+          "3. Người lao động hưởng lương theo sản phẩm, theo khoán được trả lương\ntheo thỏa thuận của hai bên; nếu công việc phải làm trong nhiều tháng thì hằng\ntháng được tạm ứng tiền lương theo khối lượng công việc đã làm trong tháng.\n\n4. Trường hợp vì lý do bất khả kháng mà người sử dụng lao động đã tìm mọi\nbiện pháp khắc phục nhưng không thể trả lương đúng hạn thì không được chậm\nquá 30 ngày; nếu trả lương chậm từ 15 ngày trở lên thì người sử dụng lao động\nphải đền bù cho người lao động một khoản tiền ít nhất bằng số tiền lãi của số tiền\ntrả chậm tính theo lãi suất huy động tiền gửi có kỳ hạn 01 tháng do ngân hàng nơi\nngười sử dụng lao động mở tài khoản trả lương cho người lao động công bố tại\nthời điểm trả lương.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n61",
+          "việc được thỏa thuận không thấp hơn mức lương tối thiểu;\n\nb) Trường hợp phải ngừng việc trên 14 ngày làm việc thì tiền lương ngừng\nviệc do hai bên thỏa thuận nhưng phải bảo đảm tiền lương ngừng việc trong 14\nngày đầu tiên không thấp hơn mức lương tối thiểu.\n\nĐiều 100. Trả lương thông qua người cai thầu\n\n1. Nơi nào sử dụng người cai thầu hoặc người có vai trò trung gian tương\ntự  thì người sử  dụng  lao động là  chủ  chính phải có danh sách và địa chỉ  của\nnhững người này kèm theo danh sách những người lao động làm việc với họ và\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n62\n\nphải bảo đảm việc họ tuân thủ quy định của pháp luật về trả lương, an toàn, vệ\nsinh lao động.",
+          "3. Người lao động làm thêm giờ vào ban đêm thì ngoài việc trả lương theo\nquy định tại khoản 1 và khoản 2 Điều này, người lao động còn được trả thêm 20%\ntiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc làm vào\nban ngày của ngày làm việc bình thường hoặc của ngày nghỉ hằng tuần hoặc của\nngày nghỉ lễ, tết.\n\n4. Chính phủ quy định chi tiết Điều này.\n\nĐiều 99. Tiền lương ngừng việc\n\nTrường hợp phải ngừng việc, người lao động được trả lương như sau:\n\n1. Nếu do lỗi của người sử dụng lao động thì người lao động được trả đủ tiền\n\nlương theo hợp đồng lao động;",
+          "### 1.Tiền lương cho những ngày làm việc chưa được thanh toán\nĐây là khoản tiền mà mọi người lao động khi nghỉ việc đều được nhận, nếu tại thời điểm nghỉ việc doanh nghiệp vẫn chưa thanh toán tiền lương cho những ngày họ đã làm việc.\nTheo Điều 48 Bộ Luật Lao động năm 2019 trong thời hạn 14 ngày làm việc kể từ ngày chấm dứt hợp đồng lao động, người sử dụng lao động có trách nhiệm thanh toán đầy đủ các khoản tiền liên quan đến quyền lợi của người lao động (trong đó có tiền lương).\nHạn thanh toán này có thể kéo dài nhưng không quá 30 ngày trong các trường hợp đặc biệt như: Doanh nghiệp chấm dứt hoạt động; thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế; chia, tách, hợp nhất,…",
+          "- Số ngày nghỉ việc là 11 ngày cũng không phải trả lương ngừng việc.\nVí dụ 7: Tháng 3, do tình hình sản xuất kinh doanh công ty X bố trí cho công nhân A\nlàm việc 5 giờ/ngày trong 13 ngày làm việc, sau đó cho nghỉ trọn 14 ngày làm việc. Như\nvậy, so với kế hoạch đã được công ty lập ra cho công nhân A vào tháng 3 nêu tại ví dụ 3\ntrên, thì:\n- Số giờ làm việc thực tế ít hơn so với số giờ làm việc tiêu chuẩn hằng ngày là:\n7 giờ - 5 giờ = 2 giờ; 2 giờ này phải trả lương ngừng việc;\n- Số ngày ngừng việc so với kế hoạch là 14 ngày; 14 ngày này phải trả lương\nngừng việc.\nVí dụ 8: Trong tháng 9, công ty X bố trí cho công nhân A làm việc 8 giờ/ngày. Như vậy,\nso với kế hoạch đã được công ty lập ra cho công nhân A vào tháng 9 tại ví dụ 5 nêu trên,"
+        ],
+        [
+          "#### **Điều 4. Áp dụng mức lương tối thiểu**\n1. Mức lương tối thiểu tháng là mức lương thấp nhất làm cơ sở để thỏa thuận và trả lương đối với người lao động áp dụng hình thức trả lương theo tháng, bảo đảm mức lương theo công việc hoặc chức danh của người lao động làm việc đủ thời giờ làm việc bình thường trong tháng và hoàn thành định mức lao động hoặc công việc đã thỏa thuận không được thấp hơn mức lương tối thiểu tháng.\n2. Mức lương tối thiểu giờ là mức lương thấp nhất làm cơ sở để thỏa thuận và trả lương đối với người lao động áp dụng hình thức trả lương theo giờ, bảo đảm mức lương theo công việc hoặc chức danh của người lao động làm việc trong một giờ và hoàn thành định mức lao động hoặc công việc đã thỏa thuận không được thấp hơn mức lương tối thiểu giờ.",
+          "## Áp dụng mức lương tối thiểu\nVề áp dụng mức lương tối thiểu, Nghị định quy định: Mức lương tối thiểu tháng là mức lương thấp nhất làm cơ sở để thỏa thuận và trả lương đối với người lao động áp dụng hình thức trả lương theo tháng, bảo đảm mức lương theo công việc hoặc chức danh của người lao động làm việc đủ thời giờ làm việc bình thường trong tháng và hoàn thành định mức lao động hoặc công việc đã thỏa thuận không được thấp hơn mức lương tối thiểu tháng.",
+          "Mức lương tối thiểu giờ là mức lương thấp nhất làm cơ sở để thỏa thuận và trả lương đối với người lao động áp dụng hình thức trả lương theo giờ, bảo đảm mức lương theo công việc hoặc chức danh của người lao động làm việc trong một giờ và hoàn thành định mức lao động hoặc công việc đã thỏa thuận không được thấp hơn mức lương tối thiểu giờ.\nĐối với người lao động áp dụng hình thức trả lương theo tuần hoặc theo ngày hoặc theo sản phẩm hoặc lương khoán thì mức lương của các hình thức trả lương này nếu quy đổi theo tháng hoặc theo giờ không được thấp hơn mức lương tối thiểu tháng hoặc mức lương tối thiểu giờ. Mức lương quy đổi theo tháng hoặc theo giờ trên cơ sở thời giờ làm việc bình thường do người sử dụng lao động lựa chọn theo quy định của pháp luật lao động như sau:",
+          "Điều 91. Mức lương tối thiểu\n\n1. Mức lương tối thiểu là mức lương thấp nhất được trả cho người lao động\nlàm công việc giản đơn nhất trong điều kiện lao động bình thường nhằm bảo đảm\nmức sống tối thiểu của người lao động và gia đình họ, phù hợp với điều kiện phát\ntriển kinh tế - xã hội.\n\n2. Mức lương tối thiểu được xác lập theo vùng, ấn định theo tháng, giờ.\n\n3. Mức lương tối thiểu được điều chỉnh dựa trên mức sống tối thiểu của\nngười lao động và gia đình họ; tương quan giữa mức lương tối thiểu và mức\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n59\n\nlương trên thị trường; chỉ số giá tiêu dùng, tốc độ tăng trưởng kinh tế; quan hệ\ncung, cầu lao động; việc làm và thất nghiệp; năng suất lao động; khả năng chi\ntrả của doanh nghiệp.",
+          "việc được thỏa thuận không thấp hơn mức lương tối thiểu;\n\nb) Trường hợp phải ngừng việc trên 14 ngày làm việc thì tiền lương ngừng\nviệc do hai bên thỏa thuận nhưng phải bảo đảm tiền lương ngừng việc trong 14\nngày đầu tiên không thấp hơn mức lương tối thiểu.\n\nĐiều 100. Trả lương thông qua người cai thầu\n\n1. Nơi nào sử dụng người cai thầu hoặc người có vai trò trung gian tương\ntự  thì người sử  dụng  lao động là  chủ  chính phải có danh sách và địa chỉ  của\nnhững người này kèm theo danh sách những người lao động làm việc với họ và\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n62\n\nphải bảo đảm việc họ tuân thủ quy định của pháp luật về trả lương, an toàn, vệ\nsinh lao động."
+        ],
+        [
+          "Trường hợp vi phạm quy định về thời hạn báo trước quy định tại khoản 2\nĐiều 36 của Bộ luật này thì phải trả một khoản tiền tương ứng với tiền lương theo\nhợp đồng lao động trong những ngày không báo trước.\n\n2. Trường hợp người lao động không muốn tiếp tục làm việc thì ngoài khoản\ntiền phải trả quy định tại khoản 1 Điều này người sử dụng lao động phải trả trợ\ncấp thôi việc theo quy định tại Điều 46 của Bộ luật này để chấm dứt hợp đồng\nlao động.",
+          "từ 12 tháng đến 36 tháng;\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n38\n\nc) Ít nhất 03 ngày làm việc đối với hợp đồng lao động xác định thời hạn\ncó thời hạn dưới 12 tháng và đối với trường hợp quy định tại điểm b khoản 1\nĐiều này;\n\nd) Đối với một số ngành, nghề, công việc đặc thù thì thời hạn báo trước được\n\nthực hiện theo quy định của Chính phủ.\n\n3. Khi đơn phương chấm dứt hợp đồng lao động quy định tại điểm d và điểm\ne khoản 1 Điều này thì người sử dụng lao động không phải báo trước cho người\nlao động.\n\nĐiều  37.  Trường  hợp  người  sử  dụng  lao  động  không  được  thực  hiện\n\nquyền đơn phương chấm dứt hợp đồng lao động",
+          "b) Ít nhất 30 ngày nếu làm việc theo hợp đồng lao động xác định thời hạn có\n\nthời hạn từ 12 tháng đến 36 tháng;\n\nc) Ít nhất 03 ngày làm việc nếu làm việc theo hợp đồng lao động xác định\n\nthời hạn có thời hạn dưới 12 tháng;\n\nd) Đối với một số ngành, nghề, công việc đặc thù thì thời hạn báo trước được\n\nthực hiện theo quy định của Chính phủ.\n\n2. Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không\n\ncần báo trước trong trường hợp sau đây:\n\na) Không được bố trí theo đúng công việc, địa điểm làm việc hoặc không\nđược bảo đảm điều kiện làm việc theo thỏa thuận, trừ trường hợp quy định tại\nĐiều 29 của Bộ luật này;\n\nb) Không được trả đủ lương hoặc trả lương không đúng thời hạn, trừ trường\n\nhợp quy định tại khoản 4 Điều 97 của Bộ luật này;",
+          "e) Người lao động tự ý bỏ việc mà không có lý do chính đáng từ 05 ngày làm\n\nviệc liên tục trở lên;\n\ng) Người lao động cung cấp không trung thực thông tin theo quy định tại\nkhoản 2 Điều 16 của Bộ luật này khi giao kết hợp đồng lao động làm ảnh hưởng\nđến việc tuyển dụng người lao động.\n\n2. Khi đơn phương chấm dứt hợp đồng lao động trong trường hợp quy định\ntại các điểm a, b, c, đ và g khoản 1 Điều này, người sử dụng lao động phải báo\ntrước cho người lao động như sau:\n\na) Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn;\n\nb) Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn có thời hạn\n\ntừ 12 tháng đến 36 tháng;\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n38",
+          "- Số ngày nghỉ việc là 11 ngày cũng không phải trả lương ngừng việc.\nVí dụ 7: Tháng 3, do tình hình sản xuất kinh doanh công ty X bố trí cho công nhân A\nlàm việc 5 giờ/ngày trong 13 ngày làm việc, sau đó cho nghỉ trọn 14 ngày làm việc. Như\nvậy, so với kế hoạch đã được công ty lập ra cho công nhân A vào tháng 3 nêu tại ví dụ 3\ntrên, thì:\n- Số giờ làm việc thực tế ít hơn so với số giờ làm việc tiêu chuẩn hằng ngày là:\n7 giờ - 5 giờ = 2 giờ; 2 giờ này phải trả lương ngừng việc;\n- Số ngày ngừng việc so với kế hoạch là 14 ngày; 14 ngày này phải trả lương\nngừng việc.\nVí dụ 8: Trong tháng 9, công ty X bố trí cho công nhân A làm việc 8 giờ/ngày. Như vậy,\nso với kế hoạch đã được công ty lập ra cho công nhân A vào tháng 9 tại ví dụ 5 nêu trên,"
+        ],
+        [
+          "### 1.Tiền lương cho những ngày làm việc chưa được thanh toán\nĐây là khoản tiền mà mọi người lao động khi nghỉ việc đều được nhận, nếu tại thời điểm nghỉ việc doanh nghiệp vẫn chưa thanh toán tiền lương cho những ngày họ đã làm việc.\nTheo Điều 48 Bộ Luật Lao động năm 2019 trong thời hạn 14 ngày làm việc kể từ ngày chấm dứt hợp đồng lao động, người sử dụng lao động có trách nhiệm thanh toán đầy đủ các khoản tiền liên quan đến quyền lợi của người lao động (trong đó có tiền lương).\nHạn thanh toán này có thể kéo dài nhưng không quá 30 ngày trong các trường hợp đặc biệt như: Doanh nghiệp chấm dứt hoạt động; thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế; chia, tách, hợp nhất,…",
+          "###  [ Người lao động nghỉ việc được nhận những khoản tiền nào? ](https://xaydungchinhsach.chinhphu.vn/nguoi-lao-dong-nghi-viec-duoc-nhan-nhung-khoan-tien-nao-119240509063307003.htm \"Người lao động nghỉ việc được nhận những khoản tiền nào?\")\n(Chinhphu.vn) - Theo Bộ Luật Lao động năm 2019 quy định chi tiết về các khoản tiền sẽ được nhận khi nghỉ việc để bảo vệ quyền lợi cho người lao động. \nGọi tổng đài \n![Chúng tôi luôn Lắng nghe và phản hồi](https://static.mediacdn.vn/XayDungChinhSachPhapLuat/web/images/image-feedback.png) Chúng tôi luôn Lắng nghe và phản hồi \nGọi đến 0964 96 66 88 tổng đài tiếp nhận các góp ý, đề xuất, hiến kế \nHoặc",
+          "##  (Chinhphu.vn) - Theo Bộ Luật Lao động năm 2019 quy định chi tiết về các khoản tiền sẽ được nhận khi nghỉ việc để bảo vệ quyền lợi cho người lao động. \n![Người lao động nghỉ việc được nhận những khoản tiền nào?](https://xdcs.cdnchinhphu.vn/thumb_w/900/446259493575335936/2024/5/9/tien-17152111116371195952805-0-0-410-656-crop-17152111140262006711196.jpg)\nTheo Cổng Thông tin Công đoàn Việt Nam, căn cứ Bộ Luật Lao động 2019 và các văn bản pháp luật, người lao động khi nghỉ việc, tùy từng trường hợp cụ thể, có thể nhận được các khoản tiền dưới đây:",
+          "Đóng\nGửi thông tin góp ý hiến kế \n[ ![Người lao động nghỉ việc được nhận những khoản tiền nào?](https://xdcs.cdnchinhphu.vn/zoom/200_125/446259493575335936/2024/5/9/tien-17152111116371195952805-0-0-410-656-crop-17152111140262006711196.jpg) ](https://xaydungchinhsach.chinhphu.vn/nguoi-lao-dong-nghi-viec-duoc-nhan-nhung-khoan-tien-nao-119240509063307003.htm \"Người lao động nghỉ việc được nhận những khoản tiền nào?\")",
+          "#  Người lao động nghỉ việc được nhận những khoản tiền nào? \n09/05/2024 08:27 \n![google news](https://static.mediacdn.vn/VTV/web/images/gg.png) [ Chia sẻ ](javascript:; \"Chia sẻ Facebook\")"
+        ],
+        [
+          "## 2. Tiền trợ cấp thôi việc\nNgười lao động sẽ được chi trả trợ cấp thôi việc nếu đáp ứng đủ các điều kiện được quy định tại Điều 46 BLLĐ 2019. Các điều kiện đó là:\n– Nghỉ việc do chấm dứt hợp đồng lao động theo một trong các trường hợp:\n+ Hết hạn hợp đồng lao động, trừ trường gia hạn hợp đồng với người lao động là thành viên ban lãnh đạo của tổ chức đại diện người lao động tại cơ sở đang trong nhiệm kỳ.\n+ Đã hoàn thành công việc theo hợp đồng lao động.\n+ Hai bên thỏa thuận chấm dứt hợp đồng lao động.\n+ Người lao động bị kết án phạt tù nhưng không được hưởng án treo hoặc không thuộc trường hợp được trả tự do theo quy định, tử hình hoặc bị cấm làm công việc theo bản án, quyết định của Tòa án.\n+ Người lao động chết; bị tuyên bố mất năng lực hành vi dân sự, mất tích hoặc đã chết.",
+          "_______\nHướng dẫn cách ghi:\n- Cơ quan cấp trên trực tiếp quản lý (1):\n Ghi tên Công ty mẹ hoặc tập đoàn kinh tế, nếu là doanh nghiệp thành viên trong nhóm công ty;\n Ghi tên Tổng Công ty, nếu là đơn vị trực thuộc Tổng Công ty;\n Ghi tên Sở, Ban, ngành, nếu trực thuộc Sở, Ban, ngành tại địa phương;\n Ghi tên Bộ, cơ quan ngang Bộ chủ quản, nếu trực thuộc Bộ, cơ quan ngang Bộ;\n Không ghi gì nếu không thuộc các loại hình trên.\n- Tên (2) và ngành nghề kinh doanh (3): Ghi theo Giấy chứng nhận đăng ký kinh doanh\n- Tính chất hoạt động sản xuất kinh doanh (4): Ghi cụ thể đối tượng thuộc nhóm quy định tại Điểm a,\nb Khoản 1 Điều 2 của Thông tư\n\n2",
+          "### 3. Trợ cấp mất việc làm\nTheo Điều 47 Bộ Luật Lao động năm 2019, người lao động nghỉ việc được trả trợ cấp mất việc làm khi có đủ các điều kiện:\n– Nghỉ việc do chấm dứt hợp đồng lao động theo trường hợp người sử dụng lao động cho người lao động thôi việc do thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế, chia, tách, hợp nhất, sáp nhập; bán, cho thuê, chuyển đổi loại hình; chuyển nhượng quyền sở hữu, quyền sử dụng tài sản.\n– Đã làm việc thường xuyên cho người sử dụng lao động từ đủ 12 tháng trở lên.\nNhư vậy, nếu đáp ứng điều kiện, người lao động sẽ được người sử dụng lao động thanh toán trợ cấp mất việc làm cho mỗi năm làm việc bằng 01 tháng tiền lương nhưng ít nhất phải bằng 02 tháng tiền lương. Cụ thể:",
+          "3. Trường hợp người sử dụng lao động không muốn nhận lại người lao động\nvà người lao động đồng ý thì ngoài khoản tiền người sử dụng lao động phải trả\ntheo quy định tại khoản 1 Điều này và trợ cấp thôi việc theo quy định tại Điều 46\ncủa Bộ luật này, hai bên thỏa thuận khoản tiền bồi thường thêm cho người lao\nđộng nhưng ít nhất bằng 02 tháng tiền lương theo hợp đồng lao động để chấm dứt\nhợp đồng lao động.\n\nĐiều 42. Nghĩa vụ của người sử dụng lao động trong trường hợp thay\n\nđổi cơ cấu, công nghệ hoặc vì lý do kinh tế\n\n1. Những trường hợp sau đây được coi là thay đổi cơ cấu, công nghệ:\n\na) Thay đổi cơ cấu tổ chức, tổ chức lại lao động;\n\nb) Thay đổi quy trình, công nghệ, máy móc, thiết bị sản xuất, kinh doanh gắn\n\nvới ngành, nghề sản xuất, kinh doanh của người sử dụng lao động;",
+          "Điều 46. Trợ cấp thôi việc\n\n1. Khi hợp đồng lao động chấm dứt theo quy định tại các khoản 1, 2, 3, 4,\n6, 7, 9 và 10 Điều 34 của Bộ luật này thì người sử dụng lao động có trách nhiệm\ntrả trợ cấp thôi việc cho người lao động đã làm việc thường xuyên cho mình từ\nđủ 12 tháng trở lên, mỗi năm làm việc được trợ cấp một nửa tháng tiền lương,\ntrừ trường hợp đủ điều kiện hưởng lương hưu theo quy định của pháp luật về\nbảo hiểm xã hội và trường hợp quy định tại điểm e khoản 1 Điều 36 của Bộ\nluật này."
+        ],
+        [
+          "3. Người sử dụng lao động không được sa thải hoặc đơn phương chấm dứt\nhợp đồng lao động đối với người lao động vì lý do kết hôn, mang thai, nghỉ thai\nsản, nuôi con dưới 12 tháng tuổi, trừ trường hợp người sử dụng lao động là cá\nnhân chết, bị Tòa án tuyên bố mất năng lực hành vi dân sự, mất tích hoặc đã chết\nhoặc người sử dụng lao động không phải là cá nhân chấm dứt hoạt động hoặc bị\ncơ quan chuyên môn về đăng ký kinh doanh thuộc Ủy ban nhân dân cấp tỉnh ra\nthông báo không có người đại diện theo pháp luật, người được ủy quyền thực hiện\nquyền và nghĩa vụ của người đại diện theo pháp luật.\n\nTrường hợp hợp đồng lao động hết hạn trong thời gian lao động nữ mang thai\nhoặc nuôi con dưới 12 tháng tuổi thì được ưu tiên giao kết hợp đồng lao động mới.",
+          "Điều 124. Hình thức xử lý kỷ luật lao động\n\n1. Khiển trách.\n\n2. Kéo dài thời hạn nâng lương không quá 06 tháng.\n\n3. Cách chức.\n\n4. Sa thải.\n\nĐiều 125. Áp dụng hình thức xử lý kỷ luật sa thải\n\nHình thức xử lý kỷ luật sa thải được người sử dụng lao động áp dụng trong\n\ntrường hợp sau đây:\n\n1. Người lao động có hành vi trộm cắp, tham ô, đánh bạc, cố ý gây thương\n\ntích, sử dụng ma tuý tại nơi làm việc;\n\n2. Người lao động có hành vi tiết lộ bí mật kinh doanh, bí mật công nghệ,\nxâm phạm quyền sở hữu trí tuệ của người sử dụng lao động, có hành vi gây thiệt\nhại nghiêm trọng hoặc đe dọa gây thiệt hại đặc biệt nghiêm trọng về tài sản, lợi\ních của người sử dụng lao động hoặc quấy rối tình dục tại nơi làm việc được quy\nđịnh trong nội quy lao động;",
+          "CÔNG BÁO/Số 131/Ngày 28-02-2026\n\n96\n\n4. Trường hợp người yêu cầu chứng minh được vì sự kiện bất khả kháng, trở\nngại khách quan hoặc lý do khác theo quy định của pháp luật mà không thể yêu\ncầu đúng thời hạn quy định tại Điều này thì thời gian có sự kiện bất khả kháng,\ntrở ngại khách quan hoặc lý do đó không tính vào thời hiệu yêu cầu giải quyết\ntranh chấp lao động cá nhân.\n\nMục 3\nTHẨM QUYỀN VÀ TRÌNH TỰ GIẢI QUYẾT\nTRANH CHẤP LAO ĐỘNG TẬP THỂ VỀ QUYỀN\n\nĐiều 191. Thẩm quyền giải quyết tranh chấp lao động tập thể về quyền\n\n1. Cơ quan, tổ chức, cá nhân có thẩm quyền giải quyết tranh chấp lao động\n\ntập thể về quyền bao gồm:\n\na) Hòa giải viên lao động;\n\nb) Hội đồng trọng tài lao động;\n\nc) Tòa án nhân dân.",
+          "thương lượng, ký kết thỏa ước lao động tập thể.\n\n2. Trường hợp quy định của pháp luật thay đổi dẫn đến thỏa ước lao động\ntập thể không còn phù hợp với quy định của pháp luật thì các bên phải tiến hành\nsửa đổi, bổ sung thỏa ước lao động tập thể cho phù hợp với quy định của pháp\nluật. Trong thời gian tiến hành sửa đổi, bổ sung thỏa ước lao động tập thể thì quyền\nlợi của người lao động được thực hiện theo quy định của pháp luật.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n57\n\nĐiều 83. Thỏa ước lao động tập thể hết hạn",
+          "hiện theo quy định tại khoản 3 Điều 18 của Bộ luật Lao động và đáp ứng các điều\nkiện sau:\na) Có phiếu lý lịch tư pháp được cấp không quá 06 tháng kể từ ngày cấp\nđến ngày giao kết hợp đồng lao động, trong đó không có án tích về hành vi\nxâm hại trẻ em;\nb) Có Bản cam kết chưa từng bị truy cứu trách nhiệm hình sự, xử phạt vi phạm\nhành chính về hành vi xâm hại trẻ em theo Mẫu số 02 tại Phụ lục I ban hành kèm\ntheo Thông tư này.\n2. Hợp đồng lao động với người chưa đủ 15 tuổi phải có các nội dung theo quy\nđịnh tại Điều 21 của Bộ luật Lao động và các nội dung sau:\na) Họ và tên; ngày, tháng, năm sinh; giới tính; nơi cư trú; số điện thoại (nếu có);\nsố thẻ căn cước công dân hoặc chứng minh nhân dân hoặc hộ chiếu của người đại\ndiện theo pháp luật của người chưa đủ 15 tuổi;"
+        ],
+        [
+          "a) Đủ tuổi theo quy định tại khoản 2 Điều 169 của Bộ luật Lao động;\n\nb) Đủ tuổi theo quy định tại khoản 3 Điều 169 của Bộ luật Lao động và có\nđủ 15 năm làm nghề, công việc nặng nhọc, độc hại, nguy hiểm hoặc đặc biệt nặng\nnhọc, độc hại, nguy hiểm thuộc danh mục do Bộ Lao động - Thương binh và Xã\nhội ban hành hoặc có đủ 15 năm làm việc ở vùng có điều kiện kinh tế - xã hội đặc\nbiệt khó khăn bao gồm cả thời gian làm việc ở nơi có phụ cấp khu vực hệ số 0,7\ntrở lên trước ngày 01 tháng 01  năm 2021;\n\nc) Người lao động có tuổi thấp hơn tối đa 10 tuổi so với tuổi nghỉ hưu của\nngười lao động quy định tại khoản 2 Điều 169 của Bộ luật Lao động và có đủ 15\nnăm làm công việc khai thác than trong hầm lò;\n\nd) Người bị nhiễm HIV do tai nạn rủi ro nghề nghiệp trong khi thực hiện\n\nnhiệm vụ được giao.",
+          "d) Người bị nhiễm HIV do tai nạn rủi ro nghề nghiệp trong khi thực hiện\n\nnhiệm vụ được giao.\n\n2. Người lao động quy định tại điểm đ và điểm e khoản 1 Điều 2 của Luật\nnày nghỉ việc có đủ 20 năm đóng bảo hiểm xã hội trở lên được hưởng lương hưu\nkhi thuộc một trong các trường hợp sau đây:\n\na) Có tuổi thấp hơn tối đa 05 tuổi so với tuổi nghỉ hưu quy định tại khoản 2\nĐiều 169 của Bộ luật Lao động, trừ trường hợp Luật Sĩ quan Quân đội nhân dân\nViệt Nam, Luật Công an nhân dân, Luật Cơ yếu, Luật Quân nhân chuyên nghiệp,\ncông nhân và viên chức quốc phòng có quy định khác;",
+          "2. Tuổi nghỉ hưu của người lao động trong điều kiện lao động bình thường\nđược điều chỉnh theo lộ trình cho đến khi đủ 62 tuổi đối với lao động nam vào\nnăm 2028 và đủ 60 tuổi đối với lao động nữ vào năm 2035.\n\nKể từ năm 2021, tuổi nghỉ hưu của người lao động trong điều kiện lao động\nbình thường là đủ 60 tuổi 03 tháng đối với lao động nam và đủ 55 tuổi 04 tháng\nđối với lao động nữ; sau đó, cứ mỗi năm tăng thêm 03 tháng đối với lao động nam\nvà 04 tháng đối với lao động nữ.",
+          "b) Có tuổi thấp hơn tối đa 05 tuổi so với tuổi nghỉ hưu quy định tại khoản 3\nĐiều 169 của Bộ luật Lao động và có đủ 15 năm làm nghề, công việc nặng nhọc,\nđộc hại, nguy hiểm hoặc đặc biệt nặng nhọc, độc hại, nguy hiểm thuộc danh mục\ndo Bộ Lao động - Thương binh và Xã hội ban hành hoặc có đủ 15 năm làm việc\nở vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn bao gồm cả thời gian làm\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n107\n\nviệc ở nơi có phụ cấp khu vực hệ số 0,7 trở lên trước ngày 01 tháng 01 năm 2021;\n\nc) Người bị nhiễm HIV do tai nạn rủi ro nghề nghiệp trong khi thực hiện\n\nnhiệm vụ được giao.",
+          "“Điều 55. Điều kiện hưởng lương hưu khi suy giảm khả năng lao động\n\n1. Người lao động quy định tại các điểm a, b, c, d, g, h và i khoản 1 Điều 2\ncủa Luật này khi nghỉ việc có đủ 20 năm đóng bảo hiểm xã hội trở lên được hưởng\nlương hưu với mức thấp hơn so với người đủ điều kiện hưởng lương hưu quy định\ntại các điểm a, b và c khoản 1 Điều 54 của Luật này nếu thuộc một trong các\ntrường hợp sau đây:\n\na) Có tuổi thấp hơn tối đa 05 tuổi so với tuổi nghỉ hưu quy định tại khoản 2\nĐiều 169 của Bộ luật Lao động khi bị suy giảm khả năng lao động từ 61% đến\ndưới 81%;\n\nb) Có tuổi thấp hơn tối đa 10 tuổi so với tuổi nghỉ hưu quy định tại khoản 2\nĐiều 169 của Bộ luật Lao động khi bị suy giảm khả năng lao động từ 81% trở lên;"
+        ],
+        [
+          "### 4. Tiền phép năm chưa nghỉ hoặc chưa nghỉ hết\nTùy vào đối tượng lao động và điều kiện làm việc thì người lao động làm việc đủ 12 tháng cho người sử dụng lao động sẽ được nghỉ phép năm từ 12 – 16 ngày (Điều 113 Bộ Luật Lao động 2019)\nTrường hợp người lao động chưa nghỉ hoặc chưa nghỉ hết mà phải nghỉ việc thì có thể được thanh toán tiền nghỉ phép năm theo khoản 3 Điều 113 Bộ Luật Lao động 2019 như sau:\n\"Trường hợp do thôi việc, bị mất việc làm mà chưa nghỉ hằng năm hoặc chưa nghỉ hết số ngày nghỉ hằng năm thì được người sử dụng lao động thanh toán tiền lương cho những ngày chưa nghỉ.\"",
+          "### 1.Tiền lương cho những ngày làm việc chưa được thanh toán\nĐây là khoản tiền mà mọi người lao động khi nghỉ việc đều được nhận, nếu tại thời điểm nghỉ việc doanh nghiệp vẫn chưa thanh toán tiền lương cho những ngày họ đã làm việc.\nTheo Điều 48 Bộ Luật Lao động năm 2019 trong thời hạn 14 ngày làm việc kể từ ngày chấm dứt hợp đồng lao động, người sử dụng lao động có trách nhiệm thanh toán đầy đủ các khoản tiền liên quan đến quyền lợi của người lao động (trong đó có tiền lương).\nHạn thanh toán này có thể kéo dài nhưng không quá 30 ngày trong các trường hợp đặc biệt như: Doanh nghiệp chấm dứt hoạt động; thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế; chia, tách, hợp nhất,…",
+          "3. Người lao động hưởng lương theo sản phẩm, theo khoán được trả lương\ntheo thỏa thuận của hai bên; nếu công việc phải làm trong nhiều tháng thì hằng\ntháng được tạm ứng tiền lương theo khối lượng công việc đã làm trong tháng.\n\n4. Trường hợp vì lý do bất khả kháng mà người sử dụng lao động đã tìm mọi\nbiện pháp khắc phục nhưng không thể trả lương đúng hạn thì không được chậm\nquá 30 ngày; nếu trả lương chậm từ 15 ngày trở lên thì người sử dụng lao động\nphải đền bù cho người lao động một khoản tiền ít nhất bằng số tiền lãi của số tiền\ntrả chậm tính theo lãi suất huy động tiền gửi có kỳ hạn 01 tháng do ngân hàng nơi\nngười sử dụng lao động mở tài khoản trả lương cho người lao động công bố tại\nthời điểm trả lương.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n61",
+          "4. Người sử dụng lao động có trách nhiệm quy định lịch nghỉ hằng năm sau\nkhi tham khảo ý kiến của người lao động và phải thông báo trước cho người lao\nđộng biết. Người lao động có thể thỏa thuận với người sử dụng lao động để nghỉ\nhằng năm thành nhiều lần hoặc nghỉ gộp tối đa 03 năm một lần.\n\n5. Khi nghỉ hằng năm mà chưa đến kỳ trả lương, người lao động được tạm\n\nứng tiền lương theo quy định tại khoản 3 Điều 101 của Bộ luật này.\n\n6. Khi nghỉ hằng năm, nếu người lao động đi bằng các phương tiện đường\nbộ, đường sắt, đường thủy mà số ngày đi đường cả đi và về trên 02 ngày thì từ\nngày thứ 03 trở đi được tính thêm thời gian đi đường ngoài ngày nghỉ hằng năm\nvà chỉ được tính cho 01 lần nghỉ trong năm.\n\n7. Chính phủ quy định chi tiết điều này.",
+          "3. Người lao động làm thêm giờ vào ban đêm thì ngoài việc trả lương theo\nquy định tại khoản 1 và khoản 2 Điều này, người lao động còn được trả thêm 20%\ntiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc làm vào\nban ngày của ngày làm việc bình thường hoặc của ngày nghỉ hằng tuần hoặc của\nngày nghỉ lễ, tết.\n\n4. Chính phủ quy định chi tiết Điều này.\n\nĐiều 99. Tiền lương ngừng việc\n\nTrường hợp phải ngừng việc, người lao động được trả lương như sau:\n\n1. Nếu do lỗi của người sử dụng lao động thì người lao động được trả đủ tiền\n\nlương theo hợp đồng lao động;"
+        ],
+        [
+          "##  (Chinhphu.vn) - Luật số 41/2024/QH15 Bảo hiểm xã hội quy định căn cứ, tỷ lệ đóng bảo hiểm xã hội. \n![Quy định căn cứ, tỷ lệ đóng BHXH](https://xdcs.cdnchinhphu.vn/thumb_w/900/446259493575335936/2024/7/26/bh-1721957979699647123548.jpg)\n#### **Căn cứ đóng bảo hiểm xã hội (Điều 31)**\nTiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc được quy định như sau:\n+ Người lao động thuộc đối tượng thực hiện chế độ tiền lương do Nhà nước quy định thì tiền lương làm căn cứ đóng bảo hiểm xã hội là tiền lương tháng theo chức vụ, chức danh, ngạch, bậc, cấp bậc quân hàm và các khoản phụ cấp chức vụ, phụ cấp thâm niên vượt khung, phụ cấp thâm niên nghề, hệ số chênh lệch bảo lưu lương (nếu có);",
+          "Sau ít nhất 12 tháng thực hiện đóng bảo hiểm xã hội theo tiền lương làm căn cứ đóng bảo hiểm xã hội đã lựa chọn thì người lao động được lựa chọn lại tiền lương làm căn cứ đóng bảo hiểm xã hội;\n+ Tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc thấp nhất bằng mức tham chiếu và cao nhất bằng 20 lần mức tham chiếu tại thời điểm đóng.\nThu nhập làm căn cứ đóng bảo hiểm xã hội tự nguyện thấp nhất bằng mức chuẩn hộ nghèo của khu vực nông thôn và cao nhất bằng 20 lần mức tham chiếu tại thời điểm đóng.",
+          "## **Tỷ lệ đóng bảo hiểm xã hội (Điều 32)**\nLuật Bảo hiểm xã hội quy định tỷ lệ đóng bảo hiểm xã hội bắt buộc bao gồm:\n+ 3% tiền lương làm căn cứ đóng bảo hiểm xã hội vào quỹ ốm đau và thai sản;\n+ 22% tiền lương làm căn cứ đóng bảo hiểm xã hội vào quỹ hưu trí và tử tuất.\nTỷ lệ đóng bảo hiểm xã hội tự nguyện bằng 22% thu nhập làm căn cứ đóng bảo hiểm xã hội vào quỹ hưu trí và tử tuất.\n  * Tham khảo thêm\n#### [TOÀN VĂN: Luật số 41/2024/QH15 Bảo hiểm xã hội](https://xaydungchinhsach.chinhphu.vn/toan-van-luat-so-41-2024-qh15-bao-hiem-xa-hoi-119240723163650489.htm)",
+          "+ Người lao động thuộc đối tượng thực hiện chế độ tiền lương do người sử dụng lao động quyết định thì tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc là tiền lương tháng, bao gồm mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác được thỏa thuận trả thường xuyên, ổn định trong mỗi kỳ trả lương.\nTrường hợp người lao động ngừng việc vẫn hưởng tiền lương tháng bằng hoặc cao hơn tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc thấp nhất thì đóng theo tiền lương được hưởng trong thời gian ngừng việc;\n+ Đối tượng quy định tại các điểm đ, e và k khoản 1 Điều 2 của Luật này thì tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc do Chính phủ quy định;",
+          "2. Người lao động có quyền được biết lý do khấu trừ tiền lương của mình.\n\n3. Mức khấu trừ tiền lương hằng tháng không được quá 30% tiền lương thực\ntrả hằng tháng của người lao động sau khi trích nộp các khoản bảo hiểm xã hội\nbắt buộc, bảo hiểm y tế, bảo hiểm thất nghiệp, thuế thu nhập cá nhân.\n\nĐiều 103. Chế độ nâng lương, nâng bậc, phụ cấp, trợ cấp\n\nChế độ nâng lương, nâng bậc, phụ cấp, trợ cấp và các chế độ khuyến khích\nđối với người lao động được thỏa thuận trong hợp đồng lao động, thỏa ước lao\nđộng tập thể hoặc quy định của người sử dụng lao động.\n\nĐiều 104. Thưởng\n\n1. Thưởng là số tiền hoặc tài sản hoặc bằng các hình thức khác mà người sử\ndụng lao động thưởng cho người lao động căn cứ vào kết quả sản xuất, kinh doanh,\nmức độ hoàn thành công việc của người lao động."
+        ],
+        [
+          "Điều 168. Tham gia bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp\n\n1. Người sử dụng lao động, người lao động phải tham gia bảo hiểm xã hội\nbắt buộc, bảo hiểm y tế, bảo hiểm thất nghiệp; người lao động được hưởng các\nchế độ theo quy định của pháp luật về bảo hiểm xã hội, bảo hiểm y tế và bảo hiểm\nthất nghiệp.\n\nKhuyến khích người sử dụng lao động, người lao động tham gia các hình\n\nthức bảo hiểm khác đối với người lao động.\n\n2. Trong thời gian người lao động nghỉ việc hưởng chế độ bảo hiểm xã hội\nthì người sử dụng lao động không phải trả lương cho người lao động, trừ trường\nhợp hai bên có thỏa thuận khác.",
+          "##  (Chinhphu.vn) - Luật số 41/2024/QH15 Bảo hiểm xã hội quy định căn cứ, tỷ lệ đóng bảo hiểm xã hội. \n![Quy định căn cứ, tỷ lệ đóng BHXH](https://xdcs.cdnchinhphu.vn/thumb_w/900/446259493575335936/2024/7/26/bh-1721957979699647123548.jpg)\n#### **Căn cứ đóng bảo hiểm xã hội (Điều 31)**\nTiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc được quy định như sau:\n+ Người lao động thuộc đối tượng thực hiện chế độ tiền lương do Nhà nước quy định thì tiền lương làm căn cứ đóng bảo hiểm xã hội là tiền lương tháng theo chức vụ, chức danh, ngạch, bậc, cấp bậc quân hàm và các khoản phụ cấp chức vụ, phụ cấp thâm niên vượt khung, phụ cấp thâm niên nghề, hệ số chênh lệch bảo lưu lương (nếu có);",
+          "## **Tỷ lệ đóng bảo hiểm xã hội (Điều 32)**\nLuật Bảo hiểm xã hội quy định tỷ lệ đóng bảo hiểm xã hội bắt buộc bao gồm:\n+ 3% tiền lương làm căn cứ đóng bảo hiểm xã hội vào quỹ ốm đau và thai sản;\n+ 22% tiền lương làm căn cứ đóng bảo hiểm xã hội vào quỹ hưu trí và tử tuất.\nTỷ lệ đóng bảo hiểm xã hội tự nguyện bằng 22% thu nhập làm căn cứ đóng bảo hiểm xã hội vào quỹ hưu trí và tử tuất.\n  * Tham khảo thêm\n#### [TOÀN VĂN: Luật số 41/2024/QH15 Bảo hiểm xã hội](https://xaydungchinhsach.chinhphu.vn/toan-van-luat-so-41-2024-qh15-bao-hiem-xa-hoi-119240723163650489.htm)",
+          "###  [ Người mắc bệnh dài ngày được hưởng chế độ ốm đau theo ngày làm việc ](https://xaydungchinhsach.chinhphu.vn/nguoi-mac-benh-dai-ngay-duoc-huong-che-do-om-dau-theo-ngay-lam-viec-119260627081647202.htm \"Người mắc bệnh dài ngày được hưởng chế độ ốm đau theo ngày làm việc\")\n(Chinhphu.vn) - Luật BHXH 2024, có hiệu lực từ ngày 01/7/2025, mang đến một thay đổi lớn trong cách tính thời gian hưởng chế độ đối với người lao động mắc bệnh cần chữa trị dài ngày, giúp tăng quyền lợi của người tham gia BHXH một cách tối ưu hơn. \nGọi tổng đài \n![Chúng tôi luôn Lắng nghe và phản hồi](https://static.mediacdn.vn/XayDungChinhSachPhapLuat/web/images/image-feedback.png) Chúng tôi luôn Lắng nghe và phản hồi \nGọi đến 0964 96 66 88 tổng đài tiếp nhận các góp ý, đề xuất, hiến kế \nHoặc",
+          "[![TOÀN VĂN: Luật số 41/2024/QH15 Bảo hiểm xã hội](https://xdcs.cdnchinhphu.vn/thumb_w/300/446259493575335936/2024/7/23/lbh-17217273972971246421730-32-0-1282-2000-crop-17217274025191287193823.jpg)](https://xaydungchinhsach.chinhphu.vn/toan-van-luat-so-41-2024-qh15-bao-hiem-xa-hoi-119240723163650489.htm)\n  * Tham khảo thêm\n#### [Quy định hưởng bảo hiểm xã hội một lần](https://xaydungchinhsach.chinhphu.vn/quy-dinh-huong-bao-hiem-xa-hoi-mot-lan-119240723161149897.htm)\n[![Quy định hưởng bảo hiểm xã hội một lần](https://xdcs.cdnchinhphu.vn/thumb_w/300/446259493575335936/2024/7/23/bhxh-1721725441107284043458-0-0-538-860-crop-1721725445884313416439.jpg)](https://xaydungchinhsach.chinhphu.vn/quy-dinh-huong-bao-hiem-xa-hoi-mot-lan-119240723161149897.htm)\n  * Tham khảo thêm"
+        ]
+      ],
+      "ground_truth": [
+        "Có, nếu công việc cần trình độ chuyên môn từ cao đẳng trở lên thì thời gian thử việc tối đa là 60 ngày. Lương thử việc phải ít nhất bằng 85% lương của công việc đó.",
+        "Không. Không áp dụng thử việc đối với hợp đồng lao động có thời hạn dưới 01 tháng.",
+        "Không phù hợp. Hợp đồng lao động phải được giao kết bằng văn bản; chỉ một số hợp đồng dưới 01 tháng mới có thể giao kết bằng lời nói.",
+        "Không được ép nếu người lao động không đồng ý, trừ trường hợp đặc biệt theo luật. Doanh nghiệp phải bảo đảm giới hạn giờ làm thêm.",
+        "Ít nhất 150% vào ngày thường, 200% vào ngày nghỉ hằng tuần và 300% vào ngày lễ, tết chưa kể lương ngày lễ; làm ban đêm còn có các khoản cộng thêm theo luật.",
+        "Người sử dụng lao động phải trả đầy đủ, đúng hạn. Nếu chậm từ 15 ngày trở lên thì phải bù tiền lãi của khoản trả chậm theo quy định.",
+        "Không được. Mức lương theo công việc hoặc chức danh không được thấp hơn mức lương tối thiểu áp dụng theo vùng, theo tháng hoặc theo giờ.",
+        "Thông thường là 45 ngày với hợp đồng không xác định thời hạn, 30 ngày với hợp đồng từ 12 đến 36 tháng và 03 ngày làm việc với hợp đồng dưới 12 tháng; có trường hợp được nghỉ không cần báo trước.",
+        "Hai bên phải thanh toán các khoản liên quan trong thời hạn luật định, gồm tiền lương và quyền lợi còn lại; nếu đủ điều kiện có thể có trợ cấp thôi việc hoặc mất việc.",
+        "Nếu đủ điều kiện hưởng trợ cấp mất việc, mỗi năm làm việc được trả một tháng tiền lương nhưng ít nhất bằng hai tháng tiền lương.",
+        "Đi muộn nhiều lần không tự động là căn cứ sa thải. Sa thải chỉ được áp dụng cho các trường hợp và theo trình tự mà pháp luật quy định.",
+        "Tuổi nghỉ hưu trong điều kiện bình thường tăng theo lộ trình cho đến 62 tuổi với nam và 60 tuổi với nữ; tuổi cụ thể phụ thuộc năm nghỉ hưu.",
+        "Có. Khi chấm dứt hợp đồng, người lao động chưa nghỉ hoặc chưa nghỉ hết phép năm được thanh toán tiền cho những ngày chưa nghỉ.",
+        "Căn cứ đóng gồm mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác được trả thường xuyên, ổn định theo quy định.",
+        "Người mắc bệnh cần chữa trị dài ngày được hưởng chế độ ốm đau theo Luật Bảo hiểm xã hội; thời gian hưởng được tính theo ngày làm việc và điều kiện luật định."
+      ],
+      "sources": [
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-09-2020-tt-bldtbxh-lao-dong-chua-thanh-nien.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md"
+        ],
+        [
+          "03_muc_luong_toi_thieu.md",
+          "03_muc_luong_toi_thieu.md",
+          "03_muc_luong_toi_thieu.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md"
+        ],
+        [
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md"
+        ],
+        [
+          "01_quyen_loi_khi_nghi_viec.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-09-2020-tt-bldtbxh-lao-dong-chua-thanh-nien.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "05_che_do_om_dau_dai_ngay.md",
+          "04_can_cu_ty_le_dong_bhxh.md"
+        ]
+      ]
+    }
+  },
+  "dense_only": {
+    "summary": {
+      "faithfulness": 0.5880952380952381,
+      "answer_relevancy": 0.36615539275824005,
+      "context_recall": 0.8111111111111111,
+      "context_precision": 0.9316666666424906
+    },
+    "rows": [
+      {
+        "question": "Em vừa tốt nghiệp đại học, đi làm vị trí marketing và công ty muốn thử việc 60 ngày. Như vậy có đúng luật không?",
+        "answer": "Công ty muốn thử việc em 60 ngày là đúng luật, vì theo quy định, thời gian thử việc cho công việc có chức danh nghề nghiệp cần trình độ chuyên môn, kỹ thuật từ cao đẳng trở lên không quá 60 ngày [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 0.3333333333333333,
+        "answer_relevancy": 0.7742685978087193,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.7769004827805132
+      },
+      {
+        "question": "Nếu em làm hợp đồng chỉ 20 ngày thì công ty có được bắt thử việc không?",
+        "answer": "Công ty không được phép bắt thử việc đối với người lao động giao kết hợp đồng lao động có thời hạn dưới 01 tháng. Điều này có nghĩa là nếu hợp đồng của bạn chỉ có thời hạn 20 ngày, thì không thể áp dụng thử việc. [Nguồn 4: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8067427033499589,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.9516856758324898
+      },
+      {
+        "question": "Công ty bảo cứ làm 2 tháng rồi tính, không ký hợp đồng lao động bằng văn bản có được không?",
+        "answer": "Công ty không được phép chỉ yêu cầu làm việc 2 tháng mà không ký hợp đồng lao động bằng văn bản. Theo quy định, trước khi nhận người lao động vào làm việc, người sử dụng lao động phải giao kết hợp đồng lao động với người lao động [Nguồn 4: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]. Hợp đồng lao động phải được giao kết bằng văn bản, trừ trường hợp hợp đồng có thời hạn dưới 01 tháng có thể giao kết bằng lời nói [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-08-2023-tt-bldtbxh-sua-doi-thu-tuc-cu-tru.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.7628057337499002,
+        "context_recall": 0.6666666666666666,
+        "context_precision": 0.99999999998,
+        "average": 0.7323681000991418
+      },
+      {
+        "question": "Sếp nhắn bắt em tăng ca cuối tuần nhưng em không muốn. Công ty có quyền ép không?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-08-2023-tt-bldtbxh-sua-doi-thu-tuc-cu-tru.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.5,
+        "context_precision": 0.94999999997625,
+        "average": 0.36249999999406246
+      },
+      {
+        "question": "Làm thêm ngày thường, ngày nghỉ hằng tuần và ngày lễ thì được tính lương thế nào?",
+        "answer": "Người lao động làm thêm giờ được trả lương theo các mức sau:\n\n1. **Vào ngày thường**: Ít nhất bằng 150% tiền lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc. [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]\n\n2. **Vào ngày nghỉ hằng tuần**: Ít nhất bằng 200% tiền lương. [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]\n\n3. **Vào ngày nghỉ lễ, tết, hoặc ngày nghỉ có hưởng lương**: Ít nhất bằng 300% tiền lương, chưa kể tiền lương ngày lễ, tết, ngày nghỉ có hưởng lương đối với người lao động hưởng lương ngày. [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md",
+          "03_muc_luong_toi_thieu.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md"
+        ],
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.7835557823023588,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.8833889455705897
+      },
+      {
+        "question": "Công ty trả lương chậm hơn lịch đã hẹn 20 ngày thì em có quyền gì?",
+        "answer": "Nếu công ty trả lương chậm hơn lịch đã hẹn 20 ngày, em có quyền yêu cầu công ty bồi thường một khoản tiền ít nhất bằng số tiền lãi của số tiền trả chậm, tính theo lãi suất huy động tiền gửi có kỳ hạn 01 tháng do ngân hàng nơi công ty mở tài khoản trả lương công bố tại thời điểm trả lương [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.6666666666616666
+      },
+      {
+        "question": "Lương em đang nhận thấp hơn mức tối thiểu vùng thì có sao không?",
+        "answer": "Nếu lương bạn đang nhận thấp hơn mức lương tối thiểu vùng, điều này là vi phạm pháp luật. Mức lương tối thiểu tháng là mức lương thấp nhất làm cơ sở để thỏa thuận và trả lương đối với người lao động, và không được thấp hơn mức lương tối thiểu tháng theo quy định [Nguồn 3: 03_muc_luong_toi_thieu.md].",
+        "sources": [
+          "03_muc_luong_toi_thieu.md",
+          "03_muc_luong_toi_thieu.md",
+          "03_muc_luong_toi_thieu.md",
+          "03_muc_luong_toi_thieu.md",
+          "03_muc_luong_toi_thieu.md"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.5,
+        "context_precision": 0.94999999997625,
+        "average": 0.6124999999940625
+      },
+      {
+        "question": "Nếu em muốn nghỉ việc ở công ty hiện tại thì phải báo trước bao lâu?",
+        "answer": "Nếu bạn muốn nghỉ việc ở công ty hiện tại, thời gian báo trước phụ thuộc vào loại hợp đồng lao động của bạn:\n\n1. Nếu bạn có hợp đồng lao động không xác định thời hạn, bạn phải báo trước ít nhất 45 ngày [Nguồn 5: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].\n2. Nếu bạn có hợp đồng lao động xác định thời hạn từ 12 tháng đến 36 tháng, bạn phải báo trước ít nhất 30 ngày [Nguồn 5: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].\n3. Nếu bạn có hợp đồng lao động xác định thời hạn dưới 12 tháng, bạn chỉ cần báo trước ít nhất 03 ngày làm việc [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.749999999995
+      },
+      {
+        "question": "Khi nghỉ việc, em sẽ được công ty thanh toán những khoản gì?",
+        "answer": "Khi nghỉ việc, bạn sẽ được công ty thanh toán các khoản sau:\n\n1. **Tiền lương cho những ngày làm việc chưa được thanh toán**: Đây là khoản tiền mà mọi người lao động khi nghỉ việc đều được nhận, nếu tại thời điểm nghỉ việc doanh nghiệp vẫn chưa thanh toán tiền lương cho những ngày họ đã làm việc. Theo Điều 48 Bộ Luật Lao động năm 2019, trong thời hạn 14 ngày làm việc kể từ ngày chấm dứt hợp đồng lao động, người sử dụng lao động có trách nhiệm thanh toán đầy đủ các khoản tiền liên quan đến quyền lợi của người lao động (trong đó có tiền lương) [Nguồn 5: 01_quyen_loi_khi_nghi_viec.md]. \n\nCác khoản tiền khác có thể nhận được tùy thuộc vào từng trường hợp cụ thể, nhưng thông tin chi tiết về các khoản này không được cung cấp trong context hiện có.",
+        "sources": [
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999666667,
+        "average": 0.7499999999916667
+      },
+      {
+        "question": "Công ty cắt giảm nhân sự vì tái cấu trúc thì em có được nhận trợ cấp gì không?",
+        "answer": "Nếu công ty cắt giảm nhân sự do tái cấu trúc, bạn có thể nhận được trợ cấp mất việc làm. Điều này áp dụng khi bạn nghỉ việc do người sử dụng lao động cho thôi việc vì lý do thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế, chia, tách, hợp nhất, sáp nhập; bán, cho thuê, chuyển đổi loại hình; chuyển nhượng quyền sở hữu, quyền sử dụng tài sản. Để đủ điều kiện nhận trợ cấp, bạn cần đã làm việc thường xuyên cho người sử dụng lao động từ đủ 12 tháng trở lên [Nguồn 5: 01_quyen_loi_khi_nghi_viec.md].",
+        "sources": [
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-08-2023-tt-bldtbxh-sua-doi-thu-tuc-cu-tru.md",
+          "thong-tu-08-2023-tt-bldtbxh-sua-doi-thu-tuc-cu-tru.md"
+        ],
+        "faithfulness": 0.5714285714285714,
+        "answer_relevancy": 0.7347409867675676,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999666667,
+        "average": 0.8265423895407014
+      },
+      {
+        "question": "Sếp nói sẽ sa thải em vì đi muộn nhiều lần, điều đó có hợp pháp không?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "sources": [
+          "thong-tu-11-2020-tt-bldtbxh-nghe-nang-nhoc-phan-2.md",
+          "thong-tu-11-2020-tt-bldtbxh-nghe-nang-nhoc-phan-1.md",
+          "thong-tu-11-2020-tt-bldtbxh-nghe-nang-nhoc-phan-1.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.0,
+        "context_precision": 0.32499999998375,
+        "average": 0.0812499999959375
+      },
+      {
+        "question": "Em làm ở công ty tư nhân, bao nhiêu tuổi thì được nghỉ hưu?",
+        "answer": "Tuổi nghỉ hưu của người lao động trong điều kiện lao động bình thường được điều chỉnh theo lộ trình. Cụ thể, lao động nam sẽ đủ 62 tuổi vào năm 2028 và lao động nữ sẽ đủ 60 tuổi vào năm 2035. Từ năm 2021, tuổi nghỉ hưu là 60 tuổi 03 tháng đối với lao động nam và 55 tuổi 04 tháng đối với lao động nữ; sau đó, mỗi năm sẽ tăng thêm 03 tháng đối với lao động nam và 04 tháng đối với lao động nữ [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "sources": [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8455477272836046,
+        "context_recall": 0.5,
+        "context_precision": 0.8333333332916666,
+        "average": 0.7947202651438178
+      },
+      {
+        "question": "Nếu em nghỉ việc mà còn phép năm chưa dùng hết thì công ty có phải trả tiền không?",
+        "answer": "Nếu bạn nghỉ việc mà còn phép năm chưa dùng hết, công ty phải thanh toán tiền lương cho những ngày chưa nghỉ phép năm. Điều này được quy định trong khoản 3 Điều 113 Bộ Luật Lao động 2019, nêu rõ rằng \"trường hợp do thôi việc, bị mất việc làm mà chưa nghỉ hằng năm hoặc chưa nghỉ hết số ngày nghỉ hằng năm thì được người sử dụng lao động thanh toán tiền lương cho những ngày chưa nghỉ\" [Nguồn 1: 01_quyen_loi_khi_nghi_viec.md].",
+        "sources": [
+          "01_quyen_loi_khi_nghi_viec.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "01_quyen_loi_khi_nghi_viec.md"
+        ],
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.499999999995
+      },
+      {
+        "question": "Tiền lương làm căn cứ đóng bảo hiểm xã hội gồm những khoản nào?",
+        "answer": "Tiền lương làm căn cứ đóng bảo hiểm xã hội bao gồm các khoản sau:\n\n1. Đối với người lao động thuộc chế độ tiền lương do Nhà nước quy định:\n   - Tiền lương tháng theo chức vụ, chức danh, ngạch, bậc, cấp bậc quân hàm.\n   - Các khoản phụ cấp chức vụ, phụ cấp thâm niên vượt khung, phụ cấp thâm niên nghề, hệ số chênh lệch bảo lưu lương (nếu có) [Nguồn 4: 04_can_cu_ty_le_dong_bhxh.md].\n\n2. Đối với người lao động thuộc chế độ tiền lương do người sử dụng lao động quyết định:\n   - Tiền lương tháng, bao gồm mức lương theo công việc hoặc chức danh.\n   - Phụ cấp lương và các khoản bổ sung khác được thỏa thuận trả thường xuyên, ổn định trong mỗi kỳ trả lương [Nguồn 5: 04_can_cu_ty_le_dong_bhxh.md].",
+        "sources": [
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7846693601114915,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998,
+        "average": 0.9461673400228728
+      },
+      {
+        "question": "Nếu em bị ốm dài ngày thì chế độ bảo hiểm xã hội được tính thế nào?",
+        "answer": "Nếu bạn bị ốm dài ngày, chế độ bảo hiểm xã hội sẽ được tính dựa trên tỷ lệ đóng bảo hiểm xã hội vào quỹ ốm đau. Cụ thể, tỷ lệ đóng bảo hiểm xã hội bắt buộc cho quỹ ốm đau và thai sản là 3% tiền lương làm căn cứ đóng bảo hiểm xã hội [Nguồn 5: 04_can_cu_ty_le_dong_bhxh.md].",
+        "sources": [
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "thong-tu-08-2023-tt-bldtbxh-sua-doi-thu-tuc-cu-tru.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "05_che_do_om_dau_dai_ngay.md"
+        ],
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.9166666666361111,
+        "average": 0.47916666665902774
+      }
+    ],
+    "predictions": {
+      "question": [
+        "Em vừa tốt nghiệp đại học, đi làm vị trí marketing và công ty muốn thử việc 60 ngày. Như vậy có đúng luật không?",
+        "Nếu em làm hợp đồng chỉ 20 ngày thì công ty có được bắt thử việc không?",
+        "Công ty bảo cứ làm 2 tháng rồi tính, không ký hợp đồng lao động bằng văn bản có được không?",
+        "Sếp nhắn bắt em tăng ca cuối tuần nhưng em không muốn. Công ty có quyền ép không?",
+        "Làm thêm ngày thường, ngày nghỉ hằng tuần và ngày lễ thì được tính lương thế nào?",
+        "Công ty trả lương chậm hơn lịch đã hẹn 20 ngày thì em có quyền gì?",
+        "Lương em đang nhận thấp hơn mức tối thiểu vùng thì có sao không?",
+        "Nếu em muốn nghỉ việc ở công ty hiện tại thì phải báo trước bao lâu?",
+        "Khi nghỉ việc, em sẽ được công ty thanh toán những khoản gì?",
+        "Công ty cắt giảm nhân sự vì tái cấu trúc thì em có được nhận trợ cấp gì không?",
+        "Sếp nói sẽ sa thải em vì đi muộn nhiều lần, điều đó có hợp pháp không?",
+        "Em làm ở công ty tư nhân, bao nhiêu tuổi thì được nghỉ hưu?",
+        "Nếu em nghỉ việc mà còn phép năm chưa dùng hết thì công ty có phải trả tiền không?",
+        "Tiền lương làm căn cứ đóng bảo hiểm xã hội gồm những khoản nào?",
+        "Nếu em bị ốm dài ngày thì chế độ bảo hiểm xã hội được tính thế nào?"
+      ],
+      "answer": [
+        "Công ty muốn thử việc em 60 ngày là đúng luật, vì theo quy định, thời gian thử việc cho công việc có chức danh nghề nghiệp cần trình độ chuyên môn, kỹ thuật từ cao đẳng trở lên không quá 60 ngày [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "Công ty không được phép bắt thử việc đối với người lao động giao kết hợp đồng lao động có thời hạn dưới 01 tháng. Điều này có nghĩa là nếu hợp đồng của bạn chỉ có thời hạn 20 ngày, thì không thể áp dụng thử việc. [Nguồn 4: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]",
+        "Công ty không được phép chỉ yêu cầu làm việc 2 tháng mà không ký hợp đồng lao động bằng văn bản. Theo quy định, trước khi nhận người lao động vào làm việc, người sử dụng lao động phải giao kết hợp đồng lao động với người lao động [Nguồn 4: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]. Hợp đồng lao động phải được giao kết bằng văn bản, trừ trường hợp hợp đồng có thời hạn dưới 01 tháng có thể giao kết bằng lời nói [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "Người lao động làm thêm giờ được trả lương theo các mức sau:\n\n1. **Vào ngày thường**: Ít nhất bằng 150% tiền lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc. [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]\n\n2. **Vào ngày nghỉ hằng tuần**: Ít nhất bằng 200% tiền lương. [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]\n\n3. **Vào ngày nghỉ lễ, tết, hoặc ngày nghỉ có hưởng lương**: Ít nhất bằng 300% tiền lương, chưa kể tiền lương ngày lễ, tết, ngày nghỉ có hưởng lương đối với người lao động hưởng lương ngày. [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md]",
+        "Nếu công ty trả lương chậm hơn lịch đã hẹn 20 ngày, em có quyền yêu cầu công ty bồi thường một khoản tiền ít nhất bằng số tiền lãi của số tiền trả chậm, tính theo lãi suất huy động tiền gửi có kỳ hạn 01 tháng do ngân hàng nơi công ty mở tài khoản trả lương công bố tại thời điểm trả lương [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "Nếu lương bạn đang nhận thấp hơn mức lương tối thiểu vùng, điều này là vi phạm pháp luật. Mức lương tối thiểu tháng là mức lương thấp nhất làm cơ sở để thỏa thuận và trả lương đối với người lao động, và không được thấp hơn mức lương tối thiểu tháng theo quy định [Nguồn 3: 03_muc_luong_toi_thieu.md].",
+        "Nếu bạn muốn nghỉ việc ở công ty hiện tại, thời gian báo trước phụ thuộc vào loại hợp đồng lao động của bạn:\n\n1. Nếu bạn có hợp đồng lao động không xác định thời hạn, bạn phải báo trước ít nhất 45 ngày [Nguồn 5: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].\n2. Nếu bạn có hợp đồng lao động xác định thời hạn từ 12 tháng đến 36 tháng, bạn phải báo trước ít nhất 30 ngày [Nguồn 5: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].\n3. Nếu bạn có hợp đồng lao động xác định thời hạn dưới 12 tháng, bạn chỉ cần báo trước ít nhất 03 ngày làm việc [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "Khi nghỉ việc, bạn sẽ được công ty thanh toán các khoản sau:\n\n1. **Tiền lương cho những ngày làm việc chưa được thanh toán**: Đây là khoản tiền mà mọi người lao động khi nghỉ việc đều được nhận, nếu tại thời điểm nghỉ việc doanh nghiệp vẫn chưa thanh toán tiền lương cho những ngày họ đã làm việc. Theo Điều 48 Bộ Luật Lao động năm 2019, trong thời hạn 14 ngày làm việc kể từ ngày chấm dứt hợp đồng lao động, người sử dụng lao động có trách nhiệm thanh toán đầy đủ các khoản tiền liên quan đến quyền lợi của người lao động (trong đó có tiền lương) [Nguồn 5: 01_quyen_loi_khi_nghi_viec.md]. \n\nCác khoản tiền khác có thể nhận được tùy thuộc vào từng trường hợp cụ thể, nhưng thông tin chi tiết về các khoản này không được cung cấp trong context hiện có.",
+        "Nếu công ty cắt giảm nhân sự do tái cấu trúc, bạn có thể nhận được trợ cấp mất việc làm. Điều này áp dụng khi bạn nghỉ việc do người sử dụng lao động cho thôi việc vì lý do thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế, chia, tách, hợp nhất, sáp nhập; bán, cho thuê, chuyển đổi loại hình; chuyển nhượng quyền sở hữu, quyền sử dụng tài sản. Để đủ điều kiện nhận trợ cấp, bạn cần đã làm việc thường xuyên cho người sử dụng lao động từ đủ 12 tháng trở lên [Nguồn 5: 01_quyen_loi_khi_nghi_viec.md].",
+        "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "Tuổi nghỉ hưu của người lao động trong điều kiện lao động bình thường được điều chỉnh theo lộ trình. Cụ thể, lao động nam sẽ đủ 62 tuổi vào năm 2028 và lao động nữ sẽ đủ 60 tuổi vào năm 2035. Từ năm 2021, tuổi nghỉ hưu là 60 tuổi 03 tháng đối với lao động nam và 55 tuổi 04 tháng đối với lao động nữ; sau đó, mỗi năm sẽ tăng thêm 03 tháng đối với lao động nam và 04 tháng đối với lao động nữ [Nguồn 1: bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md].",
+        "Nếu bạn nghỉ việc mà còn phép năm chưa dùng hết, công ty phải thanh toán tiền lương cho những ngày chưa nghỉ phép năm. Điều này được quy định trong khoản 3 Điều 113 Bộ Luật Lao động 2019, nêu rõ rằng \"trường hợp do thôi việc, bị mất việc làm mà chưa nghỉ hằng năm hoặc chưa nghỉ hết số ngày nghỉ hằng năm thì được người sử dụng lao động thanh toán tiền lương cho những ngày chưa nghỉ\" [Nguồn 1: 01_quyen_loi_khi_nghi_viec.md].",
+        "Tiền lương làm căn cứ đóng bảo hiểm xã hội bao gồm các khoản sau:\n\n1. Đối với người lao động thuộc chế độ tiền lương do Nhà nước quy định:\n   - Tiền lương tháng theo chức vụ, chức danh, ngạch, bậc, cấp bậc quân hàm.\n   - Các khoản phụ cấp chức vụ, phụ cấp thâm niên vượt khung, phụ cấp thâm niên nghề, hệ số chênh lệch bảo lưu lương (nếu có) [Nguồn 4: 04_can_cu_ty_le_dong_bhxh.md].\n\n2. Đối với người lao động thuộc chế độ tiền lương do người sử dụng lao động quyết định:\n   - Tiền lương tháng, bao gồm mức lương theo công việc hoặc chức danh.\n   - Phụ cấp lương và các khoản bổ sung khác được thỏa thuận trả thường xuyên, ổn định trong mỗi kỳ trả lương [Nguồn 5: 04_can_cu_ty_le_dong_bhxh.md].",
+        "Nếu bạn bị ốm dài ngày, chế độ bảo hiểm xã hội sẽ được tính dựa trên tỷ lệ đóng bảo hiểm xã hội vào quỹ ốm đau. Cụ thể, tỷ lệ đóng bảo hiểm xã hội bắt buộc cho quỹ ốm đau và thai sản là 3% tiền lương làm căn cứ đóng bảo hiểm xã hội [Nguồn 5: 04_can_cu_ty_le_dong_bhxh.md]."
+      ],
+      "contexts": [
+        [
+          "động có thời hạn dưới 01 tháng.\n\nĐiều 25. Thời gian thử việc\n\nThời gian thử việc do hai bên thỏa thuận căn cứ vào tính chất và mức độ\nphức tạp của công việc nhưng chỉ được thử việc một lần đối với một công việc và\nbảo đảm điều kiện sau đây:\n\n1. Không quá 180 ngày đối với công việc của người quản lý doanh nghiệp\ntheo quy định của Luật Doanh nghiệp, Luật Quản lý, sử dụng vốn nhà nước đầu\ntư vào sản xuất, kinh doanh tại doanh nghiệp;\n\n2. Không quá 60 ngày đối với công việc có chức danh nghề nghiệp cần trình\n\nđộ chuyên môn, kỹ thuật từ cao đẳng trở lên;\n\n3. Không quá 30 ngày đối với công việc có chức danh nghề nghiệp cần trình\n\nđộ chuyên môn, kỹ thuật trung cấp, công nhân kỹ thuật, nhân viên nghiệp vụ;\n\n4. Không quá 06 ngày làm việc đối với công việc khác.\n\nĐiều 26. Tiền lương thử việc",
+          "e) Người lao động tự ý bỏ việc mà không có lý do chính đáng từ 05 ngày làm\n\nviệc liên tục trở lên;\n\ng) Người lao động cung cấp không trung thực thông tin theo quy định tại\nkhoản 2 Điều 16 của Bộ luật này khi giao kết hợp đồng lao động làm ảnh hưởng\nđến việc tuyển dụng người lao động.\n\n2. Khi đơn phương chấm dứt hợp đồng lao động trong trường hợp quy định\ntại các điểm a, b, c, đ và g khoản 1 Điều này, người sử dụng lao động phải báo\ntrước cho người lao động như sau:\n\na) Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn;\n\nb) Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn có thời hạn\n\ntừ 12 tháng đến 36 tháng;\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n38",
+          "4. Không quá 06 ngày làm việc đối với công việc khác.\n\nĐiều 26. Tiền lương thử việc\n\nTiền lương của người lao động trong thời gian thử việc do hai bên thỏa thuận\n\nnhưng ít nhất phải bằng 85% mức lương của công việc đó.\n\nĐiều 27. Kết thúc thời gian thử việc\n\n1. Khi kết thúc thời gian thử việc, người sử dụng lao động phải thông báo\n\nkết quả thử việc cho người lao động.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n33\n\nTrường hợp thử việc đạt yêu cầu thì người sử dụng lao động tiếp tục thực\nhiện hợp đồng lao động đã giao kết đối với trường hợp thỏa thuận thử việc trong\nhợp đồng lao động hoặc phải giao kết hợp đồng lao động đối với trường hợp giao\nkết hợp đồng thử việc.\n\nTrường hợp thử việc không đạt yêu cầu thì chấm dứt hợp đồng lao động đã\n\ngiao kết hoặc hợp đồng thử việc.",
+          "2. Thời hạn tạm đình chỉ công việc không được quá 15 ngày, trường hợp đặc\nbiệt không được quá 90 ngày. Trong thời gian bị tạm đình chỉ công việc, người lao\nđộng được tạm ứng 50% tiền lương trước khi bị đình chỉ công việc.\n\nHết thời hạn tạm đình chỉ công việc, người sử dụng lao động phải nhận người\n\nlao động trở lại làm việc.\n\n3. Trường hợp người lao động bị xử lý kỷ luật lao động, người lao động cũng\n\nkhông phải trả lại số tiền lương đã tạm ứng.\n\n4. Trường hợp người lao động không bị xử lý kỷ luật lao động thì được người\n\nsử dụng lao động trả đủ tiền lương cho thời gian bị tạm đình chỉ công việc.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n72\n\nMục 2\nTRÁCH NHIỆM VẬT CHẤT\n\nĐiều 129. Bồi thường thiệt hại",
+          "đáp ứng đầy đủ các yêu cầu sau đây:\n\na) Phải được sự đồng ý của người lao động;\n\nb) Bảo đảm số giờ làm thêm của người lao động không quá 50% số giờ làm\nviệc bình thường trong 01 ngày; trường hợp áp dụng quy định thời giờ làm việc\nbình thường theo tuần thì tổng số giờ làm việc bình thường và số giờ làm thêm\nkhông quá 12 giờ trong 01 ngày; không quá 40 giờ trong 01 tháng;\n\nc) Bảo đảm số giờ làm thêm của người lao động không quá 200 giờ trong 01\n\nnăm, trừ trường hợp quy định tại khoản 3 Điều này.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n64\n\n3. Người sử dụng lao động được sử dụng người lao động làm thêm không\nquá 300 giờ trong 01 năm trong một số ngành, nghề, công việc hoặc trường hợp\nsau đây:\n\na) Sản xuất, gia công xuất khẩu sản phẩm hàng dệt, may, da, giày, điện, điện"
+        ],
+        [
+          "động có thời hạn dưới 01 tháng.\n\nĐiều 25. Thời gian thử việc\n\nThời gian thử việc do hai bên thỏa thuận căn cứ vào tính chất và mức độ\nphức tạp của công việc nhưng chỉ được thử việc một lần đối với một công việc và\nbảo đảm điều kiện sau đây:\n\n1. Không quá 180 ngày đối với công việc của người quản lý doanh nghiệp\ntheo quy định của Luật Doanh nghiệp, Luật Quản lý, sử dụng vốn nhà nước đầu\ntư vào sản xuất, kinh doanh tại doanh nghiệp;\n\n2. Không quá 60 ngày đối với công việc có chức danh nghề nghiệp cần trình\n\nđộ chuyên môn, kỹ thuật từ cao đẳng trở lên;\n\n3. Không quá 30 ngày đối với công việc có chức danh nghề nghiệp cần trình\n\nđộ chuyên môn, kỹ thuật trung cấp, công nhân kỹ thuật, nhân viên nghiệp vụ;\n\n4. Không quá 06 ngày làm việc đối với công việc khác.\n\nĐiều 26. Tiền lương thử việc",
+          "e) Người lao động tự ý bỏ việc mà không có lý do chính đáng từ 05 ngày làm\n\nviệc liên tục trở lên;\n\ng) Người lao động cung cấp không trung thực thông tin theo quy định tại\nkhoản 2 Điều 16 của Bộ luật này khi giao kết hợp đồng lao động làm ảnh hưởng\nđến việc tuyển dụng người lao động.\n\n2. Khi đơn phương chấm dứt hợp đồng lao động trong trường hợp quy định\ntại các điểm a, b, c, đ và g khoản 1 Điều này, người sử dụng lao động phải báo\ntrước cho người lao động như sau:\n\na) Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn;\n\nb) Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn có thời hạn\n\ntừ 12 tháng đến 36 tháng;\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n38",
+          "người lao động vẫn tiếp tục làm việc thì thực hiện như sau:\n\na) Trong thời hạn 30 ngày kể từ ngày hợp đồng lao động hết hạn, hai bên\nphải ký kết hợp đồng lao động mới; trong thời gian chưa ký kết hợp đồng lao động\nmới thì quyền, nghĩa vụ và lợi ích của hai bên được thực hiện theo hợp đồng đã\ngiao kết;\n\nb) Nếu hết thời hạn 30 ngày kể từ ngày hợp đồng lao động hết hạn mà hai bên\nkhông ký kết hợp đồng lao động mới thì hợp đồng đã giao kết theo quy định tại điểm\nb khoản 1 Điều này trở thành hợp đồng lao động không xác định thời hạn;",
+          "Trường hợp phụ lục hợp đồng lao động sửa đổi, bổ sung một số điều, khoản\ncủa hợp đồng lao động thì phải ghi rõ nội dung điều, khoản sửa đổi, bổ sung và\nthời điểm có hiệu lực.\n\nĐiều 23. Hiệu lực của hợp đồng lao động\n\nHợp đồng lao động có hiệu lực kể từ ngày hai bên giao kết, trừ trường hợp\n\nhai bên có thỏa thuận hoặc pháp luật có quy định khác.\n\nĐiều 24. Thử việc\n\n1. Người sử dụng lao động và người lao động có thể thỏa thuận nội dung thử\nviệc ghi trong hợp đồng lao động hoặc thỏa thuận về thử việc bằng việc giao kết\nhợp đồng thử việc.\n\n2. Nội dung chủ yếu của hợp đồng thử việc gồm thời gian thử việc và nội\n\ndung quy định tại các điểm a, b, c, đ, g và h khoản 1 Điều 21 của Bộ luật này.\n\n3. Không áp dụng thử việc đối với người lao động giao kết hợp đồng lao\n\nđộng có thời hạn dưới 01 tháng.",
+          "Điều 20. Loại hợp đồng lao động\n\n1. Hợp đồng lao động phải được giao kết theo một trong các loại sau đây:\n\na) Hợp đồng lao động không xác định thời hạn là hợp đồng mà trong đó hai\n\nbên không xác định thời hạn, thời điểm chấm dứt hiệu lực của hợp đồng;\n\nb) Hợp đồng lao động xác định thời hạn là hợp đồng mà trong đó hai bên xác\nđịnh thời hạn, thời điểm chấm dứt hiệu lực của hợp đồng trong thời gian không\nquá 36 tháng kể từ thời điểm có hiệu lực của hợp đồng.\n\n2. Khi hợp đồng lao động quy định tại điểm b khoản 1 Điều này hết hạn mà\n\nngười lao động vẫn tiếp tục làm việc thì thực hiện như sau:"
+        ],
+        [
+          "2. Hai bên có thể giao kết hợp đồng lao động bằng lời nói đối với hợp đồng\ncó thời hạn dưới 01 tháng, trừ trường hợp quy định tại khoản 2 Điều 18, điểm a\nkhoản 1 Điều 145 và khoản 1 Điều 162 của Bộ luật này.\n\nĐiều 15. Nguyên tắc giao kết hợp đồng lao động\n\n1. Tự nguyện, bình đẳng, thiện chí, hợp tác và trung thực.\n\n2. Tự do giao kết hợp đồng lao động nhưng không được trái pháp luật, thỏa\n\nước lao động tập thể và đạo đức xã hội.\n\nĐiều 16. Nghĩa vụ cung cấp thông tin khi giao kết hợp đồng lao động\n\n1. Người sử dụng lao động phải cung cấp thông tin trung thực cho người lao\nđộng về công việc, địa điểm làm việc, điều kiện làm việc, thời giờ làm việc, thời\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n29",
+          "e) Người lao động tự ý bỏ việc mà không có lý do chính đáng từ 05 ngày làm\n\nviệc liên tục trở lên;\n\ng) Người lao động cung cấp không trung thực thông tin theo quy định tại\nkhoản 2 Điều 16 của Bộ luật này khi giao kết hợp đồng lao động làm ảnh hưởng\nđến việc tuyển dụng người lao động.\n\n2. Khi đơn phương chấm dứt hợp đồng lao động trong trường hợp quy định\ntại các điểm a, b, c, đ và g khoản 1 Điều này, người sử dụng lao động phải báo\ntrước cho người lao động như sau:\n\na) Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn;\n\nb) Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn có thời hạn\n\ntừ 12 tháng đến 36 tháng;\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n38",
+          "2. Tôi đăng ký Hợp đồng lao động trực tiếp giao kết đi làm việc tại...................\nký ngày....../....../...... với:\n- Người sử dụng lao động:....................................................................................\n- Địa chỉ:...............................................................................................................\n- Điện thoại..........................................; email:.....................................................\n3. Thông tin về việc làm ở nước ngoài:\n- Ngành, nghề, công việc:.....................................................................................\n- Thời hạn của hợp đồng:......................................................................................",
+          "Trường hợp hai bên thỏa thuận bằng tên gọi khác nhưng có nội dung thể hiện\nvề việc làm có trả công, tiền lương và sự quản lý, điều hành, giám sát của một bên\nthì được coi là hợp đồng lao động.\n\n2. Trước khi nhận người lao động vào làm việc thì người sử dụng lao động\n\nphải giao kết hợp đồng lao động với người lao động.\n\nĐiều 14. Hình thức hợp đồng lao động\n\n1. Hợp đồng lao động phải được giao kết bằng văn bản và được làm thành\n02 bản, người lao động giữ 01 bản, người sử dụng lao động giữ 01 bản, trừ trường\nhợp quy định tại khoản 2 Điều này.\n\nHợp đồng lao động được giao kết thông qua phương tiện điện tử dưới hình\nthức thông điệp dữ liệu theo quy định của pháp luật về giao dịch điện tử có giá trị\nnhư hợp đồng lao động bằng văn bản.",
+          "người lao động vẫn tiếp tục làm việc thì thực hiện như sau:\n\na) Trong thời hạn 30 ngày kể từ ngày hợp đồng lao động hết hạn, hai bên\nphải ký kết hợp đồng lao động mới; trong thời gian chưa ký kết hợp đồng lao động\nmới thì quyền, nghĩa vụ và lợi ích của hai bên được thực hiện theo hợp đồng đã\ngiao kết;\n\nb) Nếu hết thời hạn 30 ngày kể từ ngày hợp đồng lao động hết hạn mà hai bên\nkhông ký kết hợp đồng lao động mới thì hợp đồng đã giao kết theo quy định tại điểm\nb khoản 1 Điều này trở thành hợp đồng lao động không xác định thời hạn;"
+        ],
+        [
+          "3. Khi một bên cho rằng bên kia thực hiện không đầy đủ hoặc vi phạm thỏa\nước lao động tập thể thì có quyền yêu cầu thi hành đúng thỏa ước lao động tập thể\nvà các bên có trách nhiệm cùng xem xét giải quyết; nếu không giải quyết được,\nmỗi bên đều có quyền yêu cầu giải quyết tranh chấp lao động tập thể theo quy\nđịnh của pháp luật.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n56\n\nĐiều 80. Thực hiện thỏa ước lao động tập thể doanh nghiệp trong trường\nhợp chia, tách, hợp nhất, sáp nhập; bán, cho thuê, chuyển đổi loại hình doanh\nnghiệp; chuyển nhượng quyền sở hữu, quyền sử dụng tài sản của doanh nghiệp",
+          "3. Mỗi bên thương lượng tập thể có quyền mời tổ chức đại diện cấp trên của\nmình cử người tham gia là đại diện thương lượng và bên kia không được từ chối.\nĐại diện thương lượng tập thể của mỗi bên không được vượt quá số lượng quy\nđịnh tại khoản 1 Điều này, trừ trường hợp được bên kia đồng ý.\n\nĐiều 70. Quy trình thương lượng tập thể tại doanh nghiệp\n\n1. Khi có yêu cầu thương lượng tập thể của tổ chức đại diện người lao động\ntại cơ sở có quyền yêu cầu thương lượng tập thể theo quy định tại Điều 68 của Bộ\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n51\n\nluật này hoặc yêu cầu của người sử dụng lao động thì bên nhận được yêu cầu\nkhông được từ chối việc thương lượng.\n\nTrong thời hạn 07 ngày làm việc kể từ ngày nhận được yêu cầu và nội dung",
+          "quyền đơn phương chấm dứt hợp đồng lao động\n\n1. Người lao động ốm đau hoặc bị tai nạn, bệnh nghề nghiệp đang điều trị,\nđiều dưỡng theo chỉ định của cơ sở khám bệnh, chữa bệnh có thẩm quyền, trừ\ntrường hợp quy định tại điểm b khoản 1 Điều 36 của Bộ luật này.\n\n2. Người lao động đang nghỉ hằng năm, nghỉ việc riêng và trường hợp nghỉ\n\nkhác được người sử dụng lao động đồng ý.\n\n3. Người lao động nữ mang thai; người lao động đang nghỉ thai sản hoặc\n\nnuôi con dưới 12 tháng tuổi.\n\nĐiều 38. Hủy bỏ việc đơn phương chấm dứt hợp đồng lao động\n\nMỗi bên đều có quyền hủy bỏ việc đơn phương chấm dứt hợp đồng lao động\ntrước khi hết thời hạn báo trước nhưng phải thông báo bằng văn bản và phải được\nbên kia đồng ý.\n\nĐiều 39. Đơn phương chấm dứt hợp đồng lao động trái pháp luật",
+          "cấp hàng tháng đối với  xung phong tại Thông tư liên tịch số\n|     | thanh niên xung phong  | 08/2012/TTLT-BLĐTBXH-BNV-BTC  |     |     |     |\n| --- | ---------------------- | ----------------------------- | --- | --- | --- |\nngày 16 tháng 4 năm 2012.",
+          "diện chủ sở hữu nhà nước đối với phần vốn nhà nước tại doanh nghiệp;\n\ng) Người lao động được ủy quyền để thực hiện quyền, trách nhiệm của doanh\n\nnghiệp đối với phần vốn của doanh nghiệp đầu tư tại doanh nghiệp khác;\n\nh) Trường hợp khác do hai bên thỏa thuận.\n\n2. Trong thời gian tạm hoãn thực hiện hợp đồng lao động, người lao động\nkhông được hưởng lương và quyền, lợi ích đã giao kết trong hợp đồng lao động,\ntrừ trường hợp hai bên có thỏa thuận hoặc pháp luật có quy định khác.\n\nĐiều 31. Nhận lại người lao động hết thời hạn tạm hoãn thực hiện hợp\n\nđồng lao động"
+        ],
+        [
+          "CÔNG BÁO/Số 131/Ngày 28-02-2026\n\n61\n\nĐiều 98. Tiền lương làm thêm giờ, làm việc vào ban đêm\n\n1. Người lao động làm thêm giờ được trả lương tính theo đơn giá tiền lương\n\nhoặc tiền lương thực trả theo công việc đang làm như sau:\n\na) Vào ngày thường, ít nhất bằng 150%;\n\nb) Vào ngày nghỉ hằng tuần, ít nhất bằng 200%;\n\nc) Vào ngày nghỉ lễ, tết, ngày nghỉ có hưởng lương, ít nhất bằng 300% chưa\nkể tiền lương ngày lễ, tết, ngày nghỉ có hưởng lương đối với người lao động hưởng\nlương ngày.\n\n2. Người lao động làm việc vào ban đêm thì được trả thêm ít nhất bằng 30%\ntiền lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc\ncủa ngày làm việc bình thường.",
+          "ngày nghỉ hằng tuần và nghỉ\ntrọn 11 ngày làm việc\n| Tháng 3  | 7   |     | 27  | 189  | Nghỉ 04 ngày nghỉ hằng tuần  |              |         |\n| -------- | --- | --- | --- | ---- | ---------------------------- | ------------ | ------- |\n| Tháng 4  | 7   |     | 24  | 168  | Nghỉ                         | ngày  Chiến  | thắng,  |\nngày Giỗ tổ Hùng Vương,\n04 ngày nghỉ hằng tuần\nTháng 5  11  giờ  từ  thứ  hai  đến 25  267  Nghỉ ngày Quốc tế lao động,\n|     | Thứ  Năm,  | 10  giờ  vào  |     |     | 05 ngày nghỉ hằng tuần  |     |     |\n| --- | ---------- | ------------- | --- | --- | ----------------------- | --- | --- |\nThứ Sáu, Thứ Bảy hằng\ntuần\nTháng 6  11  giờ  từ  thứ  hai  đến 26  282  Nghỉ 04 ngày nghỉ hằng tuần\n|     | Thứ  Sáu,  | 10  giờ  vào  |     |     |     |     |     |",
+          "3. Đối với người lao động áp dụng hình thức trả lương theo tuần hoặc theo ngày hoặc theo sản phẩm hoặc lương khoán thì mức lương của các hình thức trả lương này nếu quy đổi theo tháng hoặc theo giờ không được thấp hơn mức lương tối thiểu tháng hoặc mức lương tối thiểu giờ. Mức lương quy đổi theo tháng hoặc theo giờ trên cơ sở thời giờ làm việc bình thường do người sử dụng lao động lựa chọn theo quy định của pháp luật lao động như sau:\na) Mức lương quy đổi theo tháng bằng mức lương theo tuần nhân với 52 tuần chia cho 12 tháng; hoặc mức lương theo ngày nhân với số ngày làm việc bình thường trong tháng; hoặc mức lương theo sản phẩm, lương khoán thực hiện trong thời giờ làm việc bình thường trong tháng.",
+          "hằng tuần\n12  10 giờ tuần đầu tháng và 25  208  Nghỉ trọn 02 ngày 30, 31 và\n| 8 giờ vào ngày làm việc  |     |     | nghỉ 04 ngày nghỉ hằng tuần  |     |\n| ------------------------ | --- | --- | ---------------------------- | --- |\nkhác\n|   TỔNG  |     | 2320  |     |     |\n| ------- | --- | ----- | --- | --- |",
+          "| ----- | --- | --- | --- | ----------------------------- | --- | --- |\nngày nghỉ hằng tuần và nghỉ\ntrọn 11 ngày làm việc\n| 3  7  |     | 27  | 189  | Nghỉ 04 ngày nghỉ hằng tuần  |     |     |\n| ----- | --- | --- | ---- | ---------------------------- | --- | --- |\n| 4  7  |     | 24  | 168  | Nghỉ ngày Chiến thắng, ngày  |     |     |\nGiỗ tổ Hùng Vương, 04 ngày\nnghỉ hằng tuần\n5  11 giờ từ thứ hai đến thứ 25  267  Nghỉ ngày Quốc tế lao động,\n| năm, 10 giờ vào thứ sáu,  |     |     |     | 05 ngày nghỉ hằng tuần  |     |     |\n| ------------------------- | --- | --- | --- | ----------------------- | --- | --- |\nthứ bảy hằng tuần\n6  11 giờ từ thứ hai đến thứ 26  282  Nghỉ 04 ngày nghỉ hằng tuần\nnăm, 10 giờ vào thứ sáu,\nthứ bảy hằng tuần"
+        ],
+        [
+          "3. Người lao động hưởng lương theo sản phẩm, theo khoán được trả lương\ntheo thỏa thuận của hai bên; nếu công việc phải làm trong nhiều tháng thì hằng\ntháng được tạm ứng tiền lương theo khối lượng công việc đã làm trong tháng.\n\n4. Trường hợp vì lý do bất khả kháng mà người sử dụng lao động đã tìm mọi\nbiện pháp khắc phục nhưng không thể trả lương đúng hạn thì không được chậm\nquá 30 ngày; nếu trả lương chậm từ 15 ngày trở lên thì người sử dụng lao động\nphải đền bù cho người lao động một khoản tiền ít nhất bằng số tiền lãi của số tiền\ntrả chậm tính theo lãi suất huy động tiền gửi có kỳ hạn 01 tháng do ngân hàng nơi\nngười sử dụng lao động mở tài khoản trả lương cho người lao động công bố tại\nthời điểm trả lương.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n61",
+          "### 1.Tiền lương cho những ngày làm việc chưa được thanh toán\nĐây là khoản tiền mà mọi người lao động khi nghỉ việc đều được nhận, nếu tại thời điểm nghỉ việc doanh nghiệp vẫn chưa thanh toán tiền lương cho những ngày họ đã làm việc.\nTheo Điều 48 Bộ Luật Lao động năm 2019 trong thời hạn 14 ngày làm việc kể từ ngày chấm dứt hợp đồng lao động, người sử dụng lao động có trách nhiệm thanh toán đầy đủ các khoản tiền liên quan đến quyền lợi của người lao động (trong đó có tiền lương).\nHạn thanh toán này có thể kéo dài nhưng không quá 30 ngày trong các trường hợp đặc biệt như: Doanh nghiệp chấm dứt hoạt động; thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế; chia, tách, hợp nhất,…",
+          "2. Thời hạn tạm đình chỉ công việc không được quá 15 ngày, trường hợp đặc\nbiệt không được quá 90 ngày. Trong thời gian bị tạm đình chỉ công việc, người lao\nđộng được tạm ứng 50% tiền lương trước khi bị đình chỉ công việc.\n\nHết thời hạn tạm đình chỉ công việc, người sử dụng lao động phải nhận người\n\nlao động trở lại làm việc.\n\n3. Trường hợp người lao động bị xử lý kỷ luật lao động, người lao động cũng\n\nkhông phải trả lại số tiền lương đã tạm ứng.\n\n4. Trường hợp người lao động không bị xử lý kỷ luật lao động thì được người\n\nsử dụng lao động trả đủ tiền lương cho thời gian bị tạm đình chỉ công việc.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n72\n\nMục 2\nTRÁCH NHIỆM VẬT CHẤT\n\nĐiều 129. Bồi thường thiệt hại",
+          "3. Tiền lương để tính trợ cấp mất việc làm là tiền lương bình quân của 06\n\ntháng liền kề theo hợp đồng lao động trước khi người lao động mất việc làm.\n\n4. Chính phủ quy định chi tiết Điều này.\n\nĐiều 48. Trách nhiệm khi chấm dứt hợp đồng lao động\n\n1. Trong thời hạn 14 ngày làm việc kể từ ngày chấm dứt hợp đồng lao động,\nhai bên có trách nhiệm thanh toán đầy đủ các khoản tiền có liên quan đến quyền lợi\ncủa mỗi bên, trừ trường hợp sau đây có thể kéo dài nhưng không được quá 30 ngày:\n\na) Người sử dụng lao động không phải là cá nhân chấm dứt hoạt động;\n\nb) Người sử dụng lao động thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế;\n\nc) Chia, tách, hợp nhất, sáp nhập; bán, cho thuê, chuyển đổi loại hình doanh\nnghiệp; chuyển nhượng quyền sở hữu, quyền sử dụng tài sản của doanh nghiệp,\nhợp tác xã;",
+          "e) Người lao động tự ý bỏ việc mà không có lý do chính đáng từ 05 ngày làm\n\nviệc liên tục trở lên;\n\ng) Người lao động cung cấp không trung thực thông tin theo quy định tại\nkhoản 2 Điều 16 của Bộ luật này khi giao kết hợp đồng lao động làm ảnh hưởng\nđến việc tuyển dụng người lao động.\n\n2. Khi đơn phương chấm dứt hợp đồng lao động trong trường hợp quy định\ntại các điểm a, b, c, đ và g khoản 1 Điều này, người sử dụng lao động phải báo\ntrước cho người lao động như sau:\n\na) Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn;\n\nb) Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn có thời hạn\n\ntừ 12 tháng đến 36 tháng;\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n38"
+        ],
+        [
+          "[![Đề xuất khẩn trương tăng lương tối thiểu vùng từ tháng 7/2025; sớm tăng lương cho cán bộ, công chức; xây dựng bảng lương đặc thù cho ngành y tế](https://xdcs.cdnchinhphu.vn/thumb_w/300/446259493575335936/2025/6/18/thaithusuong-17502368415772007275078-26-0-446-672-crop-1750236917821390396366.jpg)](https://xaydungchinhsach.chinhphu.vn/de-xuat-khan-truong-tang-luong-toi-thieu-vung-tu-thang-7-2025-som-tang-luong-cho-can-bo-cong-chuc-xay-dung-bang-luong-dac-thu-cho-nganh-y-te-119250618160034552.htm)\n  * Tham khảo thêm\n#### [Đề xuất sửa danh mục địa bàn áp dụng mức lương tối thiểu vùng](https://xaydungchinhsach.chinhphu.vn/de-xuat-sua-danh-muc-dia-ban-ap-dung-muc-luong-toi-thieu-vung-119250506095301557.htm)",
+          "#### **Điều 4. Áp dụng mức lương tối thiểu**\n1. Mức lương tối thiểu tháng là mức lương thấp nhất làm cơ sở để thỏa thuận và trả lương đối với người lao động áp dụng hình thức trả lương theo tháng, bảo đảm mức lương theo công việc hoặc chức danh của người lao động làm việc đủ thời giờ làm việc bình thường trong tháng và hoàn thành định mức lao động hoặc công việc đã thỏa thuận không được thấp hơn mức lương tối thiểu tháng.\n2. Mức lương tối thiểu giờ là mức lương thấp nhất làm cơ sở để thỏa thuận và trả lương đối với người lao động áp dụng hình thức trả lương theo giờ, bảo đảm mức lương theo công việc hoặc chức danh của người lao động làm việc trong một giờ và hoàn thành định mức lao động hoặc công việc đã thỏa thuận không được thấp hơn mức lương tối thiểu giờ.",
+          "* Tham khảo thêm\n#### [Đề xuất khẩn trương tăng lương tối thiểu vùng từ tháng 7/2025; sớm tăng lương cho cán bộ, công chức; xây dựng bảng lương đặc thù cho ngành y tế](https://xaydungchinhsach.chinhphu.vn/de-xuat-khan-truong-tang-luong-toi-thieu-vung-tu-thang-7-2025-som-tang-luong-cho-can-bo-cong-chuc-xay-dung-bang-luong-dac-thu-cho-nganh-y-te-119250618160034552.htm)",
+          "[![Đề xuất sửa danh mục địa bàn áp dụng mức lương tối thiểu vùng](https://xdcs.cdnchinhphu.vn/thumb_w/300/446259493575335936/2025/5/6/luong-1746499830533114166279.jpg)](https://xaydungchinhsach.chinhphu.vn/de-xuat-sua-danh-muc-dia-ban-ap-dung-muc-luong-toi-thieu-vung-119250506095301557.htm)",
+          "## Áp dụng mức lương tối thiểu\nVề áp dụng mức lương tối thiểu, Nghị định quy định: Mức lương tối thiểu tháng là mức lương thấp nhất làm cơ sở để thỏa thuận và trả lương đối với người lao động áp dụng hình thức trả lương theo tháng, bảo đảm mức lương theo công việc hoặc chức danh của người lao động làm việc đủ thời giờ làm việc bình thường trong tháng và hoàn thành định mức lao động hoặc công việc đã thỏa thuận không được thấp hơn mức lương tối thiểu tháng."
+        ],
+        [
+          "b) Ít nhất 30 ngày nếu làm việc theo hợp đồng lao động xác định thời hạn có\n\nthời hạn từ 12 tháng đến 36 tháng;\n\nc) Ít nhất 03 ngày làm việc nếu làm việc theo hợp đồng lao động xác định\n\nthời hạn có thời hạn dưới 12 tháng;\n\nd) Đối với một số ngành, nghề, công việc đặc thù thì thời hạn báo trước được\n\nthực hiện theo quy định của Chính phủ.\n\n2. Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không\n\ncần báo trước trong trường hợp sau đây:\n\na) Không được bố trí theo đúng công việc, địa điểm làm việc hoặc không\nđược bảo đảm điều kiện làm việc theo thỏa thuận, trừ trường hợp quy định tại\nĐiều 29 của Bộ luật này;\n\nb) Không được trả đủ lương hoặc trả lương không đúng thời hạn, trừ trường\n\nhợp quy định tại khoản 4 Điều 97 của Bộ luật này;",
+          "e) Người lao động tự ý bỏ việc mà không có lý do chính đáng từ 05 ngày làm\n\nviệc liên tục trở lên;\n\ng) Người lao động cung cấp không trung thực thông tin theo quy định tại\nkhoản 2 Điều 16 của Bộ luật này khi giao kết hợp đồng lao động làm ảnh hưởng\nđến việc tuyển dụng người lao động.\n\n2. Khi đơn phương chấm dứt hợp đồng lao động trong trường hợp quy định\ntại các điểm a, b, c, đ và g khoản 1 Điều này, người sử dụng lao động phải báo\ntrước cho người lao động như sau:\n\na) Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn;\n\nb) Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn có thời hạn\n\ntừ 12 tháng đến 36 tháng;\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n38",
+          "từ 12 tháng đến 36 tháng;\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n38\n\nc) Ít nhất 03 ngày làm việc đối với hợp đồng lao động xác định thời hạn\ncó thời hạn dưới 12 tháng và đối với trường hợp quy định tại điểm b khoản 1\nĐiều này;\n\nd) Đối với một số ngành, nghề, công việc đặc thù thì thời hạn báo trước được\n\nthực hiện theo quy định của Chính phủ.\n\n3. Khi đơn phương chấm dứt hợp đồng lao động quy định tại điểm d và điểm\ne khoản 1 Điều này thì người sử dụng lao động không phải báo trước cho người\nlao động.\n\nĐiều  37.  Trường  hợp  người  sử  dụng  lao  động  không  được  thực  hiện\n\nquyền đơn phương chấm dứt hợp đồng lao động",
+          "Trường hợp đơn phương chấm dứt hợp đồng lao động hoặc tạm hoãn thực\nhiện hợp đồng lao động thì phải thông báo cho người sử dụng lao động kèm theo\nxác nhận của cơ sở khám bệnh, chữa bệnh có thẩm quyền về việc tiếp tục làm\nviệc sẽ ảnh hưởng xấu tới thai nhi.\n\n2. Trường hợp tạm hoãn thực hiện hợp đồng lao động, thời gian tạm hoãn\ndo người lao động thỏa thuận với người sử dụng lao động nhưng tối thiểu phải\nbằng thời gian do cơ sở khám bệnh, chữa bệnh có thẩm quyền chỉ định tạm nghỉ.\nTrường hợp không có chỉ định của cơ sở khám bệnh, chữa bệnh có thẩm quyền\nvề thời gian tạm nghỉ thì hai bên thỏa thuận về thời gian tạm hoãn thực hiện hợp\nđồng lao động.\n\nĐiều 139. Nghỉ thai sản",
+          "Trường hợp vi phạm quy định về thời hạn báo trước quy định tại khoản 2\nĐiều 36 của Bộ luật này thì phải trả một khoản tiền tương ứng với tiền lương theo\nhợp đồng lao động trong những ngày không báo trước.\n\n2. Trường hợp người lao động không muốn tiếp tục làm việc thì ngoài khoản\ntiền phải trả quy định tại khoản 1 Điều này người sử dụng lao động phải trả trợ\ncấp thôi việc theo quy định tại Điều 46 của Bộ luật này để chấm dứt hợp đồng\nlao động."
+        ],
+        [
+          "###  [ Người lao động nghỉ việc được nhận những khoản tiền nào? ](https://xaydungchinhsach.chinhphu.vn/nguoi-lao-dong-nghi-viec-duoc-nhan-nhung-khoan-tien-nao-119240509063307003.htm \"Người lao động nghỉ việc được nhận những khoản tiền nào?\")\n(Chinhphu.vn) - Theo Bộ Luật Lao động năm 2019 quy định chi tiết về các khoản tiền sẽ được nhận khi nghỉ việc để bảo vệ quyền lợi cho người lao động. \nGọi tổng đài \n![Chúng tôi luôn Lắng nghe và phản hồi](https://static.mediacdn.vn/XayDungChinhSachPhapLuat/web/images/image-feedback.png) Chúng tôi luôn Lắng nghe và phản hồi \nGọi đến 0964 96 66 88 tổng đài tiếp nhận các góp ý, đề xuất, hiến kế \nHoặc",
+          "### 1.Tiền lương cho những ngày làm việc chưa được thanh toán\nĐây là khoản tiền mà mọi người lao động khi nghỉ việc đều được nhận, nếu tại thời điểm nghỉ việc doanh nghiệp vẫn chưa thanh toán tiền lương cho những ngày họ đã làm việc.\nTheo Điều 48 Bộ Luật Lao động năm 2019 trong thời hạn 14 ngày làm việc kể từ ngày chấm dứt hợp đồng lao động, người sử dụng lao động có trách nhiệm thanh toán đầy đủ các khoản tiền liên quan đến quyền lợi của người lao động (trong đó có tiền lương).\nHạn thanh toán này có thể kéo dài nhưng không quá 30 ngày trong các trường hợp đặc biệt như: Doanh nghiệp chấm dứt hoạt động; thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế; chia, tách, hợp nhất,…",
+          "##  (Chinhphu.vn) - Theo Bộ Luật Lao động năm 2019 quy định chi tiết về các khoản tiền sẽ được nhận khi nghỉ việc để bảo vệ quyền lợi cho người lao động. \n![Người lao động nghỉ việc được nhận những khoản tiền nào?](https://xdcs.cdnchinhphu.vn/thumb_w/900/446259493575335936/2024/5/9/tien-17152111116371195952805-0-0-410-656-crop-17152111140262006711196.jpg)\nTheo Cổng Thông tin Công đoàn Việt Nam, căn cứ Bộ Luật Lao động 2019 và các văn bản pháp luật, người lao động khi nghỉ việc, tùy từng trường hợp cụ thể, có thể nhận được các khoản tiền dưới đây:",
+          "#  Người lao động nghỉ việc được nhận những khoản tiền nào? \n09/05/2024 08:27 \n![google news](https://static.mediacdn.vn/VTV/web/images/gg.png) [ Chia sẻ ](javascript:; \"Chia sẻ Facebook\")",
+          "Đóng\nGửi thông tin góp ý hiến kế \n[ ![Người lao động nghỉ việc được nhận những khoản tiền nào?](https://xdcs.cdnchinhphu.vn/zoom/200_125/446259493575335936/2024/5/9/tien-17152111116371195952805-0-0-410-656-crop-17152111140262006711196.jpg) ](https://xaydungchinhsach.chinhphu.vn/nguoi-lao-dong-nghi-viec-duoc-nhan-nhung-khoan-tien-nao-119240509063307003.htm \"Người lao động nghỉ việc được nhận những khoản tiền nào?\")"
+        ],
+        [
+          "## 2. Tiền trợ cấp thôi việc\nNgười lao động sẽ được chi trả trợ cấp thôi việc nếu đáp ứng đủ các điều kiện được quy định tại Điều 46 BLLĐ 2019. Các điều kiện đó là:\n– Nghỉ việc do chấm dứt hợp đồng lao động theo một trong các trường hợp:\n+ Hết hạn hợp đồng lao động, trừ trường gia hạn hợp đồng với người lao động là thành viên ban lãnh đạo của tổ chức đại diện người lao động tại cơ sở đang trong nhiệm kỳ.\n+ Đã hoàn thành công việc theo hợp đồng lao động.\n+ Hai bên thỏa thuận chấm dứt hợp đồng lao động.\n+ Người lao động bị kết án phạt tù nhưng không được hưởng án treo hoặc không thuộc trường hợp được trả tự do theo quy định, tử hình hoặc bị cấm làm công việc theo bản án, quyết định của Tòa án.\n+ Người lao động chết; bị tuyên bố mất năng lực hành vi dân sự, mất tích hoặc đã chết.",
+          "### 3. Trợ cấp mất việc làm\nTheo Điều 47 Bộ Luật Lao động năm 2019, người lao động nghỉ việc được trả trợ cấp mất việc làm khi có đủ các điều kiện:\n– Nghỉ việc do chấm dứt hợp đồng lao động theo trường hợp người sử dụng lao động cho người lao động thôi việc do thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế, chia, tách, hợp nhất, sáp nhập; bán, cho thuê, chuyển đổi loại hình; chuyển nhượng quyền sở hữu, quyền sử dụng tài sản.\n– Đã làm việc thường xuyên cho người sử dụng lao động từ đủ 12 tháng trở lên.\nNhư vậy, nếu đáp ứng điều kiện, người lao động sẽ được người sử dụng lao động thanh toán trợ cấp mất việc làm cho mỗi năm làm việc bằng 01 tháng tiền lương nhưng ít nhất phải bằng 02 tháng tiền lương. Cụ thể:",
+          "Điều 46. Trợ cấp thôi việc\n\n1. Khi hợp đồng lao động chấm dứt theo quy định tại các khoản 1, 2, 3, 4,\n6, 7, 9 và 10 Điều 34 của Bộ luật này thì người sử dụng lao động có trách nhiệm\ntrả trợ cấp thôi việc cho người lao động đã làm việc thường xuyên cho mình từ\nđủ 12 tháng trở lên, mỗi năm làm việc được trợ cấp một nửa tháng tiền lương,\ntrừ trường hợp đủ điều kiện hưởng lương hưu theo quy định của pháp luật về\nbảo hiểm xã hội và trường hợp quy định tại điểm e khoản 1 Điều 36 của Bộ\nluật này.",
+          "số 3B, Mẫu số 3C, Mẫu số 4A, Mẫu số 4B, Mẫu số 4C, Mẫu số 05 ban hành kèm\ntheo Thông tư liên tịch số 08/2012/TTLT-BLĐTBXH-BNV-BTC ngày 16 tháng 4\nnăm 2012 của Bộ Lao động - Thương binh và Xã hội, Bộ Nội vụ, Bộ Tài chính\nhướng dẫn thực hiện chế độ trợ cấp đối với thanh niên xung phong đã hoàn thành\nnhiệm vụ trong kháng chiến theo Quyết định số 40/2011/QĐ-TTg ngày 27 tháng 7\nnăm 2011 của Thủ tướng Chính phủ.\n2. Bãi bỏ một phần Thông tư liên lịch số 17/2014/TTLT-BLĐTBXH-BTC\nngày 01 tháng 8 năm 2014 của Bộ Lao động - Thương binh và Xã hội, Bộ Tài\nchính hướng dẫn thực hiện trợ cấp 01 lần đối với người được cử làm chuyên gia\nsang giúp Lào và Căm-pu-chi-a theo Quyết định số 57/2013/QĐ-TTg ngày 14\ntháng 10 năm 2013 của Thủ tướng Chính phủ như sau:",
+          "Đối tượng: Dân tộc thiểu số □ Hộ nghèo □ Hộ cận nghèo □\nHộ bị thu hồi đất nông nghiệp □ Thân nhân của người có công với cách mạng □\nTôi làm đơn này kính đề nghị quý Cơ quan hỗ trợ chi phí học nghề, ngoại ngữ\nvà các chi phí khác theo quy định tại Nghị định số 61/2015/NĐ-CP ngày\n09/7/2015 của Chính phủ để tham gia đi làm việc tại nước........................................\nTôi hiểu mọi quyền lợi được hỗ trợ khi tham gia chương trình và xin cam kết\nchấp hành nghiêm chỉnh mọi quy định của Nhà nước./.\n......, ngày... tháng... năm......\nNgười làm đơn\n(Ký tên và ghi rõ họ tên)\nXác nhận của Ủy ban nhân dân cấp xã/Chủ đầu tư (1)\nXác nhận ông (bà)............... thuộc đối tượng (2):...................... trong danh sách"
+        ],
+        [
+          ".nệyul gnun páhp gnơưhp gnằb cạb ,gnàv uẫm hcít nâhP\n|     |  cệiv gnôc cặoh ềhgn nêT |     |  cệiv gnôc cặoh ềhgn nêT |     |     |     |\n| --- | ------------------------ | --- | ------------------------ | --- | --- | --- |\n .tấhc aịđ uẫm gnáohk nểyut ,gnôc aiG\n .mầh gnort gnôc ủht pắl yâx nêyuhC\n .mầh gnort naohk yám hnàh nậV\n .mầh gnort pắl yâx ,gnôc iht ụv\n .tấhc aịđ naohk yám hnàh nậV\n .tấhc aịđ naohk ex iáL\n .mầh gnort nìm ổN\n .gnauq ồh\n|     |  TT   |          |  TT   |     |       |     |\n| --- | ----- | -------- | ----- | --- | ----- | --- |\n|     |  4  5 |  6  7  8 |  1    |  2  |  1  2 |  3  |",
+          ".tệihn páhp gnơưhp gnằb ,cớưn tấc yám hnàh nậV\n|     |     |  .gnôc ủht gnằb mêit gnố yẩv ,aửr ,oék ,ủ nêyuhC |     |     |     |  nảs |     |\n| --- | --- | ------------------------------------------------ | --- | --- | --- | ---- | --- |\n pệihgn\n mệihgn\n mẩhp\n|  cệiv gnôc cặoh ềhgn nêT |  .tộb gnạd ở hnis gnáhk nàh gnóđ ;gnôhk |     |     |      |     |     |     |\n| ------------------------ | --------------------------------------- | --- | --- | ---- | --- | --- | --- |\n|                          |                                         |     |     |  nảs |     |  íx |     |\n mểiK\n các\n các\n )...,mẩhp cợưd ,uệil cợưd ,uệil\n gnort\n .ýl\n|     |     |     |     |     |  .nâhn hnệb aủc…,mệđ ,iốg |  .ết y ịb tếiht gnart àv cợưd |     |",
+          "2\nOC àv nesa ưhn hnạm cộđ tấhc aóh iớv cúx pếit nêyux gnờưhT\n cệiv gnôc ,ềhgn aủc gnộđ oal nệik uềiđ mểiđ cặĐ\n .iốht iôh ,uỉht nẩb gnỡưd oảb ,aữhc aửs ihk ;íhk gnỡưd\n iụb aủc gnởưh hnả ,cọhn gnặn ,gnôc ủht cệiv gnôC\n .gnắn aưm ểk gnôhk cốd uềihn ,oac\n|     |     |  gnờưrt ừt nệiđ aủc gnởưh hnả |     |     |  nầl uềihn péhp ohc nẩuhc uêit |     |     |\n| --- | --- | ----------------------------- | --- | --- | ------------------------------ | --- | --- |\n nầl uềihn péhp ohc nẩuhc\n pạt cứhp cệiv gnôc uềihn\n|     |     |     |  VI iạol gnộđ oal nệik uềiĐ |  nầl uềihn péhp ohc |     |     |     |\n| --- | --- | --- | --------------------------- | ------------------- | --- | --- | --- |\n oac tấr\n ýl mât\n .cọhn",
+          "hiện các biện pháp tránh thai\n\nThời gian nghỉ việc khi chăm sóc con dưới 07 tuổi ốm đau, khám thai, sẩy\nthai, nạo, hút thai, thai chết lưu, phá thai bệnh lý, thực hiện các biện pháp tránh\nthai, triệt sản, người lao động được hưởng trợ cấp theo quy định của pháp luật về\nbảo hiểm xã hội.\n\nĐiều 142. Nghề, công việc có ảnh hưởng xấu tới chức năng sinh sản và\n\nnuôi con\n\n1. Bộ  trưởng Bộ  Lao động  - Thương binh và  Xã hội ban hành danh mục\n\nnghề, công việc có ảnh hưởng xấu tới chức năng sinh sản và nuôi con.",
+          "thương lượng, ký kết thỏa ước lao động tập thể.\n\n2. Trường hợp quy định của pháp luật thay đổi dẫn đến thỏa ước lao động\ntập thể không còn phù hợp với quy định của pháp luật thì các bên phải tiến hành\nsửa đổi, bổ sung thỏa ước lao động tập thể cho phù hợp với quy định của pháp\nluật. Trong thời gian tiến hành sửa đổi, bổ sung thỏa ước lao động tập thể thì quyền\nlợi của người lao động được thực hiện theo quy định của pháp luật.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n57\n\nĐiều 83. Thỏa ước lao động tập thể hết hạn"
+        ],
+        [
+          "2. Tuổi nghỉ hưu của người lao động trong điều kiện lao động bình thường\nđược điều chỉnh theo lộ trình cho đến khi đủ 62 tuổi đối với lao động nam vào\nnăm 2028 và đủ 60 tuổi đối với lao động nữ vào năm 2035.\n\nKể từ năm 2021, tuổi nghỉ hưu của người lao động trong điều kiện lao động\nbình thường là đủ 60 tuổi 03 tháng đối với lao động nam và đủ 55 tuổi 04 tháng\nđối với lao động nữ; sau đó, cứ mỗi năm tăng thêm 03 tháng đối với lao động nam\nvà 04 tháng đối với lao động nữ.",
+          "và người đại diện theo pháp luật của người đó;\n\nb) Bố trí giờ làm việc không ảnh hưởng đến thời gian học tập của người chưa\n\nđủ 15 tuổi;\n\nc) Phải có giấy khám sức khỏe của cơ sở khám bệnh, chữa bệnh có thẩm\nquyền xác nhận sức khỏe của người chưa đủ 15 tuổi phù hợp với công việc và tổ\nchức kiểm tra sức khỏe định kỳ ít nhất một lần trong 06 tháng;\n\nd) Bảo đảm điều kiện làm việc, an toàn, vệ sinh lao động phù hợp với lứa tuổi.\n\n2. Người sử dụng lao động chỉ được tuyển dụng và sử dụng người từ đủ 13\ntuổi đến chưa đủ 15 tuổi vào làm các công việc nhẹ theo quy định tại khoản 3\nĐiều 143 của Bộ luật này.",
+          "a) Đủ tuổi theo quy định tại khoản 2 Điều 169 của Bộ luật Lao động;\n\nb) Đủ tuổi theo quy định tại khoản 3 Điều 169 của Bộ luật Lao động và có\nđủ 15 năm làm nghề, công việc nặng nhọc, độc hại, nguy hiểm hoặc đặc biệt nặng\nnhọc, độc hại, nguy hiểm thuộc danh mục do Bộ Lao động - Thương binh và Xã\nhội ban hành hoặc có đủ 15 năm làm việc ở vùng có điều kiện kinh tế - xã hội đặc\nbiệt khó khăn bao gồm cả thời gian làm việc ở nơi có phụ cấp khu vực hệ số 0,7\ntrở lên trước ngày 01 tháng 01  năm 2021;\n\nc) Người lao động có tuổi thấp hơn tối đa 10 tuổi so với tuổi nghỉ hưu của\nngười lao động quy định tại khoản 2 Điều 169 của Bộ luật Lao động và có đủ 15\nnăm làm công việc khai thác than trong hầm lò;\n\nd) Người bị nhiễm HIV do tai nạn rủi ro nghề nghiệp trong khi thực hiện\n\nnhiệm vụ được giao.",
+          "d) Người bị nhiễm HIV do tai nạn rủi ro nghề nghiệp trong khi thực hiện\n\nnhiệm vụ được giao.\n\n2. Người lao động quy định tại điểm đ và điểm e khoản 1 Điều 2 của Luật\nnày nghỉ việc có đủ 20 năm đóng bảo hiểm xã hội trở lên được hưởng lương hưu\nkhi thuộc một trong các trường hợp sau đây:\n\na) Có tuổi thấp hơn tối đa 05 tuổi so với tuổi nghỉ hưu quy định tại khoản 2\nĐiều 169 của Bộ luật Lao động, trừ trường hợp Luật Sĩ quan Quân đội nhân dân\nViệt Nam, Luật Công an nhân dân, Luật Cơ yếu, Luật Quân nhân chuyên nghiệp,\ncông nhân và viên chức quốc phòng có quy định khác;",
+          "7. Chính phủ quy định chi tiết điều này.\n\nĐiều 114. Ngày nghỉ hằng năm tăng thêm theo thâm niên làm việc\n\nCứ đủ 05 năm làm việc cho một người sử dụng lao động thì số ngày nghỉ\nhằng năm của người lao động theo quy định tại khoản 1 Điều 113 của Bộ luật này\nđược tăng thêm tương ứng 01 ngày.\n\nĐiều 115. Nghỉ việc riêng, nghỉ không hưởng lương\n\n1. Người lao động được nghỉ việc riêng mà vẫn hưởng nguyên lương và phải\n\nthông báo với người sử dụng lao động trong trường hợp sau đây:\n\na) Kết hôn: nghỉ 03 ngày;\n\nb) Con đẻ, con nuôi kết hôn: nghỉ 01 ngày;\n\nc) Cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi; cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi của\n\nvợ hoặc chồng; vợ hoặc chồng; con đẻ, con nuôi chết: nghỉ 03 ngày."
+        ],
+        [
+          "### 4. Tiền phép năm chưa nghỉ hoặc chưa nghỉ hết\nTùy vào đối tượng lao động và điều kiện làm việc thì người lao động làm việc đủ 12 tháng cho người sử dụng lao động sẽ được nghỉ phép năm từ 12 – 16 ngày (Điều 113 Bộ Luật Lao động 2019)\nTrường hợp người lao động chưa nghỉ hoặc chưa nghỉ hết mà phải nghỉ việc thì có thể được thanh toán tiền nghỉ phép năm theo khoản 3 Điều 113 Bộ Luật Lao động 2019 như sau:\n\"Trường hợp do thôi việc, bị mất việc làm mà chưa nghỉ hằng năm hoặc chưa nghỉ hết số ngày nghỉ hằng năm thì được người sử dụng lao động thanh toán tiền lương cho những ngày chưa nghỉ.\"",
+          "2. Thời hạn tạm đình chỉ công việc không được quá 15 ngày, trường hợp đặc\nbiệt không được quá 90 ngày. Trong thời gian bị tạm đình chỉ công việc, người lao\nđộng được tạm ứng 50% tiền lương trước khi bị đình chỉ công việc.\n\nHết thời hạn tạm đình chỉ công việc, người sử dụng lao động phải nhận người\n\nlao động trở lại làm việc.\n\n3. Trường hợp người lao động bị xử lý kỷ luật lao động, người lao động cũng\n\nkhông phải trả lại số tiền lương đã tạm ứng.\n\n4. Trường hợp người lao động không bị xử lý kỷ luật lao động thì được người\n\nsử dụng lao động trả đủ tiền lương cho thời gian bị tạm đình chỉ công việc.\n\n\fCÔNG BÁO/Số 131/Ngày 28-02-2026\n\n72\n\nMục 2\nTRÁCH NHIỆM VẬT CHẤT\n\nĐiều 129. Bồi thường thiệt hại",
+          "### 1.Tiền lương cho những ngày làm việc chưa được thanh toán\nĐây là khoản tiền mà mọi người lao động khi nghỉ việc đều được nhận, nếu tại thời điểm nghỉ việc doanh nghiệp vẫn chưa thanh toán tiền lương cho những ngày họ đã làm việc.\nTheo Điều 48 Bộ Luật Lao động năm 2019 trong thời hạn 14 ngày làm việc kể từ ngày chấm dứt hợp đồng lao động, người sử dụng lao động có trách nhiệm thanh toán đầy đủ các khoản tiền liên quan đến quyền lợi của người lao động (trong đó có tiền lương).\nHạn thanh toán này có thể kéo dài nhưng không quá 30 ngày trong các trường hợp đặc biệt như: Doanh nghiệp chấm dứt hoạt động; thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế; chia, tách, hợp nhất,…",
+          "diện chủ sở hữu nhà nước đối với phần vốn nhà nước tại doanh nghiệp;\n\ng) Người lao động được ủy quyền để thực hiện quyền, trách nhiệm của doanh\n\nnghiệp đối với phần vốn của doanh nghiệp đầu tư tại doanh nghiệp khác;\n\nh) Trường hợp khác do hai bên thỏa thuận.\n\n2. Trong thời gian tạm hoãn thực hiện hợp đồng lao động, người lao động\nkhông được hưởng lương và quyền, lợi ích đã giao kết trong hợp đồng lao động,\ntrừ trường hợp hai bên có thỏa thuận hoặc pháp luật có quy định khác.\n\nĐiều 31. Nhận lại người lao động hết thời hạn tạm hoãn thực hiện hợp\n\nđồng lao động",
+          "### 3. Trợ cấp mất việc làm\nTheo Điều 47 Bộ Luật Lao động năm 2019, người lao động nghỉ việc được trả trợ cấp mất việc làm khi có đủ các điều kiện:\n– Nghỉ việc do chấm dứt hợp đồng lao động theo trường hợp người sử dụng lao động cho người lao động thôi việc do thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế, chia, tách, hợp nhất, sáp nhập; bán, cho thuê, chuyển đổi loại hình; chuyển nhượng quyền sở hữu, quyền sử dụng tài sản.\n– Đã làm việc thường xuyên cho người sử dụng lao động từ đủ 12 tháng trở lên.\nNhư vậy, nếu đáp ứng điều kiện, người lao động sẽ được người sử dụng lao động thanh toán trợ cấp mất việc làm cho mỗi năm làm việc bằng 01 tháng tiền lương nhưng ít nhất phải bằng 02 tháng tiền lương. Cụ thể:"
+        ],
+        [
+          "Sau ít nhất 12 tháng thực hiện đóng bảo hiểm xã hội theo tiền lương làm căn cứ đóng bảo hiểm xã hội đã lựa chọn thì người lao động được lựa chọn lại tiền lương làm căn cứ đóng bảo hiểm xã hội;\n+ Tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc thấp nhất bằng mức tham chiếu và cao nhất bằng 20 lần mức tham chiếu tại thời điểm đóng.\nThu nhập làm căn cứ đóng bảo hiểm xã hội tự nguyện thấp nhất bằng mức chuẩn hộ nghèo của khu vực nông thôn và cao nhất bằng 20 lần mức tham chiếu tại thời điểm đóng.",
+          "+ Người lao động thuộc đối tượng thực hiện chế độ tiền lương do người sử dụng lao động quyết định thì tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc là tiền lương tháng, bao gồm mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác được thỏa thuận trả thường xuyên, ổn định trong mỗi kỳ trả lương.\nTrường hợp người lao động ngừng việc vẫn hưởng tiền lương tháng bằng hoặc cao hơn tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc thấp nhất thì đóng theo tiền lương được hưởng trong thời gian ngừng việc;\n+ Đối tượng quy định tại các điểm đ, e và k khoản 1 Điều 2 của Luật này thì tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc do Chính phủ quy định;",
+          "## **Tỷ lệ đóng bảo hiểm xã hội (Điều 32)**\nLuật Bảo hiểm xã hội quy định tỷ lệ đóng bảo hiểm xã hội bắt buộc bao gồm:\n+ 3% tiền lương làm căn cứ đóng bảo hiểm xã hội vào quỹ ốm đau và thai sản;\n+ 22% tiền lương làm căn cứ đóng bảo hiểm xã hội vào quỹ hưu trí và tử tuất.\nTỷ lệ đóng bảo hiểm xã hội tự nguyện bằng 22% thu nhập làm căn cứ đóng bảo hiểm xã hội vào quỹ hưu trí và tử tuất.\n  * Tham khảo thêm\n#### [TOÀN VĂN: Luật số 41/2024/QH15 Bảo hiểm xã hội](https://xaydungchinhsach.chinhphu.vn/toan-van-luat-so-41-2024-qh15-bao-hiem-xa-hoi-119240723163650489.htm)",
+          "##  (Chinhphu.vn) - Luật số 41/2024/QH15 Bảo hiểm xã hội quy định căn cứ, tỷ lệ đóng bảo hiểm xã hội. \n![Quy định căn cứ, tỷ lệ đóng BHXH](https://xdcs.cdnchinhphu.vn/thumb_w/900/446259493575335936/2024/7/26/bh-1721957979699647123548.jpg)\n#### **Căn cứ đóng bảo hiểm xã hội (Điều 31)**\nTiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc được quy định như sau:\n+ Người lao động thuộc đối tượng thực hiện chế độ tiền lương do Nhà nước quy định thì tiền lương làm căn cứ đóng bảo hiểm xã hội là tiền lương tháng theo chức vụ, chức danh, ngạch, bậc, cấp bậc quân hàm và các khoản phụ cấp chức vụ, phụ cấp thâm niên vượt khung, phụ cấp thâm niên nghề, hệ số chênh lệch bảo lưu lương (nếu có);",
+          "2. Người lao động có quyền được biết lý do khấu trừ tiền lương của mình.\n\n3. Mức khấu trừ tiền lương hằng tháng không được quá 30% tiền lương thực\ntrả hằng tháng của người lao động sau khi trích nộp các khoản bảo hiểm xã hội\nbắt buộc, bảo hiểm y tế, bảo hiểm thất nghiệp, thuế thu nhập cá nhân.\n\nĐiều 103. Chế độ nâng lương, nâng bậc, phụ cấp, trợ cấp\n\nChế độ nâng lương, nâng bậc, phụ cấp, trợ cấp và các chế độ khuyến khích\nđối với người lao động được thỏa thuận trong hợp đồng lao động, thỏa ước lao\nđộng tập thể hoặc quy định của người sử dụng lao động.\n\nĐiều 104. Thưởng\n\n1. Thưởng là số tiền hoặc tài sản hoặc bằng các hình thức khác mà người sử\ndụng lao động thưởng cho người lao động căn cứ vào kết quả sản xuất, kinh doanh,\nmức độ hoàn thành công việc của người lao động."
+        ],
+        [
+          "[![TOÀN VĂN: Luật số 41/2024/QH15 Bảo hiểm xã hội](https://xdcs.cdnchinhphu.vn/thumb_w/300/446259493575335936/2024/7/23/lbh-17217273972971246421730-32-0-1282-2000-crop-17217274025191287193823.jpg)](https://xaydungchinhsach.chinhphu.vn/toan-van-luat-so-41-2024-qh15-bao-hiem-xa-hoi-119240723163650489.htm)\n  * Tham khảo thêm\n#### [Quy định hưởng bảo hiểm xã hội một lần](https://xaydungchinhsach.chinhphu.vn/quy-dinh-huong-bao-hiem-xa-hoi-mot-lan-119240723161149897.htm)\n[![Quy định hưởng bảo hiểm xã hội một lần](https://xdcs.cdnchinhphu.vn/thumb_w/300/446259493575335936/2024/7/23/bhxh-1721725441107284043458-0-0-538-860-crop-1721725445884313416439.jpg)](https://xaydungchinhsach.chinhphu.vn/quy-dinh-huong-bao-hiem-xa-hoi-mot-lan-119240723161149897.htm)\n  * Tham khảo thêm",
+          "## **Tỷ lệ đóng bảo hiểm xã hội (Điều 32)**\nLuật Bảo hiểm xã hội quy định tỷ lệ đóng bảo hiểm xã hội bắt buộc bao gồm:\n+ 3% tiền lương làm căn cứ đóng bảo hiểm xã hội vào quỹ ốm đau và thai sản;\n+ 22% tiền lương làm căn cứ đóng bảo hiểm xã hội vào quỹ hưu trí và tử tuất.\nTỷ lệ đóng bảo hiểm xã hội tự nguyện bằng 22% thu nhập làm căn cứ đóng bảo hiểm xã hội vào quỹ hưu trí và tử tuất.\n  * Tham khảo thêm\n#### [TOÀN VĂN: Luật số 41/2024/QH15 Bảo hiểm xã hội](https://xaydungchinhsach.chinhphu.vn/toan-van-luat-so-41-2024-qh15-bao-hiem-xa-hoi-119240723163650489.htm)",
+          ".....................................................................................................................................\nđã họp để xem xét, đề nghị giải quyết chế độ bảo hiểm y tế đối với:\nÔng (bà)................................................................................................................\nNgày, tháng, năm sinh:.........................................................................................\nSố định danh cá nhân/Chứng minh nhân dân:........................................... cấp\nngày...... tháng...... năm............ nơi cấp.......................................................................\nNgày tham gia thanh niên xung phong:................................................................",
+          "###  [ Quy định căn cứ, tỷ lệ đóng BHXH ](https://xaydungchinhsach.chinhphu.vn/quy-dinh-can-cu-ty-le-dong-bhxh-119240726084122076.htm \"Quy định căn cứ, tỷ lệ đóng BHXH\")\n(Chinhphu.vn) - Luật số 41/2024/QH15 Bảo hiểm xã hội quy định căn cứ, tỷ lệ đóng bảo hiểm xã hội. \nGọi tổng đài \n![Chúng tôi luôn Lắng nghe và phản hồi](https://static.mediacdn.vn/XayDungChinhSachPhapLuat/web/images/image-feedback.png) Chúng tôi luôn Lắng nghe và phản hồi \nGọi đến 0964 96 66 88 tổng đài tiếp nhận các góp ý, đề xuất, hiến kế \nHoặc\n[ ](https://zalo.me/3692566389422713378 \"Góp ý qua Zalo\") [ ](https://xaydungchinhsach.chinhphu.vn/quy-dinh-can-cu-ty-le-dong-bhxh-119240726084122076.htm \"Góp ý trực tiếp\")\nĐóng",
+          "* Tham khảo thêm\n#### [Chế độ, chính sách với người tham gia lực lượng bảo vệ an ninh, trật tự ở cơ sở bị ốm đau, tai nạn, bị thương](https://xaydungchinhsach.chinhphu.vn/chinh-sach-voi-nguoi-tham-gia-luc-luong-bao-ve-an-ninh-trat-tu-o-co-so-bi-om-dau-tai-nan-119240419110202493.htm)\n[![Chế độ, chính sách với người tham gia lực lượng bảo vệ an ninh, trật tự ở cơ sở bị ốm đau, tai nạn, bị thương](https://xdcs.cdnchinhphu.vn/thumb_w/300/446259493575335936/2024/4/19/anninh-17134981994821721119600.jpg)](https://xaydungchinhsach.chinhphu.vn/chinh-sach-voi-nguoi-tham-gia-luc-luong-bao-ve-an-ninh-trat-tu-o-co-so-bi-om-dau-tai-nan-119240419110202493.htm)"
+        ]
+      ],
+      "ground_truth": [
+        "Có, nếu công việc cần trình độ chuyên môn từ cao đẳng trở lên thì thời gian thử việc tối đa là 60 ngày. Lương thử việc phải ít nhất bằng 85% lương của công việc đó.",
+        "Không. Không áp dụng thử việc đối với hợp đồng lao động có thời hạn dưới 01 tháng.",
+        "Không phù hợp. Hợp đồng lao động phải được giao kết bằng văn bản; chỉ một số hợp đồng dưới 01 tháng mới có thể giao kết bằng lời nói.",
+        "Không được ép nếu người lao động không đồng ý, trừ trường hợp đặc biệt theo luật. Doanh nghiệp phải bảo đảm giới hạn giờ làm thêm.",
+        "Ít nhất 150% vào ngày thường, 200% vào ngày nghỉ hằng tuần và 300% vào ngày lễ, tết chưa kể lương ngày lễ; làm ban đêm còn có các khoản cộng thêm theo luật.",
+        "Người sử dụng lao động phải trả đầy đủ, đúng hạn. Nếu chậm từ 15 ngày trở lên thì phải bù tiền lãi của khoản trả chậm theo quy định.",
+        "Không được. Mức lương theo công việc hoặc chức danh không được thấp hơn mức lương tối thiểu áp dụng theo vùng, theo tháng hoặc theo giờ.",
+        "Thông thường là 45 ngày với hợp đồng không xác định thời hạn, 30 ngày với hợp đồng từ 12 đến 36 tháng và 03 ngày làm việc với hợp đồng dưới 12 tháng; có trường hợp được nghỉ không cần báo trước.",
+        "Hai bên phải thanh toán các khoản liên quan trong thời hạn luật định, gồm tiền lương và quyền lợi còn lại; nếu đủ điều kiện có thể có trợ cấp thôi việc hoặc mất việc.",
+        "Nếu đủ điều kiện hưởng trợ cấp mất việc, mỗi năm làm việc được trả một tháng tiền lương nhưng ít nhất bằng hai tháng tiền lương.",
+        "Đi muộn nhiều lần không tự động là căn cứ sa thải. Sa thải chỉ được áp dụng cho các trường hợp và theo trình tự mà pháp luật quy định.",
+        "Tuổi nghỉ hưu trong điều kiện bình thường tăng theo lộ trình cho đến 62 tuổi với nam và 60 tuổi với nữ; tuổi cụ thể phụ thuộc năm nghỉ hưu.",
+        "Có. Khi chấm dứt hợp đồng, người lao động chưa nghỉ hoặc chưa nghỉ hết phép năm được thanh toán tiền cho những ngày chưa nghỉ.",
+        "Căn cứ đóng gồm mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác được trả thường xuyên, ổn định theo quy định.",
+        "Người mắc bệnh cần chữa trị dài ngày được hưởng chế độ ốm đau theo Luật Bảo hiểm xã hội; thời gian hưởng được tính theo ngày làm việc và điều kiện luật định."
+      ],
+      "sources": [
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-08-2023-tt-bldtbxh-sua-doi-thu-tuc-cu-tru.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-08-2023-tt-bldtbxh-sua-doi-thu-tuc-cu-tru.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md",
+          "03_muc_luong_toi_thieu.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md",
+          "thong-tu-18-2021-tt-bldtbxh-thoi-gio-lam-viec-thoi-vu.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "03_muc_luong_toi_thieu.md",
+          "03_muc_luong_toi_thieu.md",
+          "03_muc_luong_toi_thieu.md",
+          "03_muc_luong_toi_thieu.md",
+          "03_muc_luong_toi_thieu.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md"
+        ],
+        [
+          "01_quyen_loi_khi_nghi_viec.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "thong-tu-08-2023-tt-bldtbxh-sua-doi-thu-tuc-cu-tru.md",
+          "thong-tu-08-2023-tt-bldtbxh-sua-doi-thu-tuc-cu-tru.md"
+        ],
+        [
+          "thong-tu-11-2020-tt-bldtbxh-nghe-nang-nhoc-phan-2.md",
+          "thong-tu-11-2020-tt-bldtbxh-nghe-nang-nhoc-phan-1.md",
+          "thong-tu-11-2020-tt-bldtbxh-nghe-nang-nhoc-phan-1.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "01_quyen_loi_khi_nghi_viec.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "01_quyen_loi_khi_nghi_viec.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md",
+          "01_quyen_loi_khi_nghi_viec.md"
+        ],
+        [
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "bo-luat-lao-dong-hop-nhat-18-vbhn-vpqh-2026.md"
+        ],
+        [
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "thong-tu-08-2023-tt-bldtbxh-sua-doi-thu-tuc-cu-tru.md",
+          "04_can_cu_ty_le_dong_bhxh.md",
+          "05_che_do_om_dau_dai_ngay.md"
+        ]
+      ]
+    }
+  }
+}

@@ -29,7 +29,7 @@ from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor
 
-from .task5_semantic_search import semantic_search
+from .task5_semantic_search import semantic_search, semantic_search_with_query_expansion
 from .task6_lexical_search import lexical_search
 from .task7_reranking import rerank_rrf
 from .task8_pageindex_vectorless import pageindex_search
@@ -53,6 +53,7 @@ def _validate_retrieve_arguments(
     top_k: int,
     score_threshold: float,
     use_reranking: bool,
+    use_query_expansion: bool,
 ) -> None:
     if not isinstance(query, str) or not query.strip():
         raise ValueError("query must be a non-empty string")
@@ -64,12 +65,19 @@ def _validate_retrieve_arguments(
         raise ValueError("score_threshold must be between -1 and 1")
     if not isinstance(use_reranking, bool):
         raise ValueError("use_reranking must be a boolean")
+    if not isinstance(use_query_expansion, bool):
+        raise ValueError("use_query_expansion must be a boolean")
 
 
-def _run_retrievers(query: str, fetch_k: int) -> tuple[list[dict], list[dict]]:
+def _run_retrievers(
+    query: str, fetch_k: int, use_query_expansion: bool
+) -> tuple[list[dict], list[dict]]:
     """Run independent dense and sparse retrieval concurrently."""
     with ThreadPoolExecutor(max_workers=2) as executor:
-        dense_future = executor.submit(semantic_search, query, top_k=fetch_k)
+        dense_search = (
+            semantic_search_with_query_expansion if use_query_expansion else semantic_search
+        )
+        dense_future = executor.submit(dense_search, query, top_k=fetch_k)
         sparse_future = executor.submit(lexical_search, query, top_k=fetch_k)
         dense_results = dense_future.result()
         sparse_results = sparse_future.result()
@@ -120,6 +128,7 @@ def retrieve(
     top_k: int = DEFAULT_TOP_K,
     score_threshold: float = SCORE_THRESHOLD,
     use_reranking: bool = True,
+    use_query_expansion: bool = False,
 ) -> list[dict]:
     """
     Retrieval pipeline hoàn chỉnh với fallback logic.
@@ -149,13 +158,17 @@ def retrieve(
             'source': str  # 'hybrid' hoặc 'pageindex'
         }
     """
-    _validate_retrieve_arguments(query, top_k, score_threshold, use_reranking)
+    _validate_retrieve_arguments(
+        query, top_k, score_threshold, use_reranking, use_query_expansion
+    )
     query = query.strip()
     fetch_k = top_k * FETCH_MULTIPLIER
 
     # Dense and sparse scores use incompatible scales, so never compare or add
     # those raw scores. RRF combines their ranks instead.
-    dense_results, sparse_results = _run_retrievers(query, fetch_k)
+    dense_results, sparse_results = _run_retrievers(
+        query, fetch_k, use_query_expansion
+    )
     if use_reranking:
         hybrid_results = rerank_rrf(
             [dense_results, sparse_results],
@@ -173,7 +186,10 @@ def retrieve(
     # (~0.016 per first-place contribution with k=60) are ranking signals and
     # are not calibrated relevance probabilities.
     best_dense_score = max(
-        (float(item.get("score", -1.0)) for item in dense_results),
+        (
+            float(item.get("retrieval_score", item.get("score", -1.0)))
+            for item in dense_results
+        ),
         default=-1.0,
     )
     if best_dense_score < float(score_threshold):
