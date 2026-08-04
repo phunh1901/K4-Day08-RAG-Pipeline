@@ -19,6 +19,37 @@ from .task4_chunking_indexing import (
 )
 
 
+QUERY_EXPANSIONS = {
+    "tăng ca": "làm thêm giờ thời giờ làm việc",
+    "ot": "làm thêm giờ tiền lương làm thêm",
+    "nghỉ việc": "chấm dứt hợp đồng lao động trợ cấp thôi việc",
+    "sa thải": "xử lý kỷ luật lao động hình thức sa thải",
+    "phép năm": "nghỉ hằng năm ngày nghỉ có hưởng lương",
+    "thử việc": "thời gian thử việc tiền lương thử việc",
+    "lương tối thiểu": "mức lương tối thiểu vùng theo tháng theo giờ",
+    "bhxh": "bảo hiểm xã hội bắt buộc",
+    "bảo hiểm xã hội": "BHXH mức đóng chế độ bảo hiểm xã hội",
+}
+
+
+def expand_query(query: str) -> list[str]:
+    """Create deterministic Vietnamese legal query variants.
+
+    This is a low-latency multi-query expansion method: colloquial terms are
+    mapped to statutory terminology found in the corpus. It requires no extra
+    LLM call and therefore remains available in offline/demo environments.
+    """
+    if not isinstance(query, str) or not query.strip():
+        raise ValueError("query must be a non-empty string")
+    normalized = query.strip()
+    lowered = normalized.lower()
+    variants = [normalized]
+    for phrase, legal_terms in QUERY_EXPANSIONS.items():
+        if phrase in lowered:
+            variants.append(f"{normalized} {legal_terms}")
+    return list(dict.fromkeys(variants))
+
+
 def semantic_search(query: str, top_k: int = 10) -> list[dict]:
     """
     Tìm kiếm ngữ nghĩa sử dụng vector similarity.
@@ -96,6 +127,21 @@ def semantic_search(query: str, top_k: int = 10) -> list[dict]:
 
     output.sort(key=lambda item: item["score"], reverse=True)
     return output[:top_k]
+
+
+def semantic_search_with_query_expansion(query: str, top_k: int = 10) -> list[dict]:
+    """Search all expanded variants and fuse their rankings with RRF."""
+    from .task7_reranking import rerank_rrf
+
+    variants = expand_query(query)
+    ranked_lists = [semantic_search(variant, top_k=top_k * 2) for variant in variants]
+    results = rerank_rrf(ranked_lists, top_k=top_k)
+    for result in results:
+        metadata = dict(result.get("metadata") or {})
+        metadata["query_expansion"] = len(variants) > 1
+        metadata["query_variants"] = len(variants)
+        result["metadata"] = metadata
+    return results
 
 
 if __name__ == "__main__":

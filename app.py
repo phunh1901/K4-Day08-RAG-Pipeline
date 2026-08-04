@@ -200,6 +200,11 @@ with st.sidebar:
         value=True,
         help="Dùng tối đa 4 tin nhắn gần nhất để hiểu câu hỏi nối tiếp.",
     )
+    use_query_expansion = st.toggle(
+        "Query expansion",
+        value=True,
+        help="Mở rộng từ ngữ đời thường sang thuật ngữ pháp lý trước khi tìm kiếm.",
+    )
 
     left, right = st.columns(2)
     with left:
@@ -276,6 +281,7 @@ if query:
                     query,
                     top_k=top_k,
                     conversation_history=previous_messages,
+                    use_query_expansion=use_query_expansion,
                 )
             answer = str(response.get("answer") or "").strip()
             sources = response.get("sources") or []

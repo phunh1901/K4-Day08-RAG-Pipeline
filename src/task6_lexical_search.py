@@ -19,6 +19,10 @@ import re
 from pathlib import Path
 
 from rank_bm25 import BM25Okapi
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+from .task4_chunking_indexing import chunk_documents, load_documents
 
 
 PROJECT_ROOT = Path(__file__).parent.parent
@@ -28,6 +32,8 @@ STANDARDIZED_DIR = PROJECT_ROOT / "data" / "standardized"
 CORPUS: list[dict] = []
 _BM25_INDEX: BM25Okapi | None = None
 _TOKENIZED_CORPUS: list[list[str]] = []
+_TFIDF_VECTORIZER: TfidfVectorizer | None = None
+_TFIDF_MATRIX = None
 
 
 def _tokenize(text: str) -> list[str]:
@@ -36,28 +42,18 @@ def _tokenize(text: str) -> list[str]:
 
 
 def _load_markdown_corpus() -> list[dict]:
-    corpus: list[dict] = []
+    """Reuse Task 4's 800/100 chunks so dense and sparse retrieval align.
 
+    Indexing entire statutes as one BM25 document produces huge prompts and
+    coarse citations. Sharing chunk boundaries keeps every result focused,
+    comparable and within the LLM/RAGAS context limit.
+    """
     if not STANDARDIZED_DIR.exists():
-        return corpus
-
-    for filepath in sorted(STANDARDIZED_DIR.rglob("*.md")):
-        if not filepath.is_file():
-            continue
-
-        content = filepath.read_text(encoding="utf-8").strip()
-        if not content:
-            continue
-
-        relative_path = filepath.relative_to(STANDARDIZED_DIR)
-        metadata = {
-            "source_path": str(relative_path).replace("\\", "/"),
-            "category": relative_path.parts[0] if len(relative_path.parts) > 1 else "unknown",
-            "filename": filepath.name,
-        }
-        corpus.append({"content": content, "metadata": metadata})
-
-    return corpus
+        return []
+    return [
+        {"content": chunk["content"], "metadata": dict(chunk.get("metadata") or {})}
+        for chunk in chunk_documents(load_documents())
+    ]
 
 
 def _ensure_corpus_loaded() -> None:
@@ -105,6 +101,11 @@ def lexical_search(query: str, top_k: int = 10) -> list[dict]:
         }
         Sorted by score descending.
     """
+    if not isinstance(query, str) or not query.strip():
+        raise ValueError("query must be a non-empty string")
+    if isinstance(top_k, bool) or not isinstance(top_k, int) or top_k <= 0:
+        raise ValueError("top_k must be a positive integer")
+
     _ensure_corpus_loaded()
 
     if not CORPUS:
@@ -132,6 +133,57 @@ def lexical_search(query: str, top_k: int = 10) -> list[dict]:
         )
 
     return results
+
+
+def _ensure_tfidf_index() -> tuple[TfidfVectorizer, object]:
+    """Build a word/bi-gram TF-IDF matrix once for the standardized corpus."""
+    global _TFIDF_VECTORIZER, _TFIDF_MATRIX
+    _ensure_corpus_loaded()
+    if _TFIDF_VECTORIZER is None or _TFIDF_MATRIX is None:
+        _TFIDF_VECTORIZER = TfidfVectorizer(
+            tokenizer=_tokenize,
+            token_pattern=None,
+            lowercase=False,
+            ngram_range=(1, 2),
+            sublinear_tf=True,
+        )
+        _TFIDF_MATRIX = _TFIDF_VECTORIZER.fit_transform(
+            [doc["content"] for doc in CORPUS]
+        )
+    return _TFIDF_VECTORIZER, _TFIDF_MATRIX
+
+
+def tfidf_search(query: str, top_k: int = 10) -> list[dict]:
+    """Alternative lexical retriever used for the +5 bonus comparison.
+
+    TF-IDF represents every document as a sparse weighted vector and ranks by
+    cosine similarity. Unlike BM25, it has no explicit document-length
+    saturation parameters (``k1``/``b``); bigrams help preserve Vietnamese
+    legal phrases such as "thử việc" and "lương tối thiểu".
+    """
+    if not isinstance(query, str) or not query.strip():
+        raise ValueError("query must be a non-empty string")
+    if isinstance(top_k, bool) or not isinstance(top_k, int) or top_k <= 0:
+        raise ValueError("top_k must be a positive integer")
+    _ensure_corpus_loaded()
+    if not CORPUS:
+        return []
+
+    vectorizer, matrix = _ensure_tfidf_index()
+    query_vector = vectorizer.transform([query.strip()])
+    scores = cosine_similarity(query_vector, matrix).ravel()
+    top_indices = sorted(
+        range(len(scores)), key=lambda idx: float(scores[idx]), reverse=True
+    )[:top_k]
+    return [
+        {
+            "content": CORPUS[idx]["content"],
+            "score": float(scores[idx]),
+            "metadata": {**CORPUS[idx].get("metadata", {}), "lexical_method": "tfidf"},
+        }
+        for idx in top_indices
+        if float(scores[idx]) > 0
+    ]
 
 
 if __name__ == "__main__":

@@ -12,6 +12,7 @@ import json
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import MagicMock, patch
 
 # Project root
 PROJECT_DIR = Path(__file__).parent.parent
@@ -256,7 +257,7 @@ class TestTask5(unittest.TestCase):
         """semantic_search() trả về list."""
         search = self._import_task5()
         try:
-            results = search("payment methods", top_k=3)
+            results = search("thời gian thử việc", top_k=3)
             self.assertIsInstance(results, list)
         except NotImplementedError:
             self.skipTest("semantic_search chưa implement")
@@ -265,7 +266,7 @@ class TestTask5(unittest.TestCase):
         """Mỗi result có 'content', 'score', 'metadata'."""
         search = self._import_task5()
         try:
-            results = search("return refund policy", top_k=3)
+            results = search("quyền nghỉ phép năm", top_k=3)
             if not results:
                 self.skipTest("Không có kết quả (có thể chưa index)")
             for r in results:
@@ -278,7 +279,7 @@ class TestTask5(unittest.TestCase):
         """Kết quả sorted theo score descending."""
         search = self._import_task5()
         try:
-            results = search("ecommerce return policy", top_k=5)
+            results = search("chấm dứt hợp đồng lao động", top_k=5)
             if len(results) < 2:
                 self.skipTest("Không đủ kết quả để test sort")
             scores = [r["score"] for r in results]
@@ -314,7 +315,7 @@ class TestTask6(unittest.TestCase):
         """lexical_search() trả về list."""
         search = self._import_task6()
         try:
-            results = search("return refund evidence policy", top_k=3)
+            results = search("quyền lợi người lao động", top_k=3)
             self.assertIsInstance(results, list)
         except NotImplementedError:
             self.skipTest("lexical_search chưa implement")
@@ -323,7 +324,7 @@ class TestTask6(unittest.TestCase):
         """Mỗi result có 'content', 'score'."""
         search = self._import_task6()
         try:
-            results = search("seller listing regulations", top_k=3)
+            results = search("lương tối thiểu vùng", top_k=3)
             if not results:
                 self.skipTest("Không có kết quả")
             for r in results:
@@ -336,7 +337,7 @@ class TestTask6(unittest.TestCase):
         """Kết quả sorted theo BM25 score descending."""
         search = self._import_task6()
         try:
-            results = search("order tracking guide", top_k=5)
+            results = search("thời giờ làm việc nghỉ ngơi", top_k=5)
             if len(results) < 2:
                 self.skipTest("Không đủ kết quả")
             scores = [r["score"] for r in results]
@@ -348,7 +349,7 @@ class TestTask6(unittest.TestCase):
         """Query có keyword match phải có score > 0."""
         search = self._import_task6()
         try:
-            results = search("payment methods", top_k=3)
+            results = search("thử việc và hợp đồng lao động", top_k=3)
             if not results:
                 self.skipTest("Không có kết quả")
             # Ít nhất 1 result phải có score > 0
@@ -434,15 +435,31 @@ class TestTask8(unittest.TestCase):
         self.assertTrue(callable(search))
 
     def test_returns_list_with_source_marker(self):
-        """Kết quả có 'source': 'pageindex'."""
+        """Kết quả có source marker mà không phụ thuộc quota dịch vụ ngoài."""
         search = self._import_task8()
-        try:
+        fake_client = MagicMock()
+        fake_client.is_retrieval_ready.return_value = True
+        fake_client.submit_query.return_value = {"retrieval_id": "retrieval-test"}
+        response = {
+            "retrieved_nodes": [
+                {
+                    "node_id": "article-25",
+                    "title": "Điều 25. Thời gian thử việc",
+                    "relevant_contents": [
+                        {"relevant_content": "Thời gian thử việc tối đa theo luật."}
+                    ],
+                }
+            ]
+        }
+        with (
+            patch("src.task8_pageindex_vectorless._configured_document_ids", return_value=["doc-test"]),
+            patch("src.task8_pageindex_vectorless._get_client", return_value=fake_client),
+            patch("src.task8_pageindex_vectorless._wait_for_retrieval", return_value=response),
+        ):
             results = search("payment methods", top_k=2)
-            self.assertIsInstance(results, list)
-            if results:
-                self.assertEqual(results[0].get("source"), "pageindex")
-        except (NotImplementedError, Exception) as e:
-            self.skipTest(f"PageIndex chưa sẵn sàng: {e}")
+        self.assertIsInstance(results, list)
+        self.assertTrue(results)
+        self.assertEqual(results[0].get("source"), "pageindex")
 
 
 # ===========================================================================
@@ -463,7 +480,7 @@ class TestTask9(unittest.TestCase):
         """retrieve() trả về list of dicts."""
         retrieve_fn = self._import_task9()
         try:
-            results = retrieve_fn("return refund policy", top_k=3)
+            results = retrieve_fn("thời gian thử việc", top_k=3)
             self.assertIsInstance(results, list)
         except NotImplementedError:
             self.skipTest("retrieve chưa implement")
@@ -472,7 +489,7 @@ class TestTask9(unittest.TestCase):
         """Kết quả có 'content', 'score', 'source'."""
         retrieve_fn = self._import_task9()
         try:
-            results = retrieve_fn("ecommerce return policy", top_k=3)
+            results = retrieve_fn("quyền nghỉ phép năm", top_k=3)
             if not results:
                 self.skipTest("Không có kết quả")
             for r in results:
@@ -552,7 +569,7 @@ class TestTask10(unittest.TestCase):
         """generate_with_citation() trả về dict có 'answer'."""
         generate, _, _ = self._import_task10()
         try:
-            result = generate("What payment methods does Shopee support?")
+            result = generate("Thời gian thử việc tối đa là bao lâu?")
             self.assertIsInstance(result, dict)
             self.assertIn("answer", result)
             self.assertIsInstance(result["answer"], str)

@@ -1,17 +1,77 @@
 [
   {
-    "question": "Người mua có thể yêu cầu trả hàng/hoàn tiền trong thời hạn bao lâu sau khi nhận hàng?",
-    "expected_answer": "Trong vòng 15 ngày kể từ khi giao hàng thành công (24 giờ đối với thực phẩm tươi sống/đông lạnh).",
-    "expected_context": "Trang Returns and Refunds Policy, mục Return/Refund Eligibility"
+    "question": "Em vừa tốt nghiệp đại học, đi làm vị trí marketing và công ty muốn thử việc 60 ngày. Như vậy có đúng luật không?",
+    "expected_answer": "Có, nếu công việc cần trình độ chuyên môn từ cao đẳng trở lên thì thời gian thử việc tối đa là 60 ngày. Lương thử việc phải ít nhất bằng 85% lương của công việc đó.",
+    "expected_context": "Bộ luật Lao động, Điều 25 và Điều 26"
   },
   {
-    "question": "Shopee hỗ trợ những phương thức thanh toán nào?",
-    "expected_answer": "ShopeePay Wallet, thẻ tín dụng/ghi nợ, trả góp qua thẻ, QR Code, chuyển khoản qua app ngân hàng, thẻ NAPAS, Apple Pay, Google Pay, và COD.",
-    "expected_context": "Trang Payment Methods Overview"
+    "question": "Nếu em làm hợp đồng chỉ 20 ngày thì công ty có được bắt thử việc không?",
+    "expected_answer": "Không. Không áp dụng thử việc đối với hợp đồng lao động có thời hạn dưới 01 tháng.",
+    "expected_context": "Bộ luật Lao động, khoản 3 Điều 24"
   },
   {
-    "question": "Người bán không được đăng bán những sản phẩm nào?",
-    "expected_answer": "Hàng giả/nhái, sản phẩm bất hợp pháp, vi phạm sở hữu trí tuệ, và các mặt hàng nằm trong danh sách cấm của sàn.",
-    "expected_context": "Trang Product Listing Regulations, mục Prohibited Content"
+    "question": "Công ty bảo cứ làm 2 tháng rồi tính, không ký hợp đồng lao động bằng văn bản có được không?",
+    "expected_answer": "Không phù hợp. Hợp đồng lao động phải được giao kết bằng văn bản; chỉ một số hợp đồng dưới 01 tháng mới có thể giao kết bằng lời nói.",
+    "expected_context": "Bộ luật Lao động, Điều 14"
+  },
+  {
+    "question": "Sếp nhắn bắt em tăng ca cuối tuần nhưng em không muốn. Công ty có quyền ép không?",
+    "expected_answer": "Không được ép nếu người lao động không đồng ý, trừ trường hợp đặc biệt theo luật. Doanh nghiệp phải bảo đảm giới hạn giờ làm thêm.",
+    "expected_context": "Bộ luật Lao động, Điều 107 và Điều 108"
+  },
+  {
+    "question": "Làm thêm ngày thường, ngày nghỉ hằng tuần và ngày lễ thì được tính lương thế nào?",
+    "expected_answer": "Ít nhất 150% vào ngày thường, 200% vào ngày nghỉ hằng tuần và 300% vào ngày lễ, tết chưa kể lương ngày lễ; làm ban đêm còn có các khoản cộng thêm theo luật.",
+    "expected_context": "Bộ luật Lao động, Điều 98"
+  },
+  {
+    "question": "Công ty trả lương chậm hơn lịch đã hẹn 20 ngày thì em có quyền gì?",
+    "expected_answer": "Người sử dụng lao động phải trả đầy đủ, đúng hạn. Nếu chậm từ 15 ngày trở lên thì phải bù tiền lãi của khoản trả chậm theo quy định.",
+    "expected_context": "Bộ luật Lao động, Điều 94 và Điều 97"
+  },
+  {
+    "question": "Lương em đang nhận thấp hơn mức tối thiểu vùng thì có sao không?",
+    "expected_answer": "Không được. Mức lương theo công việc hoặc chức danh không được thấp hơn mức lương tối thiểu áp dụng theo vùng, theo tháng hoặc theo giờ.",
+    "expected_context": "Bộ luật Lao động, Điều 91; Nghị định 293/2025/NĐ-CP"
+  },
+  {
+    "question": "Nếu em muốn nghỉ việc ở công ty hiện tại thì phải báo trước bao lâu?",
+    "expected_answer": "Thông thường là 45 ngày với hợp đồng không xác định thời hạn, 30 ngày với hợp đồng từ 12 đến 36 tháng và 03 ngày làm việc với hợp đồng dưới 12 tháng; có trường hợp được nghỉ không cần báo trước.",
+    "expected_context": "Bộ luật Lao động, Điều 35"
+  },
+  {
+    "question": "Khi nghỉ việc, em sẽ được công ty thanh toán những khoản gì?",
+    "expected_answer": "Hai bên phải thanh toán các khoản liên quan trong thời hạn luật định, gồm tiền lương và quyền lợi còn lại; nếu đủ điều kiện có thể có trợ cấp thôi việc hoặc mất việc.",
+    "expected_context": "Bộ luật Lao động, Điều 46, Điều 47 và Điều 48"
+  },
+  {
+    "question": "Công ty cắt giảm nhân sự vì tái cấu trúc thì em có được nhận trợ cấp gì không?",
+    "expected_answer": "Nếu đủ điều kiện hưởng trợ cấp mất việc, mỗi năm làm việc được trả một tháng tiền lương nhưng ít nhất bằng hai tháng tiền lương.",
+    "expected_context": "Bộ luật Lao động, Điều 47"
+  },
+  {
+    "question": "Sếp nói sẽ sa thải em vì đi muộn nhiều lần, điều đó có hợp pháp không?",
+    "expected_answer": "Đi muộn nhiều lần không tự động là căn cứ sa thải. Sa thải chỉ được áp dụng cho các trường hợp và theo trình tự mà pháp luật quy định.",
+    "expected_context": "Bộ luật Lao động, Điều 125"
+  },
+  {
+    "question": "Em làm ở công ty tư nhân, bao nhiêu tuổi thì được nghỉ hưu?",
+    "expected_answer": "Tuổi nghỉ hưu trong điều kiện bình thường tăng theo lộ trình cho đến 62 tuổi với nam và 60 tuổi với nữ; tuổi cụ thể phụ thuộc năm nghỉ hưu.",
+    "expected_context": "Bộ luật Lao động, Điều 169; Nghị định 135/2020/NĐ-CP"
+  },
+  {
+    "question": "Nếu em nghỉ việc mà còn phép năm chưa dùng hết thì công ty có phải trả tiền không?",
+    "expected_answer": "Có. Khi chấm dứt hợp đồng, người lao động chưa nghỉ hoặc chưa nghỉ hết phép năm được thanh toán tiền cho những ngày chưa nghỉ.",
+    "expected_context": "Bộ luật Lao động, khoản 3 Điều 113"
+  },
+  {
+    "question": "Tiền lương làm căn cứ đóng bảo hiểm xã hội gồm những khoản nào?",
+    "expected_answer": "Căn cứ đóng gồm mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác được trả thường xuyên, ổn định theo quy định.",
+    "expected_context": "Luật Bảo hiểm xã hội 2024, Điều 31"
+  },
+  {
+    "question": "Nếu em bị ốm dài ngày thì chế độ bảo hiểm xã hội được tính thế nào?",
+    "expected_answer": "Người mắc bệnh cần chữa trị dài ngày được hưởng chế độ ốm đau theo Luật Bảo hiểm xã hội; thời gian hưởng được tính theo ngày làm việc và điều kiện luật định.",
+    "expected_context": "Luật Bảo hiểm xã hội 2024, Điều 43"
   }
 ]
