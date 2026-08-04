@@ -1,56 +1,22 @@
 # RAG Evaluation Results
 
-## Framework sử dụng
-
-> Ghi rõ framework đã chọn: DeepEval / RAGAS / TruLens
-
----
+- Generated at: 2026-08-04T21:29:13
+- Evaluator: **RAGAS**
+- Number of questions: **15**
 
 ## Overall Scores
 
-| Metric | Config A (hybrid + rerank) | Config B (dense-only) | Δ |
-|--------|---------------------------|----------------------|---|
-| Faithfulness | | | |
-| Answer Relevance | | | |
-| Context Recall | | | |
-| Context Precision | | | |
-| **Average** | | | |
+| Metric | Score |
+|---|---:|
+| Faithfulness | 0.7302 |
+| Answer Relevancy | 0.5168 |
+| Context Precision | 1.0000 |
+| Context Recall | 1.0000 |
+| **Average (4 metrics)** | **0.8117** |
 
----
+## Notes
 
-## A/B Comparison Analysis
-
-**Config A:**
-> Mô tả config ...
-
-**Config B:**
-> Mô tả config ...
-
-**Kết luận:**
-> Config nào tốt hơn? Vì sao? (2-3 câu)
-
----
-
-## Worst Performers (Bottom 3)
-
-| # | Question | Faithfulness | Relevance | Recall | Failure Stage | Root Cause |
-|---|----------|-------------|-----------|--------|---------------|------------|
-| 1 | | | | | | |
-| 2 | | | | | | |
-| 3 | | | | | | |
-
----
-
-## Recommendations
-
-### Cải tiến 1
-**Action:**
-**Expected impact:**
-
-### Cải tiến 2
-**Action:**
-**Expected impact:**
-
-### Cải tiến 3
-**Action:**
-**Expected impact:**
+- Faithfulness: câu trả lời bám sát context truy xuất.
+- Answer Relevancy: câu trả lời đúng trọng tâm câu hỏi.
+- Context Precision: context lấy ra thực sự liên quan.
+- Context Recall: context bao phủ thông tin cần thiết.
