@@ -14,9 +14,12 @@ Base URL: "https://openrouter.ai/api/v1", dùng chung interface với OpenAI SDK
 """
 
 import os
+from pathlib import Path
+
 from dotenv import load_dotenv
 
-load_dotenv()
+PROJECT_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(PROJECT_DIR / ".env")
 
 from .task9_retrieval_pipeline import retrieve
 
@@ -37,23 +40,27 @@ TOP_P = 0.9
 # Chọn 0.3 vì: RAG cần factual, ít sáng tạo
 TEMPERATURE = 0.3
 
-# TODO: Chọn LLM model (OpenRouter model ID)
-LLM_MODEL = "openai/gpt-4o-mini"  # hoặc model ":free" nếu chưa có credit
+# OpenRouter uses provider/model IDs; direct OpenAI uses the model name only.
+LLM_MODEL = os.getenv("LLM_MODEL", "openai/gpt-4o-mini")
+OPENAI_LLM_MODEL = os.getenv("OPENAI_LLM_MODEL", "gpt-4o-mini")
+MAX_OUTPUT_TOKENS = 900
 
 
 # =============================================================================
 # SYSTEM PROMPT
 # =============================================================================
 
-SYSTEM_PROMPT = """Bạn là trợ lý trả lời câu hỏi về chính sách thương mại điện tử và hỗ trợ
-khách hàng (thanh toán, đổi trả, giao hàng, quyền riêng tư, quy định người bán).
+SYSTEM_PROMPT = """Bạn là trợ lý tra cứu pháp luật lao động Việt Nam dành cho người trẻ.
 
 Quy tắc bắt buộc:
 1. Chỉ sử dụng thông tin từ context được cung cấp — KHÔNG bịa đặt
-2. Mỗi khẳng định phải có trích dẫn ngay sau, ví dụ: [Returns Policy, 2026]
+2. Mỗi khẳng định pháp lý phải có trích dẫn ngay sau bằng ĐÚNG nhãn nguồn xuất hiện
+   trong context, ví dụ: [Nguồn 1: bo-luat-lao-dong.pdf]
 3. Nếu context không đủ thông tin → trả lời: "Tôi không thể xác minh thông tin này từ nguồn hiện có"
-4. Trả lời bằng tiếng Việt, có cấu trúc rõ ràng theo đoạn văn
-5. Không suy luận hay mở rộng ngoài những gì được nêu trong context"""
+4. Trả lời bằng tiếng Việt, ngắn gọn, có cấu trúc rõ ràng
+5. Khi có nhiều nguồn, ưu tiên văn bản pháp luật gốc và nêu rõ nếu các nguồn khác nhau
+6. Không suy luận hay mở rộng ngoài những gì được nêu trong context
+7. Không tự tạo tên nguồn, số điều, mức tiền hoặc thời hạn không có trong context"""
 
 
 # =============================================================================
@@ -77,15 +84,13 @@ def reorder_for_llm(chunks: list[dict]) -> list[dict]:
     Returns:
         List reordered để maximize LLM attention.
     """
-    # TODO: Implement reordering
-    #
-    # if len(chunks) <= 2:
-    #     return chunks
-    #
-    # front = chunks[::2]   # index 0, 2, 4 -> đặt ở đầu
-    # back = chunks[1::2]   # index 1, 3    -> đặt ở cuối (reversed)
-    # return front + back[::-1]
-    raise NotImplementedError("Implement reorder_for_llm")
+    if not isinstance(chunks, list):
+        raise TypeError("chunks must be a list")
+
+    # Slicing creates a new list and does not mutate retrieval/reranking output.
+    front = chunks[::2]
+    back = chunks[1::2]
+    return front + back[::-1]
 
 
 # =============================================================================
@@ -103,18 +108,95 @@ def format_context(chunks: list[dict]) -> str:
     Returns:
         Formatted context string.
     """
-    # TODO: Implement context formatting
-    #
-    # context_parts = []
-    # for i, chunk in enumerate(chunks, 1):
-    #     source = chunk.get("metadata", {}).get("source", f"Source {i}")
-    #     doc_type = chunk.get("metadata", {}).get("type", "unknown")
-    #     context_parts.append(
-    #         f"[Document {i} | Source: {source} | Type: {doc_type}]\n"
-    #         f"{chunk['content']}\n"
-    #     )
-    # return "\n---\n".join(context_parts)
-    raise NotImplementedError("Implement format_context")
+    if not isinstance(chunks, list):
+        raise TypeError("chunks must be a list")
+
+    context_parts: list[str] = []
+    for index, chunk in enumerate(chunks, start=1):
+        if not isinstance(chunk, dict):
+            continue
+        content = chunk.get("content")
+        if not isinstance(content, str) or not content.strip():
+            continue
+
+        metadata = chunk.get("metadata") or {}
+        if not isinstance(metadata, dict):
+            metadata = {}
+        source = (
+            metadata.get("source")
+            or metadata.get("title")
+            or metadata.get("section")
+            or metadata.get("node_title")
+            or metadata.get("doc_id")
+            or f"tai-lieu-{index}"
+        )
+        doc_type = metadata.get("type") or chunk.get("source") or "unknown"
+        section = metadata.get("section") or metadata.get("node_title")
+        location = f" | Mục: {section}" if section else ""
+        citation_label = f"Nguồn {index}: {source}"
+
+        context_parts.append(
+            f"[{citation_label} | Loại: {doc_type}{location}]\n{content.strip()}"
+        )
+    return "\n\n---\n\n".join(context_parts)
+
+
+def _generation_backends():
+    """Yield configured OpenAI-compatible clients in fallback order."""
+    try:
+        from openai import OpenAI
+    except ImportError as exc:
+        raise RuntimeError(
+            "Missing openai SDK. Install Task 10 dependencies from requirements.txt."
+        ) from exc
+
+    openrouter_key = os.getenv("OPENROUTER_API_KEY", "").strip()
+    openai_key = os.getenv("OPENAI_API_KEY", "").strip()
+    if openrouter_key:
+        yield (
+            "openrouter",
+            OpenAI(
+                api_key=openrouter_key,
+                base_url="https://openrouter.ai/api/v1",
+                default_headers={
+                    "HTTP-Referer": "https://github.com/",
+                    "X-Title": "Vietnam Labor Law RAG Lab",
+                },
+            ),
+            LLM_MODEL,
+        )
+    if openai_key:
+        yield "openai", OpenAI(api_key=openai_key), OPENAI_LLM_MODEL
+
+
+def _call_llm(user_message: str) -> str:
+    errors: list[str] = []
+    attempted = False
+    for provider, client, model in _generation_backends():
+        attempted = True
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": user_message},
+                ],
+                temperature=TEMPERATURE,
+                top_p=TOP_P,
+                max_tokens=MAX_OUTPUT_TOKENS,
+            )
+            answer = response.choices[0].message.content
+            if isinstance(answer, str) and answer.strip():
+                return answer.strip()
+            errors.append(f"{provider}: model returned an empty answer")
+        except Exception as exc:
+            errors.append(f"{provider}: {type(exc).__name__}: {exc}")
+
+    if not attempted:
+        raise RuntimeError(
+            "Set OPENROUTER_API_KEY or OPENAI_API_KEY in .env for Task 10 generation"
+        )
+    raise RuntimeError("All generation backends failed: " + " | ".join(errors))
 
 
 # =============================================================================
@@ -143,51 +225,56 @@ def generate_with_citation(query: str, top_k: int = TOP_K) -> dict:
             'retrieval_source': str  # 'hybrid' hoặc 'pageindex'
         }
     """
-    # TODO: Implement generation pipeline
-    #
-    # # Step 1: Retrieve
-    # chunks = retrieve(query, top_k=top_k)
-    #
-    # # Step 2: Reorder
-    # reordered = reorder_for_llm(chunks)
-    #
-    # # Step 3: Format context
-    # context = format_context(reordered)
-    #
-    # # Step 4: Build prompt
-    # user_message = f"""Context:\n{context}\n\n---\n\nQuestion: {query}"""
-    #
-    # # Step 5: Call LLM (OpenRouter — OpenAI-compatible API)
-    # from openai import OpenAI
-    # api_key = os.getenv("OPENROUTER_API_KEY") or os.getenv("OPENAI_API_KEY")
-    # client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1")
-    #
-    # response = client.chat.completions.create(
-    #     model=LLM_MODEL,
-    #     messages=[
-    #         {"role": "system", "content": SYSTEM_PROMPT},
-    #         {"role": "user", "content": user_message}
-    #     ],
-    #     temperature=TEMPERATURE,
-    #     top_p=TOP_P,
-    # )
-    #
-    # answer = response.choices[0].message.content
-    #
-    # # Step 6: Return
-    # return {
-    #     "answer": answer,
-    #     "sources": chunks,
-    #     "retrieval_source": chunks[0].get("source", "hybrid") if chunks else "none"
-    # }
-    raise NotImplementedError("Implement generate_with_citation")
+    if not isinstance(query, str) or not query.strip():
+        raise ValueError("query must be a non-empty string")
+    if isinstance(top_k, bool) or not isinstance(top_k, int) or top_k <= 0:
+        raise ValueError("top_k must be a positive integer")
+
+    query = query.strip()
+    chunks = retrieve(query, top_k=top_k)
+    if not chunks:
+        return {
+            "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+            "sources": [],
+            "retrieval_source": "none",
+        }
+
+    reordered = reorder_for_llm(chunks)
+    context = format_context(reordered)
+    if not context:
+        return {
+            "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+            "sources": [],
+            "retrieval_source": "none",
+        }
+
+    user_message = (
+        "CONTEXT ĐƯỢC PHÉP SỬ DỤNG:\n"
+        f"{context}\n\n"
+        "---\n"
+        f"CÂU HỎI: {query}\n\n"
+        "Hãy trả lời chỉ từ context và đặt nhãn trích dẫn ngay sau từng "
+        "khẳng định pháp lý."
+    )
+    answer = _call_llm(user_message)
+    retrieval_sources = {
+        str(chunk.get("source", "hybrid")) for chunk in chunks if isinstance(chunk, dict)
+    }
+    retrieval_source = (
+        next(iter(retrieval_sources)) if len(retrieval_sources) == 1 else "mixed"
+    )
+    return {
+        "answer": answer,
+        "sources": reordered,
+        "retrieval_source": retrieval_source,
+    }
 
 
 if __name__ == "__main__":
     test_queries = [
-        "Shopee hỗ trợ những phương thức thanh toán nào?",
-        "Làm sao để yêu cầu đổi trả hay hoàn tiền?",
-        "Cần chuẩn bị bằng chứng gì khi yêu cầu hoàn tiền?",
+        "Thời gian thử việc tối đa là bao lâu và lương thử việc tối thiểu bao nhiêu?",
+        "Người lao động được nghỉ phép năm bao nhiêu ngày?",
+        "Doanh nghiệp chậm trả lương thì bị xử lý thế nào?",
     ]
 
     for q in test_queries:
