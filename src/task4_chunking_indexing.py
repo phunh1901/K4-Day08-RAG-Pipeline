@@ -45,8 +45,8 @@ CHROMA_DIR = Path(__file__).parent.parent / "chroma_db"
 # =============================================================================
 
 # TODO: Chọn chunking strategy và giải thích vì sao
-CHUNK_SIZE = 500        # Vì sao chọn 500? ...
-CHUNK_OVERLAP = 50      # Vì sao chọn 50? ...
+CHUNK_SIZE = 800        # Đảm bảo mỗi đoạn chứa trọn vẹn 1–2 ý tưởng hoàn chỉnh để LLM đủ ngữ cảnh hiểu mà không làm "pha loãng" thông tin khi chuyển thành vector.
+CHUNK_OVERLAP = 100      # Tạo vùng đè khoảng 1–2 câu giữa các đoạn kế tiếp để tránh tình trạng đứt gãy ý nghĩa hoặc mất thông tin quan trọng ngay tại vị trí cắt.
 CHUNKING_METHOD = "recursive"  # "recursive" | "markdown_header" | "semantic"
 
 # TODO: Chọn embedding model và giải thích
