@@ -1,8 +1,10 @@
 """Task 8 - PageIndex vectorless retrieval for Vietnamese labour-law PDFs.
 
+
 PageIndex's cloud SDK accepts PDF documents. This module uploads the canonical
 labour-law PDF(s), stores their document IDs locally, and exposes
 ``pageindex_search`` for Task 9's low-confidence fallback path.
+
 
 Environment variables:
     PAGEINDEX_API_KEY       Required API key (``pix_...``).
@@ -11,7 +13,9 @@ Environment variables:
     PAGEINDEX_UPLOAD_GLOB   PDF selection pattern. Defaults to ``*hop-nhat*.pdf``.
 """
 
+
 from __future__ import annotations
+
 
 import json
 import os
@@ -20,19 +24,26 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterator
 
+
 from dotenv import load_dotenv
+
+
 
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 LANDING_LEGAL_DIR = PROJECT_DIR / "data" / "landing" / "legal"
 MANIFEST_PATH = PROJECT_DIR / "pageindex_doc_ids.json"
 
+
 DEFAULT_UPLOAD_GLOB = "*hop-nhat*.pdf"
 DOCUMENT_READY_TIMEOUT = 900.0
 RETRIEVAL_TIMEOUT = 120.0
 POLL_INTERVAL = 3.0
 
+
 load_dotenv(PROJECT_DIR / ".env")
+
+
 
 
 def _get_api_key() -> str:
@@ -44,6 +55,8 @@ def _get_api_key() -> str:
     return api_key
 
 
+
+
 def _get_client():
     try:
         from pageindex import PageIndexClient
@@ -52,6 +65,8 @@ def _get_client():
             "Missing pageindex SDK. Install it with: python -m pip install pageindex"
         ) from exc
     return PageIndexClient(api_key=_get_api_key())
+
+
 
 
 def _load_manifest() -> dict:
@@ -66,6 +81,8 @@ def _load_manifest() -> dict:
     return manifest
 
 
+
+
 def _save_manifest(manifest: dict) -> None:
     temp_path = MANIFEST_PATH.with_suffix(".json.tmp")
     temp_path.write_text(
@@ -73,6 +90,8 @@ def _save_manifest(manifest: dict) -> None:
         encoding="utf-8",
     )
     temp_path.replace(MANIFEST_PATH)
+
+
 
 
 def _selected_pdfs() -> list[Path]:
@@ -88,6 +107,8 @@ def _selected_pdfs() -> list[Path]:
     return pdf_files
 
 
+
+
 def _wait_until_document_ready(client: Any, doc_id: str, timeout: float) -> None:
     deadline = time.monotonic() + timeout
     while time.monotonic() < deadline:
@@ -99,6 +120,8 @@ def _wait_until_document_ready(client: Any, doc_id: str, timeout: float) -> None
     )
 
 
+
+
 def upload_documents(
     *,
     force: bool = False,
@@ -107,12 +130,14 @@ def upload_documents(
 ) -> list[dict]:
     """Upload selected legal PDFs and persist their PageIndex document IDs.
 
+
     Existing manifest entries are reused unless ``force=True``. By default the
     canonical consolidated Labour Code PDF is selected; set
     ``PAGEINDEX_UPLOAD_GLOB=*.pdf`` to upload the full legal corpus.
     """
     if ready_timeout <= 0:
         raise ValueError("ready_timeout must be positive")
+
 
     client = _get_client()
     manifest = _load_manifest()
@@ -124,9 +149,11 @@ def upload_documents(
     }
     selected_records: list[dict] = []
 
+
     for pdf_path in _selected_pdfs():
         relative_path = pdf_path.relative_to(PROJECT_DIR).as_posix()
         existing = by_source.get(relative_path)
+
 
         if existing and existing.get("doc_id") and not force:
             record = existing
@@ -153,13 +180,17 @@ def upload_documents(
             _save_manifest(manifest)
             print(f"  SAVED doc_id={doc_id}")
 
+
         if wait_until_ready:
             print(f"  WAIT processing {record['doc_id']} ...")
             _wait_until_document_ready(client, record["doc_id"], ready_timeout)
             print("  READY")
         selected_records.append(record)
 
+
     return selected_records
+
+
 
 
 def _configured_document_ids() -> list[str]:
@@ -171,6 +202,7 @@ def _configured_document_ids() -> list[str]:
     for raw_value in raw_ids:
         document_ids.extend(part.strip() for part in raw_value.split(",") if part.strip())
 
+
     if not document_ids:
         document_ids.extend(
             str(record["doc_id"])
@@ -178,12 +210,16 @@ def _configured_document_ids() -> list[str]:
             if isinstance(record, dict) and record.get("doc_id")
         )
 
+
     # De-duplicate while preserving document priority/order.
     return list(dict.fromkeys(document_ids))
 
 
+
+
 def _wait_for_retrieval(client: Any, retrieval_id: str) -> dict:
     from pageindex import PageIndexAPIError
+
 
     deadline = time.monotonic() + RETRIEVAL_TIMEOUT
     while time.monotonic() < deadline:
@@ -200,6 +236,7 @@ def _wait_for_retrieval(client: Any, retrieval_id: str) -> dict:
             raise
         status = str(response.get("status", "")).lower()
 
+
         # Some API versions omit status once retrieved_nodes is available.
         if response.get("retrieved_nodes") is not None or status in {
             "completed",
@@ -214,9 +251,12 @@ def _wait_for_retrieval(client: Any, retrieval_id: str) -> dict:
             )
         time.sleep(POLL_INTERVAL)
 
+
     raise TimeoutError(
         f"PageIndex retrieval {retrieval_id} did not finish after {RETRIEVAL_TIMEOUT:.0f}s"
     )
+
+
 
 
 def _iter_relevant_items(value: Any) -> Iterator[dict]:
@@ -233,9 +273,12 @@ def _iter_relevant_items(value: Any) -> Iterator[dict]:
                     yield from _iter_relevant_items(child)
 
 
+
+
 def _parse_retrieval(response: dict, doc_id: str) -> list[dict]:
     parsed: list[dict] = []
     seen_content: set[str] = set()
+
 
     for node in response.get("retrieved_nodes") or []:
         if not isinstance(node, dict):
@@ -265,12 +308,15 @@ def _parse_retrieval(response: dict, doc_id: str) -> list[dict]:
     return parsed
 
 
+
+
 def pageindex_search(query: str, top_k: int = 5) -> list[dict]:
     """Retrieve structurally relevant content from configured PageIndex PDFs."""
     if not isinstance(query, str) or not query.strip():
         raise ValueError("query must be a non-empty string")
     if isinstance(top_k, bool) or not isinstance(top_k, int) or top_k <= 0:
         raise ValueError("top_k must be a positive integer")
+
 
     document_ids = _configured_document_ids()
     if not document_ids:
@@ -279,9 +325,11 @@ def pageindex_search(query: str, top_k: int = 5) -> list[dict]:
             "or set PAGEINDEX_DOC_ID/PAGEINDEX_DOC_IDS in .env."
         )
 
+
     client = _get_client()
     combined: list[dict] = []
     seen_content: set[str] = set()
+
 
     for doc_id in document_ids:
         if not client.is_retrieval_ready(doc_id):
@@ -300,6 +348,7 @@ def pageindex_search(query: str, top_k: int = 5) -> list[dict]:
                 seen_content.add(result["content"])
                 combined.append(result)
 
+
     # Legacy PageIndex retrieval has no comparable numeric relevance score.
     # Use reciprocal rank so downstream components still receive a stable,
     # descending score without pretending it is cosine similarity.
@@ -308,11 +357,17 @@ def pageindex_search(query: str, top_k: int = 5) -> list[dict]:
     return combined[:top_k]
 
 
+
+
 if __name__ == "__main__":
     records = upload_documents()
     print(f"\nConfigured {len(records)} PageIndex document(s).")
+
 
     test_query = "Thời gian thử việc tối đa và lương thử việc là bao nhiêu?"
     print(f"\nTest query: {test_query}")
     for result in pageindex_search(test_query, top_k=3):
         print(f"[{result['score']:.3f}] {result['content'][:120]}...")
+
+
+

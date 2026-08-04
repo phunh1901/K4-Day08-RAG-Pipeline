@@ -1,5 +1,5 @@
 """
-RAG Chatbot — E-commerce Support (Starter Template)
+RAG Chatbot — E-commerce Support (K4 Variant)
 Streamlit app kết nối RAG Retrieval (Task 9) và Generation (Task 10).
 
 Chạy:
@@ -20,7 +20,7 @@ PROJECT_ROOT = Path(__file__).parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 # =============================================================================
-# PAGE CONFIG
+# PAGE CONFIG & CUSTOM STYLING (Role 3 - UI/UX Specialist)
 # =============================================================================
 
 st.set_page_config(
@@ -30,13 +30,50 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+st.markdown("""
+<style>
+    .main-header {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #ff4b4b;
+        margin-bottom: 0.2rem;
+    }
+    .sub-header {
+        font-size: 1.0rem;
+        color: #6c757d;
+        margin-bottom: 1.5rem;
+    }
+    .source-card {
+        background-color: #f8f9fa;
+        border-left: 4px solid #ff4b4b;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+    .badge-hybrid {
+        background-color: #28a745;
+        color: white;
+        padding: 3px 8px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+    }
+    .badge-fallback {
+        background-color: #fd7e14;
+        color: white;
+        padding: 3px 8px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # =============================================================================
-# SIDEBAR — INFO & SETTINGS
+# SIDEBAR — INFO & SETTINGS (Role 3 - UI Controls)
 # =============================================================================
 
 with st.sidebar:
     st.title("🛒 E-commerce Support RAG")
-    st.caption("Trợ lý hỏi đáp về chính sách thương mại điện tử và hỗ trợ khách hàng (đổi trả, thanh toán, bảo mật, người bán)")
+    st.caption("Trợ lý hỏi đáp chính sách thương mại điện tử (đổi trả, thanh toán, bảo mật, người bán)")
 
     st.divider()
 
@@ -53,12 +90,24 @@ with st.sidebar:
             st.session_state["pending_query"] = s
 
     st.divider()
-    st.subheader("⚙️ Thiết lập")
-    top_k = st.slider("Số chunks retrieval (top_k)", 3, 10, 5)
+    st.subheader("⚙️ Cấu Hình RAG Pipeline")
+    top_k = st.slider("Số lượng chunks retrieval (top_k)", min_value=1, max_value=10, value=5)
+    customer_role_select = st.selectbox(
+        "Đối tượng áp dụng (customer_role)",
+        ["Tất cả (both)", "Người mua (buyer)", "Người bán (seller)"]
+    )
+    
+    st.divider()
+    if st.button("🗑️ Xóa lịch sử trò chuyện", use_container_width=True):
+        st.session_state.messages = []
+        st.rerun()
 
     st.divider()
-    st.caption("**Kiến trúc hệ thống:**")
-    st.caption("Hybrid Retrieval (Semantic + BM25) → RRF Rerank → PageIndex Fallback → LLM Generation có Citation")
+    st.caption("**Chỉ số hệ thống & Kiến trúc:**")
+    st.caption("• Embedding: `BAAI/bge-m3` (1024d)")
+    st.caption("• Vector Store: `ChromaDB` (Local)")
+    st.caption("• Reranker: `RRF (k=60)`")
+    st.caption("• Vectorless Fallback: `PageIndex` (Cosine < 0.48)")
 
 # =============================================================================
 # SESSION STATE
@@ -73,26 +122,28 @@ if "pending_query" not in st.session_state:
 # MAIN CHAT AREA
 # =============================================================================
 
-st.title("🛒 E-commerce Support RAG Chatbot")
-st.caption("Hệ thống hỏi đáp chính sách e-commerce và trợ giúp khách hàng")
+st.markdown('<div class="main-header">🛒 E-commerce Support RAG Chatbot</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-header">Hỏi đáp chính sách Shopee Vietnam — Kết hợp Hybrid Retrieval, RRF Rerank & PageIndex Fallback (K4 Variant)</div>', unsafe_allow_html=True)
 
 # Hiển thị lịch sử chat
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
         if msg["role"] == "assistant" and "sources" in msg and msg["sources"]:
-            with st.expander(f"📚 Nguồn tham khảo ({len(msg['sources'])} chunks)"):
+            ret_src = msg.get("retrieval_source", "hybrid")
+            badge_class = "badge-fallback" if ret_src == "pageindex" else "badge-hybrid"
+            with st.expander(f"📚 Nguồn tham khảo ({len(msg['sources'])} chunks) | Nguồn truy vấn: {ret_src.upper()}"):
                 for i, src in enumerate(msg["sources"], 1):
                     meta = src.get("metadata", {})
                     source_name = meta.get("source", "Unknown")
                     doc_type = meta.get("type", "unknown")
-                    score = src.get("score", 0)
-                    st.markdown(f"**[{i}] {source_name}** `{doc_type}` | score: `{score:.4f}`")
-                    st.text(src.get("content", "")[:300] + "...")
+                    score = src.get("score", 0.0)
+                    st.markdown(f"**[{i}] {source_name}** (`{doc_type}`) | score: `{score:.4f}`")
+                    st.text(src.get("content", "")[:350] + "...")
                     st.divider()
 
 # =============================================================================
-# QUERY HANDLING
+# QUERY HANDLING (Role 2 - Pipeline Integration)
 # =============================================================================
 
 user_input = st.chat_input("Nhập câu hỏi của bạn về chính sách/hỗ trợ e-commerce...")
@@ -106,44 +157,44 @@ if query:
     with st.chat_message("user"):
         st.markdown(query)
 
-    # Sinh câu trả lời từ RAG Pipeline
+    # Sinh câu trả lời từ RAG Pipeline (Role 2 + Task 10 Integration)
     with st.chat_message("assistant"):
-        with st.spinner("Đang tìm kiếm tài liệu và tổng hợp câu trả lời..."):
+        with st.spinner("Đang truy vấn tài liệu chính sách và tổng hợp câu trả lời..."):
+            ret_source = "hybrid"
             try:
-                # TODO (Học viên): Tích hợp hàm sinh câu trả lời từ Task 10
-                # Ví dụ:
-                # from src.task10_generation import generate_with_citation
-                # response = generate_with_citation(query, top_k=top_k)
-                # answer = response["answer"]
-                # sources = response.get("sources", [])
-
                 from src.task10_generation import generate_with_citation
+                
+                # Gọi hàm Task 10 sinh câu trả lời
                 response = generate_with_citation(query, top_k=top_k)
                 answer = response.get("answer", "Chưa thể trả lời.")
                 sources = response.get("sources", [])
+                ret_source = response.get("retrieval_source", "hybrid")
 
             except NotImplementedError:
-                answer = "⚠️ **Task 10 chưa được implement.** Hãy hoàn thành `src/task10_generation.py` để kết nối pipeline vào UI!"
+                answer = "⚠️ **Task 10 chưa được hoàn thiện.** Hãy hoàn thành `src/task10_generation.py` để chạy pipeline!"
                 sources = []
             except Exception as e:
                 answer = f"❌ **Lỗi khi chạy RAG Pipeline:** {e}"
                 sources = []
 
+            # Hiển thị câu trả lời từ LLM
             st.markdown(answer)
 
+            # Hiển thị các chunks tài liệu trích dẫn
             if sources:
-                with st.expander(f"📚 Nguồn tham khảo ({len(sources)} chunks)"):
+                with st.expander(f"📚 Nguồn tham khảo ({len(sources)} chunks) | Nguồn truy vấn: {ret_source.upper()}"):
                     for i, src in enumerate(sources, 1):
                         meta = src.get("metadata", {})
                         source_name = meta.get("source", "Unknown")
                         doc_type = meta.get("type", "unknown")
-                        score = src.get("score", 0)
-                        st.markdown(f"**[{i}] {source_name}** `{doc_type}` | score: `{score:.4f}`")
-                        st.text(src.get("content", "")[:300] + "...")
+                        score = src.get("score", 0.0)
+                        st.markdown(f"**[{i}] {source_name}** (`{doc_type}`) | score: `{score:.4f}`")
+                        st.text(src.get("content", "")[:350] + "...")
                         st.divider()
 
     st.session_state.messages.append({
         "role": "assistant",
         "content": answer,
         "sources": sources,
+        "retrieval_source": ret_source,
     })

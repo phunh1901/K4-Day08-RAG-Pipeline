@@ -69,20 +69,44 @@ Xem code mẫu (DeepEval/RAGAS/TruLens) chi tiết trong `README.md` gốc mục
 
 ## Kiến Trúc Hệ Thống
 
-```
-[Vẽ diagram kiến trúc ở đây]
+```mermaid
+flowchart TD
+    User([Người dùng / User Input]) --> UI[Streamlit Chatbot UI - app.py]
+    UI --> Task10[Task 10: Citation Generation]
+    Task10 --> Task9[Task 9: Complete Retrieval Pipeline]
+    
+    subgraph Retrieval_Layer [Retrieval Layer]
+        Task9 -->|Cosine >= 0.48| Hybrid[Hybrid Search Engine]
+        Task9 -->|Cosine < 0.48| Fallback[Task 8: PageIndex Vectorless Fallback]
+        
+        Hybrid --> Dense[Task 5: Dense Semantic Search]
+        Hybrid --> Sparse[Task 6: Sparse BM25 Lexical Search]
+        
+        Dense --> VectorDB[(ChromaDB Vector Store)]
+        Sparse --> Corpus[(Markdown Corpus)]
+        
+        Dense --> RRF[Task 7: Reciprocal Rank Fusion Reranker]
+        Sparse --> RRF
+    end
+    
+    RRF --> Reorder[Document Reordering: front + back[::-1]]
+    Fallback --> Reorder
+    
+    Reorder --> Prompt[Prompt Assembly + System Prompt]
+    Prompt --> LLM[OpenRouter / OpenAI LLM]
+    LLM --> UI
 ```
 
 ---
 
-## Phân Công Công Việc
+## Phân Công Công Việc (Nhóm 4 Thành Viên)
 
-| Thành viên | MSSV | Nhiệm vụ | Trạng thái |
+| Thành viên | Vai Trò (Role) | Nhiệm vụ chính | Trạng thái |
 |-----------|------|----------|------------|
-| | | | |
-| | | | |
-| | | | |
-| | | | |
+| **Role 1 (Leader)** | Team Leader & RAG Architect | Quản lý repo, ghép Task 9 Pipeline (`task9_retrieval_pipeline.py`), tích hợp Chatbot UI (`app.py`), chủ trì Demo live | ✅ Complete |
+| **Role 2** | Data & Dense Search Specialist | Thu thập chính sách (Task 1), Convert Markdown (Task 3), Chunking & Indexing ChromaDB (Task 4), Semantic Search (Task 5) | ✅ Complete |
+| **Role 3** | Frontend & Chatbot Dev | Crawl tin trợ giúp (Task 2), Document Reordering & Citation Prompt (Task 10), giao diện Streamlit Chatbot (`app.py`) | ✅ Complete |
+| **Role 4** | Evaluation & QA Engineer | Lexical Search BM25 (Task 6), RRF Rerank (Task 7), PageIndex Fallback (Task 8), Golden Dataset & RAGAS Eval (`results.md`) | ✅ Complete |
 
 ---
 
