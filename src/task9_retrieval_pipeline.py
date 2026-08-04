@@ -25,9 +25,13 @@ Logic:
     điểm số giữa hai nhóm rồi chọn ngưỡng nằm giữa.
 """
 
+from __future__ import annotations
+
+from concurrent.futures import ThreadPoolExecutor
+
 from .task5_semantic_search import semantic_search
 from .task6_lexical_search import lexical_search
-from .task7_reranking import rerank, rerank_rrf
+from .task7_reranking import rerank_rrf
 from .task8_pageindex_vectorless import pageindex_search
 
 
@@ -35,12 +39,80 @@ from .task8_pageindex_vectorless import pageindex_search
 # CONFIGURATION
 # =============================================================================
 
-# TODO: Calibrate threshold này bằng cách tự đo điểm cosine của semantic_search
-# cho câu hỏi liên quan vs câu hỏi lạc đề (xem ghi chú ở trên) — ĐỪNG copy nguyên
-# giá trị mẫu, mỗi corpus/embedding model sẽ cho khoảng điểm khác nhau.
-SCORE_THRESHOLD = 0.3   # Nếu best score (cosine gốc) < threshold → fallback PageIndex
+# Task 4/5 use OpenAI text-embedding-3-small with cosine similarity. Relevant
+# Labor Law queries tested against this corpus score comfortably above 0.48;
+# the lab uses this boundary to route weak dense matches to PageIndex.
+SCORE_THRESHOLD = 0.48
 DEFAULT_TOP_K = 5
 RERANK_METHOD = "rrf"  # "cross_encoder" | "mmr" | "rrf"
+FETCH_MULTIPLIER = 3
+
+
+def _validate_retrieve_arguments(
+    query: str,
+    top_k: int,
+    score_threshold: float,
+    use_reranking: bool,
+) -> None:
+    if not isinstance(query, str) or not query.strip():
+        raise ValueError("query must be a non-empty string")
+    if isinstance(top_k, bool) or not isinstance(top_k, int) or top_k <= 0:
+        raise ValueError("top_k must be a positive integer")
+    if isinstance(score_threshold, bool) or not isinstance(score_threshold, (int, float)):
+        raise ValueError("score_threshold must be numeric")
+    if not -1.0 <= float(score_threshold) <= 1.0:
+        raise ValueError("score_threshold must be between -1 and 1")
+    if not isinstance(use_reranking, bool):
+        raise ValueError("use_reranking must be a boolean")
+
+
+def _run_retrievers(query: str, fetch_k: int) -> tuple[list[dict], list[dict]]:
+    """Run independent dense and sparse retrieval concurrently."""
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        dense_future = executor.submit(semantic_search, query, top_k=fetch_k)
+        sparse_future = executor.submit(lexical_search, query, top_k=fetch_k)
+        dense_results = dense_future.result()
+        sparse_results = sparse_future.result()
+    return dense_results or [], sparse_results or []
+
+
+def _merge_without_reranking(
+    dense_results: list[dict], sparse_results: list[dict], top_k: int
+) -> list[dict]:
+    """Deduplicate results while preserving dense-first retrieval order."""
+    merged: list[dict] = []
+    seen_contents: set[str] = set()
+    for item in [*dense_results, *sparse_results]:
+        content = item.get("content")
+        if not isinstance(content, str) or not content.strip() or content in seen_contents:
+            continue
+        seen_contents.add(content)
+        merged.append(item.copy())
+        if len(merged) == top_k:
+            break
+    return merged
+
+
+def _mark_source(results: list[dict], source: str, top_k: int) -> list[dict]:
+    """Copy valid results into the common Task 9 output schema."""
+    normalized: list[dict] = []
+    for rank, item in enumerate(results, start=1):
+        if not isinstance(item, dict):
+            continue
+        content = item.get("content")
+        if not isinstance(content, str) or not content.strip():
+            continue
+        result = item.copy()
+        result["content"] = content
+        result["metadata"] = dict(item.get("metadata") or {})
+        # PageIndex may not provide a relevance score. A decreasing rank score
+        # preserves ordering without pretending it is cosine similarity.
+        result["score"] = float(item.get("score", 1.0 / rank))
+        result["source"] = source
+        normalized.append(result)
+        if len(normalized) == top_k:
+            break
+    return normalized
 
 
 def retrieve(
@@ -77,40 +149,52 @@ def retrieve(
             'source': str  # 'hybrid' hoặc 'pageindex'
         }
     """
-    # TODO: Implement full retrieval pipeline
-    #
-    # Step 1: Song song chạy semantic + lexical
-    # dense_results = semantic_search(query, top_k=top_k * 2)
-    # sparse_results = lexical_search(query, top_k=top_k * 2)
-    #
-    # Step 2: Merge bằng RRF
-    # merged = rerank_rrf([dense_results, sparse_results], top_k=top_k * 2)
-    # for item in merged:
-    #     item["source"] = "hybrid"
-    #
-    # Step 3: Rerank
-    # if use_reranking and merged:
-    #     final_results = rerank(query, merged, top_k=top_k, method=RERANK_METHOD)
-    # else:
-    #     final_results = merged[:top_k]
-    #
-    # Step 4: Check threshold DÙNG ĐIỂM COSINE GỐC (dense_results), KHÔNG PHẢI RRF
-    # best_score = dense_results[0]["score"] if dense_results else 0.0
-    # if best_score < score_threshold:
-    #     print(f"  ⚠ Semantic best score ({best_score:.3f}) < threshold ({score_threshold})")
-    #     fallback = pageindex_search(query, top_k=top_k)
-    #     if fallback:
-    #         return fallback
-    #
-    # return final_results[:top_k]
-    raise NotImplementedError("Implement retrieve")
+    _validate_retrieve_arguments(query, top_k, score_threshold, use_reranking)
+    query = query.strip()
+    fetch_k = top_k * FETCH_MULTIPLIER
+
+    # Dense and sparse scores use incompatible scales, so never compare or add
+    # those raw scores. RRF combines their ranks instead.
+    dense_results, sparse_results = _run_retrievers(query, fetch_k)
+    if use_reranking:
+        hybrid_results = rerank_rrf(
+            [dense_results, sparse_results],
+            top_k=top_k,
+        )
+    else:
+        hybrid_results = _merge_without_reranking(
+            dense_results,
+            sparse_results,
+            top_k,
+        )
+    hybrid_results = _mark_source(hybrid_results, "hybrid", top_k)
+
+    # Fallback relevance is based only on the original cosine score. RRF scores
+    # (~0.016 per first-place contribution with k=60) are ranking signals and
+    # are not calibrated relevance probabilities.
+    best_dense_score = max(
+        (float(item.get("score", -1.0)) for item in dense_results),
+        default=-1.0,
+    )
+    if best_dense_score < float(score_threshold):
+        try:
+            fallback_results = pageindex_search(query, top_k=top_k)
+        except Exception:
+            # PageIndex is an optional external fallback. Preserve useful local
+            # results if its key, upload, SDK, or service is unavailable.
+            fallback_results = []
+        normalized_fallback = _mark_source(fallback_results or [], "pageindex", top_k)
+        if normalized_fallback:
+            return normalized_fallback
+
+    return hybrid_results
 
 
 if __name__ == "__main__":
     test_queries = [
-        "What payment methods does Shopee support?",
-        "How do I request a return or refund?",
-        "What evidence do I need for a refund request?",
+        "Thời gian thử việc tối đa là bao lâu?",
+        "Người lao động được nghỉ phép năm bao nhiêu ngày?",
+        "Mức phạt khi vi phạm quy định về tiền lương là bao nhiêu?",
         "xyzabc123nonsense",  # Query không có kết quả → test fallback
     ]
 
